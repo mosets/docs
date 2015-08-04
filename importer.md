@@ -1,9 +1,36 @@
 # Importer
 
-MT importer helps you to import stuff to Mosets Tree. Yay!
+MT Importer is a standalone extension that helps you to import your external data in to Mosets Tree as listings. If you can export your existing data in to Comma Separated Values (CSV) format, you can use this tool to import your data Mosets Tree.
 
 ## Import from CSV
-This Importer will import all listings from a .csv files. Download a sample and start by adding your listings to the file. Please bear in mind the following when adding listings:  
+
+
+
+Here's a super simple CSV that imports a single listing named "My first import" in to the root of your directory. To test this sample, copy the texts below, save it to a file named _myfirstimport.csv_ and import the file through MT Importer:
+
+	link_name
+	My first import
+
+If you have more fields, it will look something like this:
+
+	link_name, address, city, country, website, email
+	Acme Co., 34 Jefferson St., New York, USA, http://www.example.com, acme@example.com
+	Ben Co., 81 Jefferson St., New York, USA, http://www.example2.com, ben@example.com
+
+The first row define the columns of your data. Here are the column names of all core fields:
+
+  - link_name
+  - address
+  - city
+  - cat_id
+  - ...
+
+Only `link_name` is mandatory. Other columns are optional.
+
+If your data have more columns, you can always add them to the column fields with any name. Mosets Tree will create a custom field to accommodate this column based on Text fieldtype.
+
+Here are few more things to consider:
+
 - The first line of sample.csv contains the list of column names that map to Moset Tree's database. Only the first column **- link_name** is compulsory. Other columns are optional and can be safely removed. If you're removing a column, make sure you remove the corresponding values for the listings.
 - Second line and onwards is where you insert your data. One line for each listing. In sample.csv, the second line is filled with one sample listing.
 - You may use Microsoft Excel or any other word processor to edit the file. Make sure you do not save the formatting when prompted.
