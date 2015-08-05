@@ -4,7 +4,16 @@ MT Importer is a standalone extension that helps you to import your external dat
 
 ## Import from CSV
 
+If you have your CSV file, you may start the following steps:
 
+1. Login to your Joomla's administrator back-end.
+2. Goto "**Components -> MT Importer -> Import from .csv file**".
+3. Click "**Choose File**" to select .csv file from your computer.
+4. Click "**Import**" to start the import process.
+
+You will be notified and redirected to Mosets Tree main page when the import is completed. Since you're importing data from another source, you need to perform "**Recount Cats/Listings**" after the import process is complete. This function will recount the number of categories and listings you have in Mosets Tree.
+
+How to format your CSV file? 
 
 Here's a super simple CSV that imports a single listing named "My first import" in to the root of your directory. To test this sample, copy the texts below, save it to a file named _myfirstimport.csv_ and import the file through MT Importer:
 
@@ -20,10 +29,43 @@ If you have more fields, it will look something like this:
 The first row define the columns of your data. Here are the column names of all core fields:
 
   - link_name
+  - alias
+  - link_desc
+  - user_id
+  - link_hits
+  - link_votes
+  - link_rating
+  - link_featured
+  - link_published
+  - link_approved
+  - link_template
+  - attribs
+  - metakey
+  - metadesc
+  - internal_notes
+  - link_created
+  - publish_up
+  - publish_down
+  - link_modified
+  - link_visited
   - address
   - city
-  - cat_id
-  - ...
+  - state
+  - country
+  - postcode
+  - contactperson
+  - mobile
+  - date
+  - year
+  - telephone
+  - fax
+  - email
+  - website
+  - price
+  - show_map
+  - lat
+  - lng
+  - zoom
 
 Only `link_name` is mandatory. Other columns are optional.
 
@@ -49,16 +91,6 @@ What this Importer doesn't do:
 - It does not create categories. You have to create the categories first before starting the import.
 
 WARNING: **PLEASE BACKUP YOUR DATABASE BEFORE PROCEEDING TO THE NEXT STEP.** Although we have done everything possible to minimize the risk of database corruption, accident do happens once a while. Backing up your database is the best protection to this.
-
-To import:
-
-1. Login to your Joomla's administrator back-end.
-2. Goto "**Components -> MT Importer -> Import from .csv file**".
-3. Click "**Choose File**" to select .csv file from your computer.
-4. Click "**Import**" to start the import process.
-
-You will be notified and redirected to Mosets Tree main page when the import is completed. Since you're importing data from another source, you need to perform "**Recount Cats/Listings**" after the import process is complete. This function will recount the number of categories and listings you have in Mosets Tree.
-
 
 
 ## Import from Hot Property
