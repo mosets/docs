@@ -1,7 +1,7 @@
 # Installation
 
 ### Server Requirements
-xzxx
+
 Mosets Tree has a few basic server requirements:
 
 - Joomla >= 3.4
