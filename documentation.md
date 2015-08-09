@@ -10,7 +10,7 @@
 	- ⭕️ [Tags]({{version}}/tags)
 	- ⭕️ [Search]({{version}}/search)
 	- ⭕️ [Access Control List]({{version}}/acl)
-	- ⭕️ [Language]({{version}}/language)
+	- [Language]({{version}}/language)
 
 - Templates
 	- ⭕️ [Introduction]({{version}}/template)
