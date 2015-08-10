@@ -16,6 +16,8 @@ If your site runs on Joomla 3.4, chances are your server can run Mosets Tree.
 
 Installation of Mosets Tree requires you to install a single package file that you receive when you purchase Mosets Tree. You can also download the latest version of Mosets Tree package from your [Mosets account](http://www.mosets.com/login/). The package includes all the modules, plugins and component that comes with Mosets Tree.
 
+test
+
 To install:
 
 1. Login to your Joomla's administrator back-end.
