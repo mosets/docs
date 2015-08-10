@@ -20,16 +20,18 @@ Top Level Categories and Category Configuration are part of the system that make
 Related Categories allows you to select one or more categories that are related to a current category. This allows your users who are browsing the current category can access to relevant categories through the links provided.
 
 ### Allow listing submission
-"Add your listing here" link will appear in all category pages if you set the "Allow listing submission" function to "Yes". It allows your users to submit listings to the categories. 
+"_Add your listing here_" link appears in all category pages if you set the "Allow listing submission" function to "Yes". It allows your users to submit listings to the categories.
+
+Setting this to "_No_" will hide this link in your category page and will prevent user from being able to submit listings here.
 
 ### Use Main Index template page
-By enabling this function, all the category pages will look and work like the Alpha Index page. 
+By enabling this function, the category page will look and work like the Index page.
 
 ### Alias
 Alias is used to generate SEF URLs which worked like a pointer that direct your users to each page of your site. Alias preferably should contain alphanumerics and dashes. 
 
 ### Custom Title
-Custom Title allows you to create a name for the browser tab of your categories. By default, browser title for each category is the name of the category itself.
+By default, the category page's `<TITLE>` tag for each category is the name of the category itself. Custom Title allows you to override this wit ha custom title.
 
 ### Template
 Mosets Tree allows you to configure the layout of your categories by selecting any templates provided. You can always customize the templates according to your preference through the Template function in Mosets Tree back-end interface. All you need to do is make a copy of the default Mosets Tree template and make changes to your new template.  
