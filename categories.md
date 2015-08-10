@@ -46,9 +46,7 @@ Alternatively, you can select which top level categories the custom field will a
 @TODO: CY
 
 ## Operations
-Directory page of the Mosets Tree back-end interface shows you the total number of sub-categories for each top level category. 
-
-How does this feature function well?
+Mosets Tree always keep track on the total number of sub-categories and listings for each category. These number might be inaccurate sometimes. Thus, operations help to recount these number and return the actual number so a more accurate number will be displayed. 
 
 ### Force recount of categories and listings
 Full recount will force Mosets Tree to recount all sub-categories of the current category. If you have a big category, this method will be very slow and might cause PHP execution timeout. However this method is the most accurate.
