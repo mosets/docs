@@ -6,7 +6,7 @@
 - Core Features
 	- ️[Categories]({{version}}/categories)
 	- ⭕️ [Listings]({{version}}/listings)
-	- ⭕️ [Fields]({{version}}/fields)
+	- [Fields]({{version}}/fields)
 	- ⭕️ [Tags]({{version}}/tags)
 	- ⭕️ [Search]({{version}}/search)
 	- ⭕️ [Access Control List]({{version}}/acl)
