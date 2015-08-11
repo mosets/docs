@@ -4,7 +4,7 @@
 	- ⭕️ [Configuration]({{version}}/configuration)
 
 - Core Features
-	- ⭕️ [Categories]({{version}}/categories)
+	- ️[Categories]({{version}}/categories)
 	- ⭕️ [Listings]({{version}}/listings)
 	- ⭕️ [Fields]({{version}}/fields)
 	- ⭕️ [Tags]({{version}}/tags)
