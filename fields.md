@@ -4,33 +4,33 @@
 - [Custom Fields]({{version}}/fields#custom-fields)
 - [Edit Screen]({{version}}/fields#edit-screen)
 - [Fieldtypes]({{version}}/fields#fieldtypes)
-	- [Select List]({{version}}/fields#custom-field-selectlist)
-	- [Select Multiple]({{version}}/fields#custom-field-selectmultiple)
-	- [Radio Button]({{version}}/fields#custom-field-radiobutton)
-	- [Associated Listing]({{version}}/fields#custom-field-associatedlisting)
-	- [Audio Player]({{version}}/fields#custom-field-audioplayer)
-	- [Captcha]({{version}}/fields#custom-field-captcha)
-	- [Category]({{version}}/fields#custom-field-category)
-	- [Checkbox]({{version}}/fields#custom-field-checkbox)
-	- [Date]({{version}}/fields#custom-field-date)
-	- [Directory]({{version}}/fields#custom-field-directory)
-	- [E-mail]({{version}}/fields#custom-field-email)
-	- [File]({{version}}/fields#custom-field-file)
-	- [Image]({{version}}/fields#custom-field-image)
-	- [Listing ID]({{version}}/fields#custom-field-listingid)
-	- [Month & Year]({{version}}/fields#custom-field-monthandyear)
-	- [Number]({{version}}/fields#custom-field-number)
-	- [Skype]({{version}}/fields#custom-field-skype)
-	- [Tags]({{version}}/fields#custom-field-tags)
-	- [Terms & Condition]({{version}}/fields#custom-field-termsandcondition)
-	- [Text]({{version}}/fields#custom-field-text)
-	- [Text Editor]({{version}}/fields#custom-field-texteditor)
-	- [Time Zone]({{version}}/fields#custom-field-timezone)
-	- [Vanity URL]({{version}}/fields#custom-field-vanityurl)
-	- [Video Player]({{version}}/fields#custom-field-videoplayer)
-	- [Web link]({{version}}/fields#custom-field-weblink)
-	- [Year]({{version}}/fields#custom-field-year)
-	- [Youtube]({{version}}/fields#custom-field-youtube)
+	- [Select List]({{version}}/fields#fieldtype-selectlist)
+	- [Select Multiple]({{version}}/fields#fieldtype-selectmultiple)
+	- [Radio Button]({{version}}/fields#fieldtype-radiobutton)
+	- [Associated Listing]({{version}}/fields#fieldtype-associatedlisting)
+	- [Audio Player]({{version}}/fields#fieldtype-audioplayer)
+	- [Captcha]({{version}}/fields#fieldtype-captcha)
+	- [Category]({{version}}/fields#fieldtype-category)
+	- [Checkbox]({{version}}/fields#fieldtype-checkbox)
+	- [Date]({{version}}/fields#fieldtype-date)
+	- [Directory]({{version}}/fields#fieldtype-directory)
+	- [E-mail]({{version}}/fields#fieldtype-email)
+	- [File]({{version}}/fields#fieldtype-file)
+	- [Image]({{version}}/fields#fieldtype-image)
+	- [Listing ID]({{version}}/fields#fieldtype-listingid)
+	- [Month & Year]({{version}}/fields#fieldtype-monthandyear)
+	- [Number]({{version}}/fields#fieldtype-number)
+	- [Skype]({{version}}/fields#fieldtype-skype)
+	- [Tags]({{version}}/fields#fieldtype-tags)
+	- [Terms & Condition]({{version}}/fields#fieldtype-termsandcondition)
+	- [Text]({{version}}/fields#fieldtype-text)
+	- [Text Editor]({{version}}/fields#fieldtype-texteditor)
+	- [Time Zone]({{version}}/fields#fieldtype-timezone)
+	- [Vanity URL]({{version}}/fields#fieldtype-vanityurl)
+	- [Video Player]({{version}}/fields#fieldtype-videoplayer)
+	- [Web link]({{version}}/fields#fieldtype-weblink)
+	- [Year]({{version}}/fields#fieldtype-year)
+	- [Youtube]({{version}}/fields#fieldtype-youtube)
 	
 
 Fields are your listings attributes. Mosets Tree comes with a host of fieldtypes that you can use to create custom fields for your directory. There are two types of fields.
@@ -81,16 +81,16 @@ You can create various type of custom fields from the following fieldtypes.
 
 ## Fieldtypes {#fieldtypes}
 
-### Select List {#custom-field-selectlist}
+### Select List {#fieldtype-selectlist}
 Select List provides a drop-down list that allows your users to choose a value from the list.
 
-### Select Multiple {#custom-field-selectmultiple}
+### Select Multiple {#fieldtype-selectmultiple}
 Unlike Select List, Select Multiple enables users to choose one or more values from the list. In order to make multiple selection, after the first value is selected, users have to work in combination with "Shift" or "Ctrl" key to select the next desired value.
 
-### Radio Button {#custom-field-radiobutton}
+### Radio Button {#fieldtype-radiobutton}
 Radio Button works similar to a Select List which allows users to choose only one value from multiple choice. However, Radio Button makes each choice permanently visible on the form while Select List only shows one value from the list at a time.
 
-### Associated Listing {#custom-field-associatedlisting}
+### Associated Listing {#fieldtype-associatedlisting}
 Associated Listings shows you the selection based on the listings available from associated category. It defines listings relationship between two associated categories.  
 Setting up Associated Category and Associated Listings:  
  1. To set up category association in Mosets Tree, start by creating two top level categories. For example, the two categories will be "Companies" and "Persons".
@@ -101,7 +101,7 @@ Setting up Associated Category and Associated Listings:
  Choose 'Mosets' as the company for both 'Amy' and 'Ben' listings.
  6. Go to your site's front-end and view the 'Mosets' listing. If you've set up everything correctly, you will see the Mosets listing, just like any other listing in Mosets Tree. Scroll down the page and you will see 'Amy' and 'Ben' listings underneath it.
  
-### Audio Player {#custom-field-audioplayer}
+### Audio Player {#fieldtype-audioplayer}
 Audio Player allows your users to upload an audio file along with their listing. 
  
  #### Auto Start
@@ -113,10 +113,10 @@ Audio Player allows your users to upload an audio file along with their listing.
  #### Loop
  By default, Loop is set to "No" so the audio track will not start over again when it is finished. If you want the track to loop indefinitely, set it to Yes then.
  
-### Captcha {#custom-field-captcha}
+### Captcha {#fieldtype-captcha}
 Make sure you enable [Captcha](https://docs.joomla.org/How_do_you_use_Recaptcha_in_Joomla%3F) function so that you will know whether or not your user is human.  
 
-### Category {#custom-field-category}
+### Category {#fieldtype-category}
 Category allows you to allocate where the listing belongs to. Links will be displayed to direct your users to the related categories. 
  
  #### Search Category
@@ -131,7 +131,7 @@ Category allows you to allocate where the listing belongs to. Links will be disp
  #### Show Breadcrumbs
  Select Yes in this parameter will show the categories in breadcrumbs format.
 
-### Checkbox {#custom-field-checkbox}
+### Checkbox {#fieldtype-checkbox}
 Similar to Radio Button, Checkbox makes all choices permanently visible on the form, except that it allows your users to have multiple selection on the field.
    
    #### Images
@@ -167,7 +167,7 @@ Similar to Radio Button, Checkbox makes all choices permanently visible on the f
    #### Search Operator
    Select how results are being returned when searching against the field. Selecting "Match All" will return listings matching all selected elements or values. Selecting "Match Any" will return listings matching any one of the selected elements or values.
 
-### Date {#custom-field-date}
+### Date {#fieldtype-date}
 Date provides a text box for entry of a date. An icon next to the text box provides a link to a pop-up calendar, which can also be used to enter date value.
 
  #### Start year
@@ -179,13 +179,13 @@ Date provides a text box for entry of a date. An icon next to the text box provi
  #### Date Format
  Date Format decides how the date to be displayed for the field. By default, "Year-Month-Day"(for example, 2015-12-31) is used for the field.
 
-### Directory {#custom-field-directory}
+### Directory {#fieldtype-directory}
 Directory shows your users the top level category which a listing belongs to.
 
-### E-mail {#custom-field-email}
+### E-mail {#fieldtype-email}
 E-mail allows your users to submit an E-mail address for a new listing. Any messages related to the listing will be sent to the listing's owner through the E-mail address provided during submission of the listing. Otherwise, messages will be sent to the E-mail address of the user's account.
 
-### File {#custom-field-file}
+### File {#fieldtype-file}
 This provides an input field for your users to upload files along with their listings.
 
  #### Acceptable file extensions
@@ -204,7 +204,7 @@ This provides an input field for your users to upload files along with their lis
  #### Link Class Suffix
  Link Class Suffix sets a suffix to be applied to the CSS class of the download link.
 
-### Image {#custom-field-image}
+### Image {#fieldtype-image}
 Image allows your users to upload image files along with their listings.
 
  #### Min. width & height
@@ -213,10 +213,10 @@ Image allows your users to upload image files along with their listings.
  #### Max. File Size (in bytes)
  This is the maximum file size for the uploaded file in bytes. Default is 3MB (3145728 bytes). Enter 0 for no limit. Note that your server may have a maximum upload limit.
 
-### Listing ID {#custom-field-listingid}
+### Listing ID {#fieldtype-listingid}
 A Listing ID will be assigned to the listings automatically and will be displayed to your users.
 
-### Month & Year {#custom-field-monthandyear}
+### Month & Year {#fieldtype-monthandyear}
 Mosets Tree allows you to create a field for users to enter only month and year, without day. 
  
  #### Start Year
@@ -228,7 +228,7 @@ Mosets Tree allows you to create a field for users to enter only month and year,
  #### Date Format
   Date Format decides how the date to be displayed for the field. For example, the [format](http://php.net/strftime) entered should be like "%M %Y", without quotes.
 
-### Number {#custom-field-number}
+### Number {#fieldtype-number}
 Number renders an input text field and specialized in handling only numeric value. 
  
  #### Search Field Type
@@ -251,13 +251,13 @@ Number renders an input text field and specialized in handling only numeric valu
  #### Thousand Separator
  You can customize the thousand separator. By default, it is a comma (,). 
 
-### Skype {#custom-field-skype}
+### Skype {#fieldtype-skype}
 Mosets Tree provides a link in listings for users to connect the listing's owners through Skype. 
 
  #### Action 
  You can decide which action you want the Skype link works. You can set the link as to view the Skype profile of the listing's owner, add the owner to own Skype's contact, call or start a text chat with the listing's owner or send a file to the listing's owner through Skype.
 
-### Tags {#custom-field-tags}
+### Tags {#fieldtype-tags}
 Tags let your users to organize information using keywords separated by commas. Tags shown in listings are able to click which will show all listings that having the same tag. 
 
  #### Max. characters
@@ -272,7 +272,7 @@ Tags let your users to organize information using keywords separated by commas. 
  #### Search Filed Type
  You can select the field type to use when your users search against Tags field. Field types provided are checkboxes, drop-down list and text.
 
-### Terms & Condition {#custom-field-termsandcondition}
+### Terms & Condition {#fieldtype-termsandcondition}
 Depending on your type of directory, you may want your users to agree on certain terms and conditions before they can add any listings. This field type provides a link so your users can read the terms and conditions prescribed.
 
  #### Select T&C Article
@@ -281,7 +281,7 @@ Depending on your type of directory, you may want your users to agree on certain
  #### Text
  You can customize the T&C text that will appear beside the checkbox. You can use {article_title} and {article_url} as a placeholder for the title and URL of the selected article from Select T&C Article section.
 
-### Text {#custom-field-text}
+### Text {#fieldtype-text}
 Text enable the user to input text information and to be displayed in listing details later.  
 
  #### Input type
@@ -305,16 +305,16 @@ Text enable the user to input text information and to be displayed in listing de
  #### Style
  Style allows you to specify additional CSS style for the input field.
 
-### Text Editor {#custom-field-texteditor}
+### Text Editor {#fieldtype-texteditor}
 Mosets Tree provides WYSIWYG editor as the text editor. Users can insert content such as texts and images into a WYSIWYG editor and the appearance of the content when it is displayed will be closely corresponding to what is inserted in the editor. 
 
  #### Load Buttons
  If it is set to Yes, all editor buttons (except pagebreak and readmore) will be loaded.
 
-### Time Zone {#custom-field-timezone}
+### Time Zone {#fieldtype-timezone}
 Time Zone provides a drop-down list of time zones for your users to select. 
 
-### Vanity URL {#custom-field-vanityurl}
+### Vanity URL {#fieldtype-vanityurl}
 Mosets Tree allows you to set the vanity URL for your users so they will be able to provide a specific page of the predefined website whenever they add a new listing. 
 
  #### URL Format
@@ -348,10 +348,10 @@ Mosets Tree allows you to set the vanity URL for your users so they will be able
  #### GA's outbound directory
  If you use Google Analytics, this parameter allows you to enter an outgoing directory where all outbound clicks through Vanity URL field will be recorded. More information is available [here](https://support.google.com/analytics/answer/1136920?cbid=1aul57ykjrzdd&src=cb&rd=1).
 
-### Video Player {#custom-field-videoplayer}
+### Video Player {#fieldtype-videoplayer}
 Mosets Tree allows your users to submit video along with their new listings. You can specify the width and height of the video player and whether or not to start the video automatically. 
 
-### Web link {#custom-field-weblink}
+### Web link {#fieldtype-weblink}
 Web link allows your users to add a link to their listings so they can redirect their visitors whoever reading the listing to the specified website.
 
  #### Link Text
@@ -391,7 +391,7 @@ Web link allows your users to add a link to their listings so they can redirect 
  #### GA's outbound directory
  If you use Google Analytics, this parameter allows you to enter an outgoing directory where all outbound clicks through Web link field will be recorded. More information is available [here](https://support.google.com/analytics/answer/1136920?cbid=1aul57ykjrzdd&src=cb&rd=1).
 
-### Year {#custom-field-year}
+### Year {#fieldtype-year}
 Sometimes, you only want the information about years and nothing else. Mosets Tree provides you this field for your users to enter only year, without month and day.
 
  #### Start year
@@ -400,7 +400,7 @@ Sometimes, you only want the information about years and nothing else. Mosets Tr
  #### End year
  Enter the latest year that available for selection. If this is left empty, the current year will be used.
 
-### Youtube {#custom-field-youtube}
+### Youtube {#fieldtype-youtube}
 If you want your users to showcase a video, just use Youtube field type. Your users will be requested to enter a Youtube video link and Mosets Tree will display the Youtube video player inside the listing page.
 
  #### Search's checkbox label
