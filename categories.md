@@ -39,9 +39,9 @@ By default, the category page's `<TITLE>` tag for each category is the name of t
 Allows you to select which [Mosets Tree template]({{version}}/template) to use in this category. Changing this only affects the template used by pages from this category only. If you want to apply the same template to all its sub-categories, check the "_Change all sub categories to use this template_" checkbox and save the category.
 
 ## Field Assignments
-Instead of showing all your custom fields to all categories, Fields Assignment lets you to choose which field to appear in each top level category. Let's say if you have a top level category for "Real Estate Properties". You can assign "Rooms", "Bathroom" and "Facilities" to it. This way, the 3 fields only appear in Real Estate Properties and no where else. 
+Instead of showing all your custom fields to all categories, Fields Assignment lets you to choose which field to appear in a top level category. Let's say if you are editing a top level category for "Real Estate Properties". You can assign "Rooms", "Bathroom" and "Facilities" custom fields to it. This way, the 3 fields only appear in Real Estate Properties and no where else.
 
-Alternatively, you can select which top level categories the custom field will appear through Custom Field function in Mosets Tree back-end interface.  
+Alternatively, you can select which top level categories a custom field will appear through Custom Field section in Mosets Tree back-end interface.
 
 ## Association
 
