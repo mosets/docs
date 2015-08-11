@@ -1,5 +1,13 @@
 # Categories
 
+- [Introduction]({{version}}/categories#intro)
+- [Edit Screen]({{version}}/categories#edit)
+- [Fields Assignment]({{version}}/categories#fields-assignment)
+- [Association]({{version}}/categories#association)
+- [Operations]({{version}}/categories#operations)
+
+## Introduction {#intro}
+
 Categories in Mosets Tree are the primary way to structure your directory in Mosets Tree. Categories are among the first thing your users will see when they visit your directory. They also dictate how search engine friendly (SEF) URLs are generated for your listings.
 
 Categories can be added to your directory in a few ways. You can them through Mosets Tree back-end interface or you can allow your users to add them in front-end.
@@ -13,7 +21,7 @@ For example, you can disable reviews in a top level categories while they are ac
 Top Level Categories and Category Configuration are part of the system that make the [Multi Directory]({{version}}/multi-directory) support possible.
 
 
-## Edit Screen
+## Edit Screen {#edit}
 
 ### Related Categories
 
@@ -38,20 +46,20 @@ By default, the category page's `<TITLE>` tag for each category is the name of t
 ### Template
 Allows you to select which [Mosets Tree template]({{version}}/template) to use in this category. Changing this only affects the template used by pages from this category only. If you want to apply the same template to all its sub-categories, check the "_Change all sub categories to use this template_" checkbox and save the category.
 
-## Field Assignments
+## Fields Assignments {#fields-assignment}
 Instead of showing all your custom fields to all categories, Fields Assignment lets you to choose which field to appear in a top level category. Let's say if you are editing a top level category for "Real Estate Properties". You can assign "Rooms", "Bathroom" and "Facilities" custom fields to it. This way, the 3 fields only appear in Real Estate Properties and no where else.
 
 Alternatively, you can select which top level categories a custom field will appear through Custom Field section in Mosets Tree back-end interface.
 
-## Association
+## Association {#association}
 
 @TODO: CY
 
-## Operations
-Mosets Tree always keep track on the total number of sub-categories and listings for each category. These number might be inaccurate sometimes. Thus, operations help to recount these number and return the actual number so a more accurate number will be displayed. 
+## Operations {#operations}
+For performance reason, Mosets Tree keeps track on the total number of sub-categories and listings for each category in its own database table. Some times, these number might be inaccurate. Thus, operations help you to recount categories and listings to fix this.
 
 ### Force recount of categories and listings
-Full recount will force Mosets Tree to recount all sub-categories of the current category. If you have a big category, this method will be very slow and might cause PHP execution timeout. However this method is the most accurate.
+Full recount will force Mosets Tree to recount all sub-categories of the current category. If you have a big category, this method may be very slow and might cause PHP execution timeout. However this method is the most accurate.
 
 ### Full recount of categories and listings
-Fast recount will only count the current active category's listings and add all sub-category listings(if available) based on the total stored in database. This is a faster method but will not be accurate if the subcategories total is not correct.
+Fast recount will only count the current active category's listings and add all sub-category listings(if available) based on the total stored in database. This is a faster method but will not be accurate if the subcategories total are not correct.
