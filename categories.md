@@ -4,6 +4,8 @@
 - [Edit Screen]({{version}}/categories#edit)
 - [Fields Assignment]({{version}}/categories#fields-assignment)
 - [Association]({{version}}/categories#association)
+	- [Setting up Category Association]({{version}}/categories#setting-up-association)
+	- [Using Category Association]({{version}}/categories#using-association)
 - [Operations]({{version}}/categories#operations)
 
 ## Introduction {#intro}
@@ -53,7 +55,24 @@ Alternatively, you can select which top level categories a custom field will app
 
 ## Association {#association}
 
-@TODO: CY
+Category association allows you to create "is a member of" relationship with an associated category. For example, a "_Persons_" category can be associated with "_Companies_" category. In such association, listings created under "_Persons_" category will have an option to associate itself with one of the listings listed under "_Companies_" category.
+
+### Setting up category association {#setting-up-association}
+
+1. To set up category association in Mosets Tree, start by creating two top level categories. Following the example above, the two categories will be "_Companies_" and "_Persons_".
+2. In our example, listings under "_Persons_" category will be a member of company listings in "_Companies_" category. To such association, edit the "_Persons_" category and set its "_Associated Category_" to "_Companies_" category.
+3. Next, go to "_Custom Fields_" section and create a new custom field based on [Associated Listing]({{version}}/fields#fieldtype-associatedlisting) field type. Enter its caption as "_Company_". Because this field is only used in "_Persons_" category, assign this custom field to "_Persons_" category only.
+
+### Using category association {#using-association}
+
+1. Now that you've done setting up category association, you can start by creating a few companies under "Companies" category. For this example, create 2 listings under "Companies" category, ie: 'Mosets' and 'Joomla' as their name.
+2. Next, create 2 listings under "Persons" category. Let's name them "_Amy_" and "_Ben_". You will see the "_Company_" custom field you've created in steps above while doing this. This is a special type of custom field that shows you the selection based on the listings available in the associated category you set up above. In this example, it will show you 2 listings from "_Companies_" category.
+Choose "_Mosets_" as the company for both "_Amy_" and "_Ben_" listings.
+3. Go to your site's front-end and view the "_Mosets_" listing. If you've set up everything correctly, you will see the Mosets listing, just like any other listing in Mosets Tree. Scroll down the page and you will see "_Amy_" and "_Ben_" listings underneath it.
+
+This is the result of setting up the category association in "_Persons_" category to "_Companies_" and then using "_Associated Listing_" field type to let you define listings relationship between the 2 categories.
+
+You can see an [example of category association](http://demo.mosetstree.com/real-estate-companies/957-joomla-estate.html) in Mosets Tree demo.
 
 ## Operations {#operations}
 For performance reason, Mosets Tree keeps track on the total number of sub-categories and listings for each category in its own database table. Some times, these number might be inaccurate. Thus, operations help you to recount categories and listings to fix this.
