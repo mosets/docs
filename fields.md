@@ -91,15 +91,7 @@ Unlike Select List, Select Multiple enables users to choose one or more values f
 Radio Button works similar to a Select List which allows users to choose only one value from multiple choice. However, Radio Button makes each choice permanently visible on the form while Select List only shows one value from the list at a time.
 
 ### Associated Listing {#fieldtype-associatedlisting}
-Associated Listings shows you the selection based on the listings available from associated category. It defines listings relationship between two associated categories.  
-Setting up Associated Category and Associated Listings:  
- 1. To set up category association in Mosets Tree, start by creating two top level categories. For example, the two categories will be "Companies" and "Persons".
- 2. In our example, listings under "Persons" category will be a member of company listings in "Companies" category. To define this, edit the "Persons" category and set its "Associated Category" to "Companies" category.
- 3. Next, go to "Custom Fields" section and create a new custom field based on "Associated Listing" field type. Enter its Caption as "Company". Because of this field is only used in "Persons" category, assign this custom field to "Persons" category only.
- 4. Now that you've done setting up category association, you can start by creating a few companies under "Companies" category. For this example, create 2 listings under "Companies" category, by naming them 'Mosets' and 'Joomla'.
- 5. Next, create 2 listings under "Persons" category. Let's name them 'Amy' and 'Ben'. You will see the 'Company' custom field you've created in steps above while doing this.  
- Choose 'Mosets' as the company for both 'Amy' and 'Ben' listings.
- 6. Go to your site's front-end and view the 'Mosets' listing. If you've set up everything correctly, you will see the Mosets listing, just like any other listing in Mosets Tree. Scroll down the page and you will see 'Amy' and 'Ben' listings underneath it.
+Associated Listings shows you a drop-down list, with a selection based on the listings available from associated category. It defines listings relationship between two associated categories. For more information on setting up and using category association, check out [the documentation]({{version}}/categories#association).
  
 ### Audio Player {#fieldtype-audioplayer}
 Audio Player allows your users to upload an audio file along with their listing. 
