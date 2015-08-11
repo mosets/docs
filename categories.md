@@ -33,7 +33,7 @@ Aliases are short pieces of text that represent the title of your category. They
 Alias preferably should contain only lowercase letters and dashes(-).
 
 ### Custom Title
-By default, the category page's `<TITLE>` tag for each category is the name of the category itself. Custom Title allows you to override this wit ha custom title.
+By default, the category page's `<TITLE>` tag for each category is the name of the category itself. Custom Title allows you to override this with a custom title.
 
 ### Template
 Mosets Tree allows you to configure the layout of your categories by selecting any templates provided. You can always customize the templates according to your preference through the Template function in Mosets Tree back-end interface. All you need to do is make a copy of the default Mosets Tree template and make changes to your new template.  
