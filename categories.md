@@ -28,7 +28,9 @@ Setting this to "_No_" will hide this link in your category page and will preven
 By enabling this function, the category page will look and work like the Index page.
 
 ### Alias
-Alias is used to generate SEF URLs which worked like a pointer that direct your users to each page of your site. Alias preferably should contain alphanumerics and dashes. 
+Aliases are short pieces of text that represent the title of your category. They are used to make Search Engine Friendly URLs. Mosets Tree will generates one for your category if you leave it empty.
+
+Alias preferably should contain only lowercase letters and dashes(-).
 
 ### Custom Title
 By default, the category page's `<TITLE>` tag for each category is the name of the category itself. Custom Title allows you to override this wit ha custom title.
