@@ -1,8 +1,23 @@
 # Configuration
 
+- [Introduction]({{version}}/configuration#intro)
+- [Main]({{version}}/configuration#main)
+- [Category]({{version}}/configuration#category)
+- [Listing]({{version}}/configuration#listings)
+- [Search]({{version}}/configuration#search)
+- [Rating/Rev]({{version}}/configuration#ratingrev)
+- [Features]({{version}}/configuration#features)
+- [Notify]({{version}}/configuration#notify)
+- [Image]({{version}}/configuration#image)
+- [Sharing]({{version}}/configuration#sharing)
+- [SEF URLs]({{version}}/configuration#sefurls)
+- [Captcha]({{version}}/configuration#captcha)
+- [Admin]({{version}}/configuration#admin)
+
+## Introduction {#intro}
 Configurations in Mosets Tree controls most aspects of how Mosets Tree works. It can be access in Mosets Tree's back-end: "**Mosets Tree -> Configuration**". Most of the configurations are self explanatory (at least we try to be!), so we will cover some of the importants one here.
 
-## Main
+## Main {#main}
 
  ### View access level
  View access level allows you to decide who can view your directory or top level category. 
@@ -22,7 +37,7 @@ Configurations in Mosets Tree controls most aspects of how Mosets Tree works. It
  ### Permission
  Permission allows you to control which user group will gain access to certain function. 
 
-## Category
+## Category {#category}
 
  ### Primary ordering
  Primary ordering allows you to set the order of how categories will be appeared in Mosets Tree back-end interface. You can customize the order by clicking the arrow signs in the ordering column of directory page.
@@ -96,7 +111,7 @@ Data entered to a field is displayed in two places in Mosets Tree front-end , Su
  ### Number of days to expire listing
  Specify the number of days for a listing to remain published upon submission. Once this number of days has passed, the listing will be published down and not visible in front-end. Enter 0 to disable this feature.
 
-## Search
+## Search {#search}
 Mosets Tree currently support three types of searching functions, which are Simple Search, Advanced Search and Filters Search. [Filter Search]({{version}}/configuration#filters) is displayed in "All Listing" page which has been explained earlier. 
 
  ### Simple Search
@@ -114,7 +129,7 @@ Mosets Tree currently support three types of searching functions, which are Simp
   #### Default sorting in results page
   Through Mosets Tree back-end interface, you can decide how you want the listing result to be viewed in Advanced Search.
 
-## Rating/Rev
+## Rating/Rev {#ratingrev}
 
  ### Rating
  
@@ -171,7 +186,7 @@ Mosets Tree currently support three types of searching functions, which are Simp
   #### Pre-defined replies
   You are able to enter up to 5 pre-defined e-mail replies. Every pre-defined reply you entered will become the option of the selection list in Mosets Tree back-end review's pending approval interface. If you checked the "Send e-mail to reviewer upon approval/rejection" checkbox, this selection list will be appeared and allowed you to choose a pre-defined e-mail reply to be sent along with the approval or rejection of a review. 
   
-## Features
+## Features {#features}
 Features allows you to configure some functions in the listing page of your directory.
 
  ### Show map
@@ -225,7 +240,7 @@ Features allows you to configure some functions in the listing page of your dire
  ### Use user's e-mail address if listing e-mail is empty
  Any messages related to the listing will be sent to the listing's owner through the e-mail address provided during submission of the listing. Otherwise, messages will be sent to the e-mail address of the user's account.
 
-## Notify
+## Notify {#notify}
 Notify allows you to configure when to send a notification e-mail to Admin and Listing's owner.
  
  ### Admin
@@ -243,7 +258,7 @@ Notify allows you to configure when to send a notification e-mail to Admin and L
  - Review approved
  - Review added to own listing
 
-## Image
+## Image {#image}
 When an image is uploaded, system will save the image in three formats: the original image, thumbnail sized image and medium sized image.
 
  ### Small/Thumbnail's image size
@@ -270,7 +285,7 @@ When an image is uploaded, system will save the image in three formats: the orig
  ### Images per listing
  Images per listing lets you set the maximum number of images can be uploaded to a listing.
 
-## Sharing
+## Sharing {#sharing}
 In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in most important social networks such as  Facebook, Twitter, Pinterest, Google+ and LinkedIn.
 
  ### Facebook Like
@@ -291,7 +306,7 @@ In sharing, you can control whether to insert social bookmarking buttons in list
   #### Twitter Card Type
   Select one of these values: `summary`, `summary_large_image` or `photo`. To check out more about Twitter Card Types, click [here](https://dev.twitter.com/cards/types).
 
-## SEF URLs
+## SEF URLs {#sefurls}
 Enable Search engine friendly (SEF) URLs to provide a easier way to access to your directory pages by using a succinct URL in search engine. Turn on Joomla Search Engine Friendly URLs in Joomla's Configuration (Go to "**System -> Global Configuration**",  under SEO Settings) and Mosets Tree will generate SEF URLs for your directory. 
 
  ### Listing's slug type
@@ -300,10 +315,10 @@ Enable Search engine friendly (SEF) URLs to provide a easier way to access to yo
  Using **Link ID** will use listing's link ID to represent your listing's URL.  
  **Link ID & Alias Hybrid** combines a listing's alias and link ID to give a more unique URL for the listing.
 
-## Captcha
+## Captcha {#captcha}
 You can decide which feature you want to use a [Captcha]({{version}}/fields#fieldtype-captcha) to verify your site's visitors are real human and not a robot.
 
-## Admin
+## Admin {#admin}
 This section lets you control the Administrator back-end interface.
 
  ### Use Explorer
