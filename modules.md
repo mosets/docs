@@ -14,6 +14,6 @@ Shows a tree-like structure to help user to browse the directory. The categories
 
 ## Filter {#mod-mt-filter}
 
-@TODO: Address a common issue of user when ticking all checkboxes does not display any filter in front-end. The checked fields need to be made Tag Searchable!
+@TODO: Address a common issue of user when ticking all checkboxes does not display any filter in front-end. The checked fields need to be made Filter Searchable!
 
 ## ...
