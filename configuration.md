@@ -120,7 +120,7 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  ### Total new listings
  You can set the total number of recently added listings to be displayed in "Recently Added" page.
 
- ### Number of days to expire listing
+ ### Number of days to expire listing {#days_to_expire}
  Specify the number of days for a listing to remain published upon submission. Once this number of days has passed, the listing will be published down and not visible in front-end. Enter 0 to disable this feature. This config is useful for setting up a classified-like directories.
 
 ## Search {#search}
