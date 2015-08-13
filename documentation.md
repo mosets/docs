@@ -1,7 +1,7 @@
 - Setup
 	- [Installation]({{version}}/installation)
 	- ⭕️ [Upgrade]({{version}}/upgrade)
-	- ⭕️ [Configuration]({{version}}/configuration)
+	- [Configuration]({{version}}/configuration)
 
 - Core Features
 	- ️[Categories]({{version}}/categories)
