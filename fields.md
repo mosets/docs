@@ -134,7 +134,7 @@ Similar to Show in details view, except that this option allow you to configure 
 #### Taggable
 When a field is set to taggable, the values that are shown in details and summary view will be shown as links. Clicking these links will show users a page of listings with the same value. This is useful when you want to let your users to quickly find related listings sharing similar attributes.
 
-#### Simple Searchable
+#### Simple Searchable {#simple-searchable}
 Mosets Tree provides 3 methods to search for listings. One of them is Simple Search. This is provided by [Mosets Tree's Search module]({{version}}/modules#mod-mt-search) and consist of a single text input field. When users search through this module, the search word will be matched against fields that are marked as Simple Searchable. If you would like a field to be simple searchable, set `Yes` for this option.
 
 It is not advisable to have too many fields set to simple searchable, as it will affect the speed of the searches. To improve the performance of simple search, limit this option to just core field..
