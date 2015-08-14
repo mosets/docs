@@ -142,7 +142,7 @@ It is not advisable to have too many fields set to simple searchable, as it will
 #### Advanced Searchable
 The second search method is advanced search. Advanced search form appears in a dedicated page. This page is accessible through a link in [Mosets Tree's Search module]({{version}}/modules#mod-mt-search). Advanced search allow users to find listings that meet specific criteria. Set this to `Yes` if you would like a field to appear in Advanced Search page.
 
-#### Filter Searchable
+#### Filter Searchable {#filter-searchable}
 This parameter allows the custom fields to be available as an optional filter. Filters are available when you view a category page through "**All Listings**".
 
 #### Required Field
