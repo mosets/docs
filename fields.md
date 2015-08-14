@@ -66,7 +66,7 @@ Mosets Tree comes with the following set of core fields:
   - Featured
   - Created
   - Modified
-  - Visited
+  - Website Clicks
   - Publish up
   - Publish down
   - Meta Keys
@@ -447,10 +447,10 @@ Web link allows your users to add URL links to their listings.
  Enter the maximum URL's length before it is clipped.
  
  #### Use internal redirect
- Using internal redirect will hide the actual destination URL and use an internal URL to redirect users to the actual URL. This option also allows you to track the number of visits which the link gets. The number of visits can be shown in front-end interface when `Show Counter` option is set to `Yes`.
+ Using internal redirect will hide the actual destination URL and use an internal URL to redirect users to the actual URL. This option also allows you to track the number of clicks the link gets. The number of clicks can be shown in front-end interface when `Show Counter` option is set to `Yes`.
  
  #### Show counter
- This option shows the number of visits the link has been clicked in front-end interface. Tracking the number of visits is only available when you use internal redirect.
+ This option shows the number of time the link has been clicked in front-end interface. Tracking the number of clicks is only available when you use internal redirect.
  
  #### Clipped symbol
  Clipped symbol represents the remaining characters of a URL which exceeds maximum URL's length.
