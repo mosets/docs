@@ -60,7 +60,7 @@ Mosets Tree comes with the following set of core fields:
   - E-mail
   - Website
   - Price
-  - Hits
+  - Unique Pageviews
   - Votes
   - Rating
   - Featured

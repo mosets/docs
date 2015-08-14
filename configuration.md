@@ -36,7 +36,7 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Number of days to show as new listing
  A "New" badge will be shown beside listing's name if it is a recently added listing. This config lets you to configure the number of days you want a listing to be displayed as new listing.
 
- ### Number of average per day hits to show as popular listing
+ ### Number of average unique pageviews per day to show as popular listing
  A "Popular" badge is shown when a listing has an average hits equal of above the number configured here.
 
  ### Unique pageviews session (in seconds)
