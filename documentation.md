@@ -5,7 +5,7 @@
 
 - Core Features
 	- ️[Categories]({{version}}/categories)
-	- ⭕️ [Listings]({{version}}/listings)
+	- [Listings]({{version}}/listings)
 	- [Fields]({{version}}/fields)
 	- ⭕️ [Tags]({{version}}/tags)
 	- ⭕️ [Search]({{version}}/search)

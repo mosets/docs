@@ -39,7 +39,7 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Number of average unique pageviews per day to show as popular listing
  A "Popular" badge is shown when a listing has an average hits equal of above the number configured here.
 
- ### Unique pageviews session (in seconds)
+ ### Unique pageviews session (in seconds) {#hit_lag}
  Mosets Tree uses cookies to track if a user has visited a listing details page before, so that multiple visits to the same listings will be counted as only 1 pageview during a session.
 
  By default, this cookie expires after 86400 seconds (24 hours). The time between the user's first visit and the cookie expiration is called a session. If the user visit the same listing after the cookie expires, the visit will be counted as another pageview.
