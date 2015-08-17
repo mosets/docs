@@ -1,6 +1,7 @@
 # Categories
 
 - [Introduction]({{version}}/categories#intro)
+- [Top Level Categories]({{version}}/categories#tlc)
 - [Edit Screen]({{version}}/categories#edit)
 - [Fields Assignment]({{version}}/categories#fields-assignment)
 - [Association]({{version}}/categories#association)
@@ -14,7 +15,7 @@ Categories in Mosets Tree are the primary way to structure your directory in Mos
 
 Categories can be added to your directory in a few ways. You can them through Mosets Tree back-end interface or you can allow your users to add them in front-end.
 
-## Top Level Categories
+## Top Level Categories {#tlc}
 
 Top level categories are the first level of categories in your directory. They have the additional capability called Category Configuration. Category Configuration lets you override [Mosets Tree configuration]({{version}}/configuration) that will only affects this category and its sub-categories.
 
