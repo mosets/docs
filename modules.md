@@ -1,8 +1,21 @@
+<style>
+    .modules-list {
+        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+        margin-top:10px;
+    }
+
+    .modules-list a {
+        display: block;
+        font-weight: 400;
+    }
+</style>
 # Modules
 
 - [Introduction]({{version}}/modules#intro)
 - [Assignment Options]({{version}}/modules#assignment)
 - [Module Types]({{version}}/modules#types)
+<div class="modules-list" markdown="1">
     - [Alpha Index]({{version}}/modules#mod-mt-alphaindex)
     - [Browse]({{version}}/modules#mod-mt-browse)
     - [Categories]({{version}}/modules#mod-mt-categories)
@@ -17,6 +30,7 @@
     - [Tag Cloud]({{version}}/modules#mod-mt-tagcloud)
     - [Top Listings]({{version}}/modules#mod-mt-listings)
     - [Voted Best]({{version}}/modules#mod-mt-votedbest)
+</div>
 
 ## Introduction {#intro}
 Mosets Tree comes with 14 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
@@ -67,23 +81,4 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
  This is a multipurpose module that allows you to display top listings in your directory. This module can be configured to show New, Recently Updated, Featured, Popular, Most Rated, Top Rated and Most Reviewed listings. This can also be used to show random listings.
 
  ### Voted Best {#mod-mt-votedbest}
- Voted Best module displays a table of top rated listings. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ Voted Best module displays a table of top rated listings.
