@@ -15,7 +15,7 @@
 - Templates
 	- ⭕️ [Introduction]({{version}}/template)
 	- ⭕️ [Customization]({{version}}/template-customization)
-	- ⭕️ [Multi Directory]({{version}}/multi-directory)
+	- [Multi Directory]({{version}}/multi-directory)
 
 - Extensions
 
