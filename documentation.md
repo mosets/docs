@@ -19,7 +19,7 @@
 
 - Extensions
 
-	- ⭕️ [Modules]({{version}}/modules)
+	- [Modules]({{version}}/modules)
 	- ⭕️ [Search Plugin]({{version}}/plugin-search)
 	- ⭕️ [Profile Picture Plugin]({{version}}/profile-picture)
 	- [Importer]({{version}}/importer)

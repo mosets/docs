@@ -33,7 +33,7 @@ Categories in Mosets Tree can be configured to use any template. Additionally, i
 
 ## Modules {#modules}
 
-Each Mosets Tree modules has a tab called [Mosets Tree Assignment Options]({{version}}/modules#mt-assgn-opt) that lets you publish to a specific set of top level categories. Many modules also have a parameter for "**Category ID**" that lets you set the active category in which the module operate on.
+Each Mosets Tree modules has a tab called [Mosets Tree Assignment Options]({{version}}/modules#assignment) that lets you publish to a specific set of top level categories. Many modules also have a parameter for "**Category ID**" that lets you set the active category in which the module operate on.
 
 With these 2 features, you can, for example, create a [Search module]({{version}}/modules#mod-mt-search) that are published in a top level category and search listings within it.
 

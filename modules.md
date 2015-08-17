@@ -1,8 +1,8 @@
 # Modules
 
 - [Introduction]({{version}}/modules#intro)
-- [Momsets Tree Assignment Options]({{version}}/modules#mt-assgn-opt)
-- [Module Types]({{version}}/modules#moduletypes)
+- [Assignment Options]({{version}}/modules#assignment)
+- [Module Types]({{version}}/modules#types)
     - [Alpha Index]({{version}}/modules#mod-mt-alphaindex)
     - [Browse]({{version}}/modules#mod-mt-browse)
     - [Categories]({{version}}/modules#mod-mt-categories)
@@ -21,12 +21,10 @@
 ## Introduction {#intro}
 Mosets Tree comes with 14 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
 
-## Mosets Tree Assignment Options {#mt-assgn-opt}
+## Assignment Options {#assignment}
 Mosets Tree allows you to publish modules exactly where you want it. Each Mosets Tree modules includes a pane that allows you to control where within your directory pages that a module will be displayed. For example, you can assign a module to appear in all pages of your site or hide it from your site; or show in a single top level category while being hidden in others; or only display either in category or listing pages; or both.
 
-
-
-## Module Types {#moduletypes}
+## Module Types {#types}
 
  ### Alpha Index {#mod-mt-alphaindex}
  Shows an alphabetically list of A-Z and 0-9. This allows user to quickly view listings starting from a particular alphabet or number.
