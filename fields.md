@@ -1,9 +1,22 @@
+<style>
+    .fieldtypes-list {
+        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+        margin-top:10px;
+    }
+
+    .fieldtypes-list a {
+        display: block;
+        font-weight: 400;
+    }
+</style>
 # Fields
 
 - [Core Fields]({{version}}/fields#core-fields)
 - [Custom Fields]({{version}}/fields#custom-fields)
 - [Creating a Custom Field]({{version}}/fields#create)
 - [Fieldtypes]({{version}}/fields#fieldtypes)
+<div class="fieldtypes-list" markdown="1">
 	- [Select List]({{version}}/fields#fieldtype-selectlist)
 	- [Select Multiple]({{version}}/fields#fieldtype-selectmultiple)
 	- [Radio Button]({{version}}/fields#fieldtype-radiobutton)
@@ -31,6 +44,7 @@
 	- [Web link]({{version}}/fields#fieldtype-weblink)
 	- [Year]({{version}}/fields#fieldtype-year)
 	- [Youtube]({{version}}/fields#fieldtype-youtube)
+	</div>
 
 Fields are your listings attributes. Mosets Tree comes with a host of fieldtypes that you can use to create custom fields for your directory. There are two types of fields.
 
@@ -42,7 +56,14 @@ Fields are your listings attributes. Mosets Tree comes with a host of fieldtypes
 Core fields are important part of your listings. Their data are stored in a dedicated database table column, thus more performant. Whenever possible, use core fields. Because there are limited amount of core fields, prioritize using core fields for fields that you will be making as simple searchable. Generally simple searchable core fields are more performant than custom fields.
 
 Mosets Tree comes with the following set of core fields:
+<style>
+    .core-fields-list {
+        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+    }
 
+</style>
+<div class="core-fields-list" markdown="1">
   - Name
   - Contact Person
   - Mobile
@@ -71,7 +92,7 @@ Mosets Tree comes with the following set of core fields:
   - Publish down
   - Meta Keys
   - Meta Desciption
-
+</div>
 ## Custom Fields {#custom-fields}
 
 Custom fields are additional fields that you create for your listings in Mosets Tree. Think of it as a custom attribute. It defines the form control that will be used when your user fill in your fields. It also define how the fields will be displayed, searched and validated.
