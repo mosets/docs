@@ -139,7 +139,7 @@ Mosets Tree provides 3 methods to search for listings. One of them is Simple Sea
 
 It is not advisable to have too many fields set to simple searchable, as it will affect the speed of the searches. To improve the performance of simple search, limit this option to just core field..
 
-#### Advanced Searchable
+#### Advanced Searchable {#advanced-searchable}
 The second search method is advanced search. Advanced search form appears in a dedicated page. This page is accessible through a link in [Mosets Tree's Search module]({{version}}/modules#mod-mt-search). Advanced search allow users to find listings that meet specific criteria. Set this to `Yes` if you would like a field to appear in Advanced Search page.
 
 #### Filter Searchable {#filter-searchable}
