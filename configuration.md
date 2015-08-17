@@ -231,7 +231,7 @@ Features allows you to configure most of the functions in the listing page of yo
  ### Show visit
  Shows a "_Visit_" button where users can visit a listing's website (if provided by listing's owner).
  
- ### Show claim
+ ### Show claim {#show_claim}
  Shows a "_Claim_" button to allow users to claim listings as their own. When users claiming a listings, a pending approval notification will be sent to Administrator. Administrator can view this claim in Mosets Tree's back-end to approve or reject the claim.
  
  ### Show owner's listings
