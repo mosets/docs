@@ -8,7 +8,7 @@
 	- [Listings]({{version}}/listings)
 	- [Fields]({{version}}/fields)
 	- ⭕️ [Tags]({{version}}/tags)
-	- ⭕️ [Search]({{version}}/search)
+	- [Search]({{version}}/search)
 	- ⭕️ [Access Control List]({{version}}/acl)
 	- [Language]({{version}}/language)
 
