@@ -1,6 +1,6 @@
 - Setup
 	- [Installation]({{version}}/installation)
-	- ⭕️ [Upgrade]({{version}}/upgrade)
+	- [Upgrade]({{version}}/upgrade)
 	- [Configuration]({{version}}/configuration)
 
 - Core Features
