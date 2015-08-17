@@ -175,7 +175,7 @@ Mosets Tree can help you to import your data from SobiPro 1.1 to Mosets Tree 3.6
 
 The import is fairly straight forward. All you need to to have your SobiPro data resides in same MySQL database using the same table prefix and images in your server's filesystem.
 
-Note that your data in Mosets Tree will be erased when you're importing from SobiPro. If you have any data you wish to retain, please backup your site prior to running the import.
+> **Warning**: Your data in Mosets Tree will be erased when you're importing from SobiPro. If you have any data you wish to retain, please backup your site prior to running the import.
 
 To import from SobiPro:
 
