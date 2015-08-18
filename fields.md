@@ -133,6 +133,9 @@ This option allow you to display additional information about a field when user 
 #### Prefix and Suffix text during display:
 The option is similar with Prefix and Suffix text to display during field modification with the exception that these only appears during output in front-end. This is useful when you're displaying values which has associated metrics such as kg, acres and the others.
 
+#### Alias {#alias}
+When you enable SEF URLs in Joomla's Configuration, alias is used to create SEF URLs for taggable fields. Alias is also used as a human-friendly column name when you[ import CSV data to a custom field]({{version}}/importer#csv-existing-fields).
+
 #### Default Value
 Default Value populates a value in the custom field when a new listing is created. This value will be prefilled on the custom field and only shown on a "**Add Listing**" form. Your users can overwrite this value for their listing.
 

@@ -94,7 +94,7 @@ The first row define the columns of your data. Here are the column names of all 
 Only `link_name` is mandatory. Other columns are optional.
 
 ### Import to existing custom fields {#csv-existing-fields}
-If you want to import a column to an existing custom field that you created in your directory, use the ID of the custom field as the column name. You can locate these IDs at Custom Fields page.
+If you want to import a column to an existing custom field that you have created in your directory, use the **ID** or [Alias]({{version}}/fields#alias) of the custom field as the column name. You can locate these IDs at Custom Fields page.
 
 In the example below, we have 2 new columns named `25` and `31`. Mosets Tree will import data for these columns to custom field with those IDs:
 
