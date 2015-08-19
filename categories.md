@@ -73,7 +73,9 @@ Choose "_Mosets_" as the company for both "_Amy_" and "_Ben_" listings.
 
 This is the result of setting up the category association in "_Persons_" category to "_Companies_" and then using "_Associated Listing_" field type to let you define listings relationship between the 2 categories.
 
-You can see an [example of category association](http://demo.mosetstree.com/real-estate-companies/957-joomla-estate.html) in Mosets Tree demo.
+Demo: http://demo.mosetstree.com/real-estate-companies/957-joomla-estate.html
+
+: _Properties_ category is associated with _Real Estate Companies_ company. We have a couple of listings from _Properties_ that is associated with "_Joomla Estate_" listing from _Real Estate Companies_. In this page, you can see all the listings that are associated with it.
 
 ## Operations {#operations}
 For performance reason, Mosets Tree keeps track on the total number of sub-categories and listings for each category in its own database table. Some times, these number might be inaccurate. Thus, operations help you to recount categories and listings to fix this.
