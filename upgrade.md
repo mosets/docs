@@ -26,6 +26,11 @@ If you are few version behind the latest version, upgrading to the latest versio
 
 You can also refer to the steps above if you are upgrading from other version. For example, if you're upgrading from 2.2, you can start with Step 5 above.
 
+{question}Can I just copy database tables to a new version of Mosets Tree to upgrade?{/question}
+{answer}
+No. The proper way to upgrade is by installing a newer version over your existing Mosets Tree or by following the multi-steps upgrade as described above.
+{/answer}
+
 ## Compatibility With Joomla {#compatibility-with-joomla}
 Use the information below to determine the latest version of Mosets Tree you can run on each major version of Joomla.
 
