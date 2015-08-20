@@ -68,6 +68,10 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
  Shows a list of configurable filters that allow users to search for listing based on specific criteria. 
  Note that when ticking the checkboxes, filter for the fields does not display in front-end unless the checked fields is made [Filter Searchable]({{version}}/fields#filter-searchable) in Custom Fields.
 
+ Demo: http://demo.mosetstree.com/movies.html
+ 
+ : You can see the example of filter module in _Movie_ category. It is placed under the top menu and contain search criteria that related to _Movie_ category such as "**Director**" and "**Genre**" to refine users' searches in this category.
+
  ### Search {#mod-mt-search}
  Displays a search box for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users filtering their searches through selected category.
 

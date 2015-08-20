@@ -38,6 +38,10 @@ Setting this to "_No_" will hide this link in your category page and will preven
 ### Use Main Index template page
 By enabling this function, the category page will look and work like the Index page.
 
+Demo: http://demo.mosetstree.com/properties.html
+
+: When using main index template in a category page, you can see the category page displays some modules that same as what you have seen in main Index, for example Alpha Index and Directory Menu. You can customized through Mosets Tree back-end for where you want to show these modules.
+
 ### Alias
 Aliases are short pieces of text that represent the title of your category. They are used to make Search Engine Friendly URLs. Mosets Tree will generates one for your category if you leave it empty.
 

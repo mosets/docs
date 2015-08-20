@@ -38,6 +38,8 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
 
  ### Number of average unique pageviews per day to show as popular listing
  A "Popular" badge is shown when a listing has an average hits equal of above the number configured here.
+ 
+ Demo: http://demo.mosetstree.com/real-estate-companies/958-capridien-properties.html
 
  ### Unique pageviews session (in seconds) {#hit_lag}
  Mosets Tree uses cookies to track if a user has visited a listing details page before, so that multiple visits to the same listings will be counted as only 1 pageview during a session.
@@ -62,13 +64,17 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
 
  ### Type of listings to show in Index
  By default, listings displayed in Index page are those had assigned to the current category. You can this by showing other types of listings in Index, for example, displaying the Top Rated listings or Popular listings.
-
+ 
+ Demo: http://demo.mosetstree.com/
+ 
+ : Scrolling down the Index page, you can see all listings shown are **Top Rated** listings. 
+ 
  ### Number of listings in index
  Set the number of top listings to be shown in index view. If you set the type of listing to show in index to "Default", the number of listings shown will be based on "Number of listings per page" setting you have configured in [Listing]({{version}}/configuration#listings) tab.
 
  ### Display categories
- If this config is set to `No`, categories will only be displayed to users in "All Categories" page and no where else.
-
+ If this config is set to `No`, categories will only be displayed to users in "All Categories" page and no where else. 
+ 
  ### Display empty category
  Empty category means category that contains no sub-categories or listings. By setting `Yes` to this parameter, all the empty categories will be hidden.
 
@@ -87,11 +93,19 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  ### Default sorting in All Listings
  This config lets you choose the default sorting when your users to view "All Listings" page.
  
+ Demo: http://demo.mosetstree.com/games/all.html
+ 
+ : Once users enter this page, they will see the most recent listings first because sorting is set to "**Recently Added**". Mosets Tree provides several options to let you decide how you want your listings to be displayed to users. 
+ 
  ### All Listings page sort options
  Sort options allows you to select which "Sort by" options are available in "All Listings" page.
 
  ### Show user profile in Listing Details page
  Setting this to `Yes` will show the owner's profile in listing details page.
+ 
+ Demo: http://demo.mosetstree.com/properties/factories/929-assiniaboine.html
+ 
+ : In this listing page, you can see user profile is displayed under listing details. Clicking the user name will direct you to view details of the user profile including user's listings, reviews and favoured listings.
  
  ### Additional characters for Alpha Index
  By default, Mosets Tree displays Alpha Index in alphabetic and numeric characters for your users to select. This config allows you to add additional characters to the end of the alpha list as part of the selection.
@@ -101,11 +115,17 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
 
  ### Allow changing of category in Add Listing
  Set this parameter to `Yes` to allow changing of category when users add listings. Otherwise, listing added will be assigned to the category from where your users click the "Add your listing here" link.
+ 
+ Demo: http://demo.mosetstree.com/business/add.html
 
  ### Allow user to assign more than one category to listing
  Sometimes, your users may have a listing which is related to multiple categories. You can set this to `Yes` to let you user assign more than one category. Your users can assign more than one category to a listing when clicking "Also appear in this category" link.
 
  Be sure to also set `Yes` to "_Allow user to assign more than one category to listing_" in order to use this.
+ 
+ Demo: http://demo.mosetstree.com/877-mosets.html
+ 
+ : "**Also appear in these categories**" is displayed in listing details to show all the categories which a listing is assigned to.
 
  ### Max. number of assignable secondary categories
  This config lets you limit the maximum number of categories which a listing can be assigned to.
@@ -121,9 +141,15 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  ### Number of listings per page
  This config lets you set the maximum number of listings to be displayed in one page.
  
+ Demo: http://demo.mosetstree.com/health.html
+ 
+ : In this page, we have set "**Number of listings per page**" to 20 and thus you can see at most 20 listings is shown for each page. Click on the page navigation link to view other listings in subsequent pages. 
+ 
  ### Number of new listings per page
  This parameter control the number of new listings per page that will be displayed in "Recently Added" page.
-
+ 
+ Demo: http://demo.mosetstree.com/new.html
+ 
  ### Total new listings
  You can set the total number of recently added listings to be displayed in "Recently Added" page.
 
@@ -156,11 +182,23 @@ Mosets Tree has three types of searching functions to help your user find the li
   #### Show rating
   Setting this to `Yes` enables users to rate listings.
   
+ Demo: http://demo.mosetstree.com/games/889-super-smash-bros-brawl.html
+
+ : In this page, you can see rating is placed under listing's description to allow users to rate listing. 
+
+ Demo: http://demo.mosetstree.com/properties/houses/931-blue-house.html
+
+ : "**Show Rating**" in _Properties_ category has been set to `No`, thus rating section is not displayed in front-end. 
+  
   #### User can only rate once
   By default, users are only allowed to rate once for every listing. If you set this to `No`, your users will be able to rate your listings multiple times.
 
   #### Prevent user from rating own listing
   You can also prevent the listing's owners to rate their own listings by setting this to `Yes`.
+  
+  Demo: http://demo.mosetstree.com/properties/lands/942-land-of-tulips.html
+  
+  : By signing in to Mosets Tree's demo page as **Demo User**, you can see from the user profile, this listing is belongs to the logged in user, thus rating on own listing is not allowed if "_Prevent user from rating own listing_" is set to `Yes`.
    
   #### Minimum number of votes to be considered for top rated listings
   To be fair in the calculation for showing top rated listings, you can set a requirement for the minimum number of votes for a listing get before it can be considered for inclusion in the top rated listing list.
@@ -175,8 +213,14 @@ Mosets Tree has three types of searching functions to help your user find the li
   #### Show review
   Setting this to `Yes` will show all listing's reviews in listings details page.
   
+  Demo: http://demo.mosetstree.com/business/875-domino-s-pizza.html
+    
+  : Scrolling down the page, you will see several reviews from users regarding this listing.
+  
   #### Allow rating during review
   If you set this parameter to `Yes`, a select list will be provided to your users in "Submit review" page for them to submit rating along with their review for a listing.
+  
+  Demo: http://demo.mosetstree.com/business/875-domino-s-pizza/review.html
   
   #### Require rating during review
   Enable Require rating during review will make the rating field a mandatory field in "Submit review" page. In this case, users have to enter a rating before they can submit their review.
@@ -186,6 +230,10 @@ Mosets Tree has three types of searching functions to help your user find the li
   
   #### Prevent user from reviewing own listing
   Set this parameter to `Yes` so the listing's owners won't be able to submit reviews for their own listings.
+  
+  Demo: http://demo.mosetstree.com/movies/979-frozen/review.html
+      
+  : By signing in to Mosets Tree's demo page as **Demo User**, go to _My Page_ and simply choose a listing which belongs to the logged in user, for example "Frozen" from _Movie_ category. Try to submit review for this listing so you will be directed to the page to notify you reviewing on own listing is not allowed .
   
   #### Primary ordering
   Ordering lets you decide which review you want to be displayed first in listings details page. For instance, you can show the reviews according to their total number of [helpful votes]({{version}}/configuration#helpful-votes) or by review date.

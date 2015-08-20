@@ -16,6 +16,8 @@ Advanced Search usually search against all your directory pages. In order to sea
     
 When no SEF URLs is enable, you can go to any of the category page and replace `listcats` to `advsearch` in URL for entering to the category Advanced Search.
 
+Demo: http://demo.mosetstree.com/advanced-search.html
+
 ## Filters
 Filters are available by publishing Mosets Tree's [Filter module]({{version}}/modules#mod-mt-filter) to your directory. Similar to Advanced Search, Filters is also an option that allows users to filter the listings to quickly find the listing they are looking, except that users can use this searching method in any pages of your directory from where you want the module to be published.
 
@@ -23,3 +25,6 @@ Instead of searching against the entire directory, you can change the `Category 
 
 Filters are also available when your users view your category through 'All Listings' in front-end. They can access it by clicking on the "**Filter listings...**" link.
 
+Demo: http://demo.mosetstree.com/properties/all.html
+
+: In this page, users can click on the "**Filter Properties**" link to review filters. 

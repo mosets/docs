@@ -19,9 +19,13 @@ A listing is displayed in two forms in the front-end - Details view and Summary 
  ### Summary view {#summary}
 
  In summary view, part of the listing's data is shown to your users in a limited amount of space. What will always be shown here is the listing name. Rating and the number of reviews are also shown if they are enabled. If you want to show additional custom fields or hide the default ones in this view, toggle the "_Shown in summary view_" setting by editing the field in "**Mosets Tree -> Custom Fields**".
+ 
+ Demo: http://demo.mosetstree.com/models.html
 
  ### Details view {#details}
  Details view is the dedicated page that shows all published information about your listing. This includes all your fields data, images, ratings, reviews, user profile and maps. Listing details view is also the primary place where you can find links to or perform interaction with your listing.
+ 
+ Demo: http://demo.mosetstree.com/models/970-alex-pettyfer.html
 
 ## Edit Screen {#edit-screen}
 
@@ -36,6 +40,10 @@ Mosets Tree comes with support for Google Map. To enable this map, set "Show Map
 When you have a listing's address entered, you can press `Locate in map`. Mosets Tree will geocode this address and place a marker on the map to show you the listing's location.
 
 You can also provide better geocode experience by setting default country, state and city in Mosets Tree's configuration. By doing this, Mosets Tree will use these default value when they are not entered to a listing. For example, when you have set a default city, state and country, your users only need to enter an address in order to perform a geocode.
+
+Demo: http://demo.mosetstree.com/business/872-carl-s-jr.html
+
+: Listings in _Business_ category usually attach an address. In this page, Mosets Tree geocode the address and you can see the marker is placed at the business address showing users the business location.
 
 ### Publishing {#publishing}
 Publishing lets you configure many of the listing's meta data.
