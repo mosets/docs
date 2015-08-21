@@ -421,4 +421,14 @@ This section lets you control some aspect of Mosets Tree's back-end interface.
  ### Use WYSIWYG Editor description field in back-end
  Set this to `Yes` if you want to use WYSIWYG Editor in your core description field.
 
+## Frequently Asked Question
 
+{question}How can I manage reviews of my directory?{/question}
+{answer}
+You can manage all the reviews from your directory through back-end - Directory. Under the _Listings_ section, you will see a "Reviews" column which shows the total number of reviews for each listing in hyperlink. Click on the link to manage reviews for a particular listing.
+{/answer}
+
+{question}Why "Report" link is still displayed in Reviews when I had set "Show Report" to `No` under the _Feature_ tab in configuration?{/question}
+{answer}
+"Show Report" under the _Feature_ tab is used for reporting a listing, not a review. To disable "Report" link in reviews, you can configure it under Permission. Go to "**Mosets Tree > Configurations > Edit Permissions... (under "Main" tab)**", set the permission for "Report Review" to "Denied". 
+{/answer}

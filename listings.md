@@ -95,3 +95,10 @@ If any of your listings are owned by user from _Super Users_, _Administrator_ or
 Approving the claim will assign the ownership of the listing to the claimant, essentially making the claimant the owner of the listing which allow them to manage the listing in front-end.
 
 You can disable this [feature]({{version}}/configuration#show_claim) in Configuration.
+
+## Frequently Asked Questions
+
+{question}Is it possible to have multiple marker in a single map?{/question}
+{answer}
+No. Mosets Tree does not show multiple markers in a single map. You can however search a third party addons that allows you to do this.
+{/answer}

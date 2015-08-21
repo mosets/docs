@@ -89,3 +89,20 @@ Full recount will force Mosets Tree to recount all sub-categories of the current
 
 ### Full recount of categories and listings
 Fast recount will only count the current active category's listings and add all sub-category listings(if available) based on the total stored in database. This is a faster method but will not be accurate if the subcategories total are not correct.
+
+## Frequently Asked Questions
+
+{question}How do I show category images in Mosets Tree's Index?{/question}
+{answer}
+Categories image by default is shown only when you view the category page. You can configure in "**Mosets Tree > Templates > current default template**", set "Show Categories' images" to `Yes` to have the images to show in Main Index.
+{/answer}
+
+{question}Is it possible to hide all listings of a specific category?{/question}
+{answer}
+Yes. You can hide a category's listings through Mosets Tree back end. Go to edit category page, set "Show Listing" to `No` in the category's _Edit Screen_. 
+{/answer}
+
+{question}I don't want listings to be shown underneath every category in Main Index. How can I do that?{/question}
+{answer}
+In order to hide all the listings under each top level categories, you can go to "**Mosets Tree back-end > Templates > current default template**", set "Number of listings under top level cats." to `0`. Make sure you check whether if you set to use Main Index template for category pages. This configuration will affect the index page and all the category pages that using main index template page.
+{/answer}
