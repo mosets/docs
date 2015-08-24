@@ -432,3 +432,4 @@ You can manage all the reviews from your directory through back-end - Directory.
 {answer}
 "Show Report" under the _Feature_ tab is used for reporting a listing, not a review. To disable "Report" link in reviews, you can configure it under Permission. Go to "**Mosets Tree > Configurations > Edit Permissions... (under "Main" tab)**", set the permission for "Report Review" to "Denied". 
 {/answer}
+
