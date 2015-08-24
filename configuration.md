@@ -374,7 +374,11 @@ In sharing, you can control whether to insert social bookmarking buttons in list
 
 ## RSS{#rss}
 
-Mosets Tree generates an RSS Feed for all categories, recently add and recently updated page. This is often useful when you want to let users know of changes in your directory without needing them to check your website constantly through use of RSS feed readers or news aggregator.
+Mosets Tree generates an RSS Feed for all categories' recently added and recently updated page. This is often useful when you want to let users know of changes in your directory without needing them to check your website constantly through use of RSS feed readers or news aggregator.
+
+ Demo: http://demo.mosetstree.com/new.html
+
+ : The RSS's feed icon can be seen next to the "_Recently Added Listings_" title. You can also see this in [Recently Updated](http://demo.mosetstree.com/updated.html) page.
 
 Mosets Tree RSS contains your listing names, descriptions, URLs and images. Options in Configuration's RSS tab allows you to add additional elements to your RSS feeds. The additional element will look like this:
 
