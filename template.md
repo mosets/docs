@@ -17,6 +17,13 @@ This article shows how you can create your own Mosets Tree template and customiz
 
 If you're comfortable with PHP, HTML and CSS, you will feel right at home. Even if you're not, our examples are simple and easy to follow.
 
+To access Mosets Tree's template, go to:
+
+**Mosets Tree -> Templates -> [your current template]**
+
+You'll find many template parameters that lets you control many of the visual aspect of your directory. Note that they are grouped by "_Index_", "_Sub-categories_", "_Listing Details Page_", "_Listing Summaries_" and "_Others_" to indicate the part of directory you're customizing.
+
+
 ## Requirement {#requirement}
 Mosets Tree requires Bootstrap version 2 that is shipped with Joomla.
 
