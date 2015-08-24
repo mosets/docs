@@ -20,6 +20,10 @@ Configurations in Mosets Tree controls most aspects of how Mosets Tree works. It
 
 As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, many of the configurations here can be overridden in top level categories, giving you the possibility of creating top level categories with completely different configurations.
 
+>  If you're looking to customize Mosets Tree, you may also find more configurable parameters by editing Mosets Tree's template:
+
+> **Mosets Tree -> Templates -> [your default template]**
+
 ## Main {#main}
 
  ### View access level
