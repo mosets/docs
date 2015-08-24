@@ -3,7 +3,7 @@
 - [Introduction]({{version}}/configuration#intro)
 - [Main]({{version}}/configuration#main)
 - [Category]({{version}}/configuration#category)
-- [Listing]({{version}}/configuration#listings)
+- [Listing]({{version}}/configuration#listing)
 - [Search]({{version}}/configuration#search)
 - [Rating/Rev]({{version}}/configuration#ratingrev)
 - [Features]({{version}}/configuration#features)
@@ -84,7 +84,7 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Display Filters {#filters}
  Filters lets you to perform a filter on a list of listings. This is available when you view a category through "_All Listings_". Setting this to `No` will remove the filter function.
 
-## Listing {#listings}
+## Listing {#listing}
 Data entered to a field is displayed in two places in Mosets Tree front-end, Summary view and Details view.
 
  ### Listing details view access level
