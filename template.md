@@ -9,6 +9,7 @@
 	- [Displaying Custom Fields]({{version}}/template#listing-details-displaying-custom-fields)
 	- [Hiding Custom Fields]({{version}}/template#listing-details-hiding-custom-fields)
 - [Customize Listing Summary Sub Template]({{version}}/template#listing-summary)
+- [Module Positions]({{version}}/template#module-positions)
 
 ## Introduction {#intro}
 Mosets Tree template a is simple, yet powerful feature that controls how your directory is displayed in front-end. It's designed to be modular and easy to customize to give you the full flexibility in designing your Mosets Tree directory.
@@ -159,4 +160,22 @@ All the codes from [Customize Listing Details Page]({{version}}/template#listing
     	echo ': ';
     	echo $myfield->getOutput();
     }
+
+## Module Positions {#module-positions}
+
+Mosets Tree's Kinabalu template supports additional module positions within the Mosets Tree extension. These module positions are available in index and category pages, opening up the possibilities of showing additional any modules inside these pages.
+
+You may refer to the diagram below to see all the available module positions. Replace `{cat_id}` with the category ID you want the module to be displayed. For example, to use `category2-footer-id{cat_id}` in th category with ID 13, you'll enter `category2-footer-id13` as the module position.
+
+![Module positions](http://demo.mosetstree.com/images/demo/mt-kinabalu-template-module-positions.png)
+
+Here are some pages from demo that make use of these module positions:
+
+Demo: http://demo.mosetstree.com/computers.html
+
+: _Computer_ category using `category2-footer-id{cat_id}` to show listings in 2 positions.
+
+Demo: http://demo.mosetstree.com/health.html
+
+: _Health_ category using `category3-header-id{cat_id}` to show listings in 3 positions.
 
