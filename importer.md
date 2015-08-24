@@ -166,9 +166,23 @@ Note that you still need to set up category association and create an [Associate
 - Your CSV file should be saved with **UTF8** encoding and **LF** (Line Feed) line endings.
 - Use the "**Dry Run**" option to check if your CSV file is properly formatted. Dry run will scan your CSV file and report any errors if it finds any. Importing using the dry-run option does not write any data to your database.
 
+> One of the most common issue importing CSV file is when your file is not using **UTF-8** encoding or **LF** line endings. When you're doing a dry-run, you may find out that MT Importer detects your entire file as the column header (not using LF line endings); or it may not import non-latin characters (not using UTF-8 encoding).
+
 #### What Importer doesn't do:
 - It does not support importing files or binary based data.
 - It does not create categories. You have to create the categories first before starting the import.
+
+{question}How can I check my file's encoding and line endings?{/question}
+{answer}
+You can use the _Notepad_ program in _Windows_ to check both file's encoding and line endings.
+
+On Unix, run the following command:
+
+	$ file myfile.csv
+    myfile.csv: UTF-8 Unicode text
+
+An ideal output would be `UTF-8 Unicode text` or `UTF-8 Unicode English text, with very long lines`.
+{/answer}
 
 ## Import from Hot Property {#hot-property}
 MT Importer will import all types, companies, agents and properties from Hot Property 1.0 to Mosets Tree version 3.5+. During the import, 3 new top level categories will be created, namely 'Hot Property Properties', 'Hot Property Agents' and 'Hot Property Companies' to store the imported properties, agents and companies respectively.
