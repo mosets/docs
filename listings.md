@@ -10,6 +10,7 @@
 	- [Parameters]({{version}}/listings#parameters)
 	- [Notes]({{version}}/listings#notes)
 - [Claim]({{version}}/listings#claim)
+- [Frequently Asked Questions]({{version}}/listings#faq)
 
 ## Introduction {#intro}
 Listings are the primary way to store information on your directory. They are what your users ultimately looks for in your directory. Mosets Tree provides host of options and capabilities to manage them.  
@@ -96,7 +97,7 @@ Approving the claim will assign the ownership of the listing to the claimant, es
 
 You can disable this [feature]({{version}}/configuration#show_claim) in Configuration.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#faq}
 
 {question}Is it possible to have multiple marker in a single map?{/question}
 {answer}
@@ -107,7 +108,7 @@ No. Mosets Tree does not show multiple markers in a single map. You can however 
 {answer}
 The message "No records found" appears when you browse to a Mosets Tree category that contains no listings.  
  
-If you do not intend to have listings in Index and wish to remove the message, you can go to "**Mosets Tree > Configuration > Listing tab**", set "Display listings in root" to `No`.  
+If you do not intend to have listings in Index and wish to remove the message, you can go to "**Mosets Tree -> Configuration -> Listing tab**", set "Display listings in root" to `No`.  
 
 If you do not intend to have listings in a particular category and wish to remove the message, you can go to Mosets Tree back-end and browse to edit category, set "Show Listings" in that category to `No`.
 {/answer}
