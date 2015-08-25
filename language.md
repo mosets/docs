@@ -7,6 +7,7 @@
 	- [Language Overrides File]({{version}}/language#overrides-file)
 - [Top Level Categories]({{version}}/language#top-level-categories)
 - [Best Practise]({{version}}/language#best-practise)
+- [Frequently Asked Questions]({{version}}/language#faqs)
 
 ## Introduction {#intro}
 
@@ -206,3 +207,20 @@ These are the language constants with their default language values that are ava
 Any texts changes should be done by overriding them using the steps outline above, either directly to the overrides INI file or through Joomla's Language Manager. Unless you're making a new translation for Mosets Tree, you shouldn't edit Mosets Tree language file, because these files are overwritten during Mosets Tree upgrade.
 
 Using language override will ensure that your changes will be maintained even after you update Mosets Tree.
+
+## Frequently Asked Questions {#faqs}
+
+{question}Does Mosets Tree support multi-language?{/question}
+{answer}
+No, Mosets Tree does not support multi-language.
+{/answer}
+
+{question}How can I change the word 'Directory'?{/question}
+{answer}
+Following the [override instructions]({{version}}/language#overrides), look for the following constants:
+
+	COM_MTREE_ROOT
+    COM_MTREE_PAGE_TITLE_ROOT
+
+to replace the word "_Directory_".
+{/answer}
