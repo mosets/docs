@@ -102,3 +102,12 @@ You can disable this [feature]({{version}}/configuration#show_claim) in Configur
 {answer}
 No. Mosets Tree does not show multiple markers in a single map. You can however search a third party addons that allows you to do this.
 {/answer}
+
+{question}How can I hide the message "No records Found"{/question}
+{answer}
+The message "No records found" appears when you browse to a Mosets Tree category that contains no listings.  
+ 
+If you do not intend to have listings in Index and wish to remove the message, you can go to "**Mosets Tree > Configuration > Listing tab**", set "Display listings in root" to `No`.  
+
+If you do not intend to have listings in a particular category and wish to remove the message, you can go to Mosets Tree back-end and browse to edit category, set "Show Listings" in that category to `No`.
+{/answer}
