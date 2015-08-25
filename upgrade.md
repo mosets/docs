@@ -7,6 +7,7 @@
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
  - [Upgrading From 3.0 To 3.6]({{version}}/upgrade#from-30-to-36)
  - [Upgrading To 3.6]({{version}}/upgrade#to-36)
+ - [Database Schema Updates]({{version}}/upgrade#db-schema)
 
 ## Introduction {#intro}
 
@@ -149,3 +150,98 @@ The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3
 
 ### Upgrade completed
 If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.6 on Joomla 3.4.
+
+## Database Schema Updates {#db-schema}
+
+Starting with 3.0.11, you can migrate your Mosets Tree database tables to another site running a later version of Mosets Tree, without going through the multi-steps upgrade outlined above. Once you've moved the database tables to your new site, you need to run the SQL queries listed below.
+
+The SQL queries below will update Mosets Tree's database table schema from 3.0.11 to Mosets Tree version {{version}} schema.
+
+If you're not running on Mosets Tree 3.0.11, you must upgrade to this version or later before you can run the SQL queries.
+
+To run these SQL queries, replace `#__` with your database table prefix. You can find this in Joomla's Global Configuration.
+
+```sql
+
+############################
+# Mosets Tree version 3.5.0
+DELETE FROM `#__mt_config` WHERE `varname` IN ('relative_path_to_js_library');
+UPDATE `#__mt_config` SET `configcode` = 'text' WHERE `varname` = 'linkchecker_num_of_links';
+
+############################
+# Mosets Tree version 3.5.2
+DELETE FROM `#__mt_config` WHERE `varname` IN ('load_js_framework_frontend');
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'load_bootstrap_css', 'core', '1', '1', 'yesno', '0', '0', '0');
+
+############################
+# Mosets Tree version 3.5.4
+ALTER TABLE `#__mt_links` CHANGE `price` `price` DOUBLE(12,2) NOT NULL DEFAULT '0.00';
+
+############################
+# Mosets Tree version 3.5.6
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'demo_mode', 'core', '', '0', 'yesno', '0', '0', '0');
+
+############################
+# Mosets Tree version 3.5.8
+ALTER TABLE `#__mt_links` ADD INDEX `link_created` (`link_created`);
+
+############################
+# Mosets Tree version 3.5.10
+UPDATE `#__mt_fieldtypes` SET `ft_desc` = 'Audio Player allows users to upload audio files and play the music from within the listing page. Provides basic playback options such as play, pause and volume control. Made possible by http://www.1pixelout.net/code/audio-player-wordpress-plugin/.' WHERE `field_type` = 'audioplayer';
+
+############################
+# Mosets Tree version 3.5.11
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'fe_num_of_related', 'listing', '', '50', 'text', '6800', '0', '0');
+
+############################
+# Mosets Tree version 3.5.13
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.6.0
+DELETE FROM #__mt_config WHERE varname IN ('user_addcategory','user_addlisting','user_contact','user_recommend','user_report','user_report_review','user_rating','user_review');
+
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'note_permission',  'main',  '',  '',  'note',  '11100',  '1',  '0'), ( 'link_to_configure_permission',  'main',  '',  '',  'label',  '11110',  '1',  '0'), ( 'listing_details_access_level', 'listing', '1', '1', 'access_level', '0', '1', '1'), ('category_view_access_level', 'main', '', '1', 'access_level', 450, 1, 1), ('schema_type', 'main', '', 'Thing', 'text', 460, 0, 1), ('load_font_awesome', 'core', '1', '1', 'yesno', 0, 0, 0), ('show_share_with_email', 'sharing', '1', '1', 'yesno', 100, 1, 1), ('show_share_with_facebook', 'sharing', '1', '1', 'yesno', 200, 1, 1), ('show_share_with_twitter', 'sharing', '1', '1', 'yesno', 300, 1, 1), ('show_share_with_pinterest', 'sharing', '1', '1', 'yesno', 400, 1, 1), ('show_share_with_googleplus', 'sharing', '1', '1', 'yesno', 500, 1, 1), ('note_facebook_like', 'sharing', '', '', 'note', 1000, 1, 1), ('use_facebook_like', 'sharing', '1', '1', 'yesno', 1010, 1, 1),  ('note_pinterest_on_hover_pin', 'sharing', '', '', 'note', '1100', '1', '1'), ('use_pinterest_on_hover_pin', 'sharing', '1', '1', 'yesno', '1110', '1', '1'), ('note_twitter_card', 'sharing', '', '', 'note', '1200', '1', '0'), ('use_twitter_card', 'sharing', '1', '1', 'yesno', '1210', '1', '0'), ('twitter_site', 'sharing', '', '', 'text', '1220', '1', '0'), ('twitter_card_type', 'sharing', 'summary', 'summary', 'text', '1230', '1', '0');
+
+INSERT IGNORE INTO `#__mt_configgroup` (`groupname`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('sharing', '660', '1', '1');
+
+ALTER TABLE `#__mt_customfields` ADD access_level INT NOT NULL DEFAULT '1' AFTER published;
+
+ALTER TABLE `#__mt_links` ADD mobile VARCHAR(255) NOT NULL DEFAULT '' AFTER telephone;
+
+ALTER TABLE `#__mt_links` ADD contactperson VARCHAR(255) NOT NULL DEFAULT '' AFTER postcode;
+
+ALTER TABLE `#__mt_links` ADD `date` DATE NOT NULL AFTER website;
+
+ALTER TABLE `#__mt_links` ADD `year` INT(11) NOT NULL AFTER website;
+
+INSERT IGNORE INTO `#__mt_customfields` (`field_type`, `caption`, `alias`, `default_value`, `size`, `field_elements`, `prefix_text_mod`, `suffix_text_mod`, `prefix_text_display`, `suffix_text_display`, `placeholder_text`, `cat_id`, `ordering`, `hidden`, `required_field`, `published`, `access_level`, `hide_caption`, `advanced_search`, `simple_search`, `tag_search`, `filter_search`, `details_view`, `summary_view`, `search_caption`, `params`, `iscore`) VALUES ('corecontactperson', 'Contact Person', 'contact-person', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1), ('coremobile', 'Mobile', 'mobile', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1), ('coredate', 'Date', 'date', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1), ('coreyear', 'Year Established', 'year', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1);
+
+INSERT IGNORE INTO `#__assets` (`parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES (1, 0, 0, 1, 'com_mtree', 'com_mtree', '{\"core.admin\":[],\"core.manage\":[],\"mtree.listing.create\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.category.create\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.rate\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.review\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.contact\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.recommend\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.report\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.report_review\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.claim\":{\"6\":1,\"2\":1,\"8\":1}}') ON DUPLICATE KEY UPDATE rules = '{\"core.admin\":[],\"core.manage\":[],\"mtree.listing.create\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.category.create\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.rate\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.review\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.contact\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.recommend\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.report\":{\"1\":1,\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.report_review\":{\"6\":1,\"2\":1,\"8\":1},\"mtree.listing.claim\":{\"6\":1,\"2\":1,\"8\":1}}';
+
+UPDATE `#__mt_fieldtypes` SET `field_type` = 'myear' WHERE `field_type` = 'year';
+
+UPDATE `#__mt_customfields` SET `field_type` = 'myear' WHERE `field_type` = 'year';
+
+############################
+# Mosets Tree version 3.6.1
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'prevent_rate_own_listing',  'ratingreview',  '1',  '1',  'yesno',  '1450',  '1',  '1'), ( 'prevent_review_own_listing',  'ratingreview',  '1',  '1',  'yesno',  '2750',  '1',  '1');
+
+ALTER TABLE `#__mt_customfields` CHANGE `access_level` `view_access_level` INT(11)  NOT NULL  DEFAULT '1';
+
+ALTER TABLE `#__mt_customfields` ADD `edit_access_level` INT(11)  NOT NULL  DEFAULT '1'  AFTER `view_access_level`;
+
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_share_with_linkedin', 'sharing', '1', '1', 'yesno', 600, 1, 1);
+
+############################
+# Mosets Tree version 3.6.2
+UPDATE `#__assets` SET lft = 9999, rgt = 9999 WHERE name = 'com_mtree' AND lft = 0 AND rgt = 0 LIMIT 1;
+
+############################
+# Mosets Tree version 3.6.3
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ( 'use_captcha_recommend',  'captcha',  '0',  '0',  'yesno',  '5000',  '1',  '0');
+
+############################
+# Mosets Tree version 3.6.4
+# No upgrade queries.
+```
