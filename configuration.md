@@ -14,6 +14,7 @@
 - [SEF URLs]({{version}}/configuration#sefurls)
 - [Captcha]({{version}}/configuration#captcha)
 - [Admin]({{version}}/configuration#admin)
+- [Frequently Asked Questions]({{version}}/configuration#faqs)
 
 ## Introduction {#intro}
 Configurations in Mosets Tree controls most aspects of how Mosets Tree works. It can be accessed in Mosets Tree's back-end: "**Mosets Tree -> Configuration**". Most of the configurations are self explanatory (at least we try to be!), so we will cover some of the important ones here.
@@ -331,6 +332,12 @@ Notify allows you to configure when to send a notification e-mail to Admin and L
 ## Image {#image}
 When an image is uploaded, system will save the image in three formats: the original image, thumbnail sized image and medium sized image.
 
+> **Note**: Changing the value for image sizes or squared thumbnail feature will not change the images you already uploaded to your listings. To apply the new configuration to your existing image, you need to rebuild your images using the **Rebuild Thumbnails** tool. This tool will rebuild your listings' small & medium images by resizing them based on the configuration you have.
+
+> You can access the tool at:
+
+> **Mosets Tree -> Tools -> Rebuild Thumbnails**
+
  ### Small/Thumbnail's image size
  This allows you to set the maximum width and height of a thumbnail image.
  
@@ -429,15 +436,20 @@ This section lets you control some aspect of Mosets Tree's back-end interface.
  ### Use WYSIWYG Editor description field in back-end
  Set this to `Yes` if you want to use WYSIWYG Editor in your core description field.
 
-## Frequently Asked Question
+## Frequently Asked Questions {#faqs}
 
 {question}How can I manage reviews of my directory?{/question}
 {answer}
-You can manage all the reviews from your directory through back-end - Directory. Under the _Listings_ section, you will see a "Reviews" column which shows the total number of reviews for each listing in hyperlink. Click on the link to manage reviews for a particular listing.
+You can manage all the reviews from your directory through Mosets Tree's back-end. Under the _Listings_ section, you will see a "_Reviews_" column which shows the total number of reviews for each listing in hyperlink. Click on the link to manage reviews for a particular listing.
+Demo: http://demo.mosetstree.com/administrator/index.php?option=com_mtree&task=reviews_list&link_id=878
 {/answer}
 
 {question}Why "Report" link is still displayed in Reviews when I had set "Show Report" to `No` under the _Feature_ tab in configuration?{/question}
 {answer}
-"Show Report" under the _Feature_ tab is used for reporting a listing, not a review. To disable "Report" link in reviews, you can configure it under Permission. Go to "**Mosets Tree > Configurations > Edit Permissions... (under "Main" tab)**", set the permission for "Report Review" to "Denied". 
+**Show Report** under the _Feature_ tab is used for reporting a listing, not a review. To disable "_Report_" link in reviews, you can configure it under _Permission_. Go to:
+
+ **Mosets Tree -> Configurations -> Edit Permissions... (under "Main" tab)**
+
+ set the permission for **Report Review** to "_Denied_".
 {/answer}
 
