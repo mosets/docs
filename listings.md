@@ -10,7 +10,7 @@
 	- [Parameters]({{version}}/listings#parameters)
 	- [Notes]({{version}}/listings#notes)
 - [Claim]({{version}}/listings#claim)
-- [Frequently Asked Questions]({{version}}/listings#faq)
+- [Frequently Asked Questions]({{version}}/listings#faqs)
 
 ## Introduction {#intro}
 Listings are the primary way to store information on your directory. They are what your users ultimately looks for in your directory. Mosets Tree provides host of options and capabilities to manage them.  
@@ -106,7 +106,22 @@ Approving the claim will assign the ownership of the listing to the claimant, es
 
 You can disable this [feature]({{version}}/configuration#show_claim) in Configuration.
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions {#faqs}
+
+{question}Why can't I change category?{/question}
+{answer}
+Mosets Tree performs a JSON request to your site to request for the list of categories when you change category by clicking on a category name. Here's the format of the URL Mosets Tree uses to perform the request:
+
+	<yoursite>/?option=com_mtree&task=ajax&task2=categories.list&cat_id=XX&format=json&is_admin=1&no_html=1&tmpl=component
+
+where _&lt;yoursite&gt;_ is your site's domain and _XX_ is a category's ID.
+
+When you can't change your category, the issue is typically caused by additional output that interfere with the JSON response. Removing these output should resolve the issue.
+
+Demo: http://demo.mosetstree.com/?option=com_mtree&task=ajax&task2=categories.list&cat_id=76&format=json&is_admin=1&no_html=1&tmpl=component
+
+: This is a sample JSON output from Mosets Tree's demo. It should starts with a opening square bracket and ends with a closing square bracket. It shouldn't have anything before and after those square brackets.
+{/answer}
 
 {question}Is it possible to have multiple marker in a single map?{/question}
 {answer}
