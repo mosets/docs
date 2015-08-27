@@ -51,9 +51,9 @@ Publishing lets you configure many of the listing's meta data.
 
 #### Owner
 
-Shows the owner of the listing. You can change this by clicking on the person icon.
+Owner is the designated user that owns the listing. They are the one that can manage the listing in front-end. You can change the owner by clicking on the person icon.
 
-##### Alias
+#### Alias
 
 Alias is used as your listing slugs when you have SEF URLs enabled. When a new listing is created, the alias is automatically generated for you by using a lower case name and replacing spaces and dash.
  
