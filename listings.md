@@ -49,40 +49,49 @@ Demo: http://demo.mosetstree.com/business/872-carl-s-jr.html
 ### Publishing {#publishing}
 Publishing lets you configure many of the listing's meta data.
 
- ### Owner
- Shows the owner of the listing. You can change this by clicking on the person icon.
+#### Owner
 
- ### Alias
- Alias is used as your listing slugs when you have SEF URLs enabled. When a new listing is created, the alias is automatically generated for you by using a lower case name and replacing spaces and dash.
- 
- ### Created Date
- If you want to change a listing's date created, you can do this by editing "_Created Date_". Changing this may affect the "New Listing" status of a listing in front-end.
- 
- ### Start Publishing
- By default, Start Publishing date is the creation date of the listing. You can override this date in order for the listing to be published on a later date.
- 
- ### Finish Publishing
- Similar to Start Publishing date, you can set a Finish Publishing date to expire a listing. Once a listing is published down, it will no longer be visible in the front-end interface.  
+Shows the owner of the listing. You can change this by clicking on the person icon.
 
- By default, all listings do not have a "_Finish Publishing_" date set, so they are published as long as they are set as such. If you have set a value for "[Number of days to expire listing]({{version}}/configuration#days_to_expire)" config, the "_Finish Publishing_" date will be set with a future expiry date.
+##### Alias
 
- ### Template
- Allows you to select which [Mosets Tree template]({{version}}/template) to use in this listing. Changing this only affects the layout of current listing.
+Alias is used as your listing slugs when you have SEF URLs enabled. When a new listing is created, the alias is automatically generated for you by using a lower case name and replacing spaces and dash.
  
- ### Rating
- Shows the listing's average rating and allows you to alter its rating. Note that changing value of this may affect the listing's position in "_Top Rated listing_" page.
+#### Created Date
+If you want to change a listing's date created, you can do this by editing "_Created Date_". Changing this may affect the "New Listing" status of a listing in front-end.
  
- ### Votes
- Shows the total number of votes and allows you to change it. Note that changing value of this may affect the listing's position in "Most Rated" page.
- 
- ### Unique Pageviews
- Shows the total number of times your users has viewed a listing. A unique pageview is counted as one when a user view a listing in a session. The user can view the listing page multiple times within a session and it will count as one unique page view.
+#### Start Publishing
 
- By default a session is 24 hours. You can change this in Configuration for "[Unique pageviews session (in seconds)]({{version}}/configuration#hit_lag)"
+By default, Start Publishing date is the creation date of the listing. You can override this date in order for the listing to be published on a later date.
+ 
+#### Finish Publishing
+
+Similar to Start Publishing date, you can set a Finish Publishing date to expire a listing. Once a listing is published down, it will no longer be visible in the front-end interface.
+
+By default, all listings do not have a "_Finish Publishing_" date set, so they are published as long as they are set as such. If you have set a value for "[Number of days to expire listing]({{version}}/configuration#days_to_expire)" config, the "_Finish Publishing_" date will be set with a future expiry date.
+
+#### Template
+
+Allows you to select which [Mosets Tree template]({{version}}/template) to use in this listing. Changing this only affects the layout of current listing.
+ 
+#### Rating
+
+Shows the listing's average rating and allows you to alter its rating. Note that changing value of this may affect the listing's position in "_Top Rated listing_" page.
+ 
+#### Votes
+
+Shows the total number of votes and allows you to change it. Note that changing value of this may affect the listing's position in "Most Rated" page.
+ 
+#### Unique Pageviews
+
+Shows the total number of times your users has viewed a listing. A unique pageview is counted as one when a user view a listing in a session. The user can view the listing page multiple times within a session and it will count as one unique page view.
+
+By default a session is 24 hours. You can change this in Configuration for "[Unique pageviews session (in seconds)]({{version}}/configuration#hit_lag)"
  This parameter lets you view or change the number of visitors who viewed the listing. 
  
- ### Website Clicks
- Shows the number of times your users has visited a listings websites through the "Visit" link in listings details page.
+#### Website Clicks
+
+Shows the number of times your users has visited a listings websites through the "Visit" link in listings details page.
 
 ### Parameters {#parameters}
 Listing's parameter configuration overrides Mosets Tree global configuration. Parameters enable you to configure how certain features of a listing behave. Choosing `Use Global` will inherit values from Mosets Tree global configurations. To override global configuration, choose either `Hide` or `Show` the features. 
