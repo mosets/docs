@@ -161,6 +161,12 @@ All the codes from [Customize Listing Details Page]({{version}}/template#listing
     	echo $myfield->getOutput();
     }
 
+To test the sample code above in your directory, make sure that:
+
+- You have a custom field with ID 33. If not, replace the ID with one that you have in the directory.
+- The custom field is **Published** and **Shown in summary view** is set to **Yes**.
+- The listing that you are testing with has value in the custom field. Generally, fields that has no values will not be shown.
+
 ## Module Positions {#module-positions}
 
 Mosets Tree's Kinabalu template supports additional module positions within the Mosets Tree extension. These module positions are available in index and category pages, opening up the possibilities of showing additional any modules inside these pages.
