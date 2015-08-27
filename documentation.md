@@ -4,12 +4,12 @@
 	- [Configuration]({{version}}/configuration)
 
 - Features
+	- [Access Control List]({{version}}/acl)
 	- ️[Categories]({{version}}/categories)
 	- [Listings]({{version}}/listings)
 	- [Fields]({{version}}/fields)
 <!--	- ⭕️ [Tags]({{version}}/tags) -->
 	- [Search]({{version}}/search)
-<!--	- ⭕️ [Access Control List]({{version}}/acl) -->
 	- [Template]({{version}}/template)
 	- [Language]({{version}}/language)
 	- [Multi Directory]({{version}}/multi-directory)

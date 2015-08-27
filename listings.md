@@ -10,6 +10,7 @@
 	- [Parameters]({{version}}/listings#parameters)
 	- [Notes]({{version}}/listings#notes)
 - [Claim]({{version}}/listings#claim)
+- [Frequently Asked Questions]({{version}}/listings#faqs)
 
 ## Introduction {#intro}
 Listings are the primary way to store information on your directory. They are what your users ultimately looks for in your directory. Mosets Tree provides host of options and capabilities to manage them.  
@@ -48,40 +49,49 @@ Demo: http://demo.mosetstree.com/business/872-carl-s-jr.html
 ### Publishing {#publishing}
 Publishing lets you configure many of the listing's meta data.
 
- ### Owner
- Shows the owner of the listing. You can change this by clicking on the person icon.
+#### Owner
 
- ### Alias
- Alias is used as your listing slugs when you have SEF URLs enabled. When a new listing is created, the alias is automatically generated for you by using a lower case name and replacing spaces and dash.
- 
- ### Created Date
- If you want to change a listing's date created, you can do this by editing "_Created Date_". Changing this may affect the "New Listing" status of a listing in front-end.
- 
- ### Start Publishing
- By default, Start Publishing date is the creation date of the listing. You can override this date in order for the listing to be published on a later date.
- 
- ### Finish Publishing
- Similar to Start Publishing date, you can set a Finish Publishing date to expire a listing. Once a listing is published down, it will no longer be visible in the front-end interface.  
+Owner is the designated user that owns the listing. They are the one that can manage the listing in front-end. You can change the owner by clicking on the person icon.
 
- By default, all listings do not have a "_Finish Publishing_" date set, so they are published as long as they are set as such. If you have set a value for "[Number of days to expire listing]({{version}}/configuration#days_to_expire)" config, the "_Finish Publishing_" date will be set with a future expiry date.
+#### Alias
 
- ### Template
- Allows you to select which [Mosets Tree template]({{version}}/template) to use in this listing. Changing this only affects the layout of current listing.
+Alias is used as your listing slugs when you have SEF URLs enabled. When a new listing is created, the alias is automatically generated for you by using a lower case name and replacing spaces and dash.
  
- ### Rating
- Shows the listing's average rating and allows you to alter its rating. Note that changing value of this may affect the listing's position in "_Top Rated listing_" page.
+#### Created Date
+If you want to change a listing's date created, you can do this by editing "_Created Date_". Changing this may affect the "New Listing" status of a listing in front-end.
  
- ### Votes
- Shows the total number of votes and allows you to change it. Note that changing value of this may affect the listing's position in "Most Rated" page.
- 
- ### Unique Pageviews
- Shows the total number of times your users has viewed a listing. A unique pageview is counted as one when a user view a listing in a session. The user can view the listing page multiple times within a session and it will count as one unique page view.
+#### Start Publishing
 
- By default a session is 24 hours. You can change this in Configuration for "[Unique pageviews session (in seconds)]({{version}}/configuration#hit_lag)"
+By default, Start Publishing date is the creation date of the listing. You can override this date in order for the listing to be published on a later date.
+ 
+#### Finish Publishing
+
+Similar to Start Publishing date, you can set a Finish Publishing date to expire a listing. Once a listing is published down, it will no longer be visible in the front-end interface.
+
+By default, all listings do not have a "_Finish Publishing_" date set, so they are published as long as they are set as such. If you have set a value for "[Number of days to expire listing]({{version}}/configuration#days_to_expire)" config, the "_Finish Publishing_" date will be set with a future expiry date.
+
+#### Template
+
+Allows you to select which [Mosets Tree template]({{version}}/template) to use in this listing. Changing this only affects the layout of current listing.
+ 
+#### Rating
+
+Shows the listing's average rating and allows you to alter its rating. Note that changing value of this may affect the listing's position in "_Top Rated listing_" page.
+ 
+#### Votes
+
+Shows the total number of votes and allows you to change it. Note that changing value of this may affect the listing's position in "Most Rated" page.
+ 
+#### Unique Pageviews
+
+Shows the total number of times your users has viewed a listing. A unique pageview is counted as one when a user view a listing in a session. The user can view the listing page multiple times within a session and it will count as one unique page view.
+
+By default a session is 24 hours. You can change this in Configuration for "[Unique pageviews session (in seconds)]({{version}}/configuration#hit_lag)"
  This parameter lets you view or change the number of visitors who viewed the listing. 
  
- ### Website Clicks
- Shows the number of times your users has visited a listings websites through the "Visit" link in listings details page.
+#### Website Clicks
+
+Shows the number of times your users has visited a listings websites through the "Visit" link in listings details page.
 
 ### Parameters {#parameters}
 Listing's parameter configuration overrides Mosets Tree global configuration. Parameters enable you to configure how certain features of a listing behave. Choosing `Use Global` will inherit values from Mosets Tree global configurations. To override global configuration, choose either `Hide` or `Show` the features. 
@@ -96,9 +106,33 @@ Approving the claim will assign the ownership of the listing to the claimant, es
 
 You can disable this [feature]({{version}}/configuration#show_claim) in Configuration.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#faqs}
+
+{question}Why can't I change category?{/question}
+{answer}
+Mosets Tree performs a JSON request to your site to request for the list of categories when you change category by clicking on a category name. Here's the format of the URL Mosets Tree uses to perform the request:
+
+	<yoursite>/?option=com_mtree&task=ajax&task2=categories.list&cat_id=XX&format=json&is_admin=1&no_html=1&tmpl=component
+
+where _&lt;yoursite&gt;_ is your site's domain and _XX_ is a category's ID.
+
+When you can't change your category, the issue is typically caused by additional output that interfere with the JSON response. Removing these output should resolve the issue.
+
+Demo: http://demo.mosetstree.com/?option=com_mtree&task=ajax&task2=categories.list&cat_id=76&format=json&is_admin=1&no_html=1&tmpl=component
+
+: This is a sample JSON output from Mosets Tree's demo. It should starts with a opening square bracket and ends with a closing square bracket. It shouldn't have anything before and after those square brackets.
+{/answer}
 
 {question}Is it possible to have multiple marker in a single map?{/question}
 {answer}
 No. Mosets Tree does not show multiple markers in a single map. You can however search a third party addons that allows you to do this.
+{/answer}
+
+{question}How can I hide the message "No records Found"{/question}
+{answer}
+The message "No records found" appears when you browse to a Mosets Tree category that contains no listings.  
+ 
+If you do not intend to have listings in Index and wish to remove the message, you can go to "**Mosets Tree -> Configuration -> Listing tab**", set "Display listings in root" to `No`.  
+
+If you do not intend to have listings in a particular category and wish to remove the message, you can go to Mosets Tree back-end and browse to edit category, set "Show Listings" in that category to `No`.
 {/answer}

@@ -8,6 +8,7 @@
 	- [Setting up Category Association]({{version}}/categories#setting-up-association)
 	- [Using Category Association]({{version}}/categories#using-association)
 - [Operations]({{version}}/categories#operations)
+- [Frequently Asked Questions]({{version}}/categories#faqs)
 
 ## Introduction {#intro}
 
@@ -90,7 +91,7 @@ Full recount will force Mosets Tree to recount all sub-categories of the current
 ### Full recount of categories and listings
 Fast recount will only count the current active category's listings and add all sub-category listings(if available) based on the total stored in database. This is a faster method but will not be accurate if the subcategories total are not correct.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#faqs}
 
 {question}How do I show category images in Mosets Tree's Index?{/question}
 {answer}
