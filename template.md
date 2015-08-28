@@ -8,7 +8,7 @@
 - [Customize Listing Details Page]({{version}}/template#listing-details)
 	- [Displaying Custom Fields]({{version}}/template#listing-details-displaying-custom-fields)
 	- [Hiding Custom Fields]({{version}}/template#listing-details-hiding-custom-fields)
-	- [Using Bootstrap Toggleable Tabs]({{version}}/template#listing-details-bootstrap-toggleable-tabs)
+	- [Implementing Bootstrap Toggleable Tabs]({{version}}/template#listing-details-bootstrap-toggleable-tabs)
 - [Customize Listing Summary Sub Template]({{version}}/template#listing-summary)
 - [Module Positions]({{version}}/template#module-positions)
 
@@ -137,10 +137,11 @@ Add a field ID to the `array()` to prevent it from being show under "_Listing De
 
 	$skipped_field_ids = array(1,2,33);
 	
-### Using Bootstrap Toggleable Tabs {#listing-details-bootstrap-toggleable-tabs}
-Showing custom fields in toggleable tabs is possible in Mosets Tree by implementing bootstrap toggleable tabs in `sub_listingDetails.tpl.php` template file.
+### Implementing Bootstrap Toggleable Tabs {#listing-details-bootstrap-toggleable-tabs}
 
-Basic bootstrap toggleable tabs:
+Lets take what we have learned so far to implement a toggable tabs to show some of your custom fields using Bootstrap's [Togglable Tabs](http://getbootstrap.com/2.3.2/javascript.html#tabs). We are going to do the customization in `sub_listingDetails.tpl.php` template file.
+
+Here's the basic Bootstrap toggleable tabs HTML code:
 
 	<ul class="nav nav-tabs" id="tab-title"> 
         <li><a href="#toggleabletab" data-toggle="tab">Tab Title</a></li>
@@ -149,19 +150,19 @@ Basic bootstrap toggleable tabs:
         <div class="tab-pane" id="toggleabletab">Tab Content</div>
     </div>
 
-In the following example, three tabs will be created based on three custom fields: 
+For the example, we will create 3 tabs for 3 of our custom fields:
 
  - Text
  - Image 
  - Youtube
 
-To create toggleable tab, first you need to [get custom fields]({{version}}/template#listing-details-displaying-custom-fields) through IDs and use them together with bootstrap. 
+First you need to [get the custom fields object]({{version}}/template#listing-details-displaying-custom-fields) through their IDs. We will use these object later to display their caption and output:
 
 	$text = $this->fields->getFieldById(37);
     $image = $this->fields->getFieldById(36);
     $youtube = $this->fields->getFieldById(35);
 
-To display field's caption for tab title:
+We call the `getCaption()` method to display each custom fields' caption:
 
 	<ul class="nav nav-tabs" id="myTab">
 		<?php if(isset($text)) { ?>
@@ -175,7 +176,7 @@ To display field's caption for tab title:
 		<?php } ?>
     </ul>
     
-To output value for tab content:
+To output value for tab content, we use `getOutput()` method. You notice that we use the `isset` function to check if the custom fields object exists. This is a good practise to make sure that you only want to show the tabs when your custom fields exist and published. Without these checks, your user may get errors on your directory whenever any of the 3 fields are unpublished:
 
 	<div class="tab-content">
 		<?php if(isset($text)) { ?>
@@ -206,7 +207,7 @@ To output value for tab content:
 			</div>
 		<?php } ?>
     </div>
-    
+
 Make sure you [hide]({{version}}/template#listing-details-hiding-custom-fields) these custom fields under "_Listing Details_" so that a page is not showing repetitive content.  
     
 ## Customize Listing Summary Sub Template {#listing-summary}
