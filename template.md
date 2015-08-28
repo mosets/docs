@@ -183,7 +183,7 @@ To output value for tab content:
 				<?php if($text->hasValue()) {
 					echo $text->getOutput(); 
 				} else {
-					echo 'User has no Description.';
+					echo 'Listing has no Description.';
 				} ?>
 			</div>
 		<?php } ?>
