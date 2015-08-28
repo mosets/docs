@@ -129,7 +129,7 @@ Taken all together, you may use the following codes to output a custom field tog
     }
 
 ### Hiding Custom Fields {#listing-details-hiding-custom-fields}
-Most of your fields caption and output are shown under the header "_Listing Details_". If want to prevent a field from being shown here, edit `sub_listingDetailsFields.tpl.php` template file. Near the top of the file, you should see this code:
+Most of your fields caption and output are shown under the header "_Listing Details_". If you want to prevent a field from being shown here, edit `sub_listingDetailsFields.tpl.php` template file. Near the top of the file, you should see this code:
 
 	$skipped_field_ids = array(1,2);
 
