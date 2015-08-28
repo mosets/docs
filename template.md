@@ -192,7 +192,7 @@ To output value for tab content:
 				<?php if($image->hasValue()) {
 					echo $image->getOutput(); 
 				} else {
-					echo 'User has no Image.';
+					echo 'Listing has no Image.';
 				} ?>
 			</div> 
 		<?php } ?>
@@ -201,7 +201,7 @@ To output value for tab content:
 				<?php if ($youtube->hasValue()) {
 					echo $youtube->getOutput(); 
 				} else {
-                	echo 'User has no Video';	
+                	echo 'Listing has no Video';	
 				} ?> 
 			</div>
 		<?php } ?>
