@@ -1,6 +1,11 @@
 # Installation
 
-### Server Requirements
+- [Server Requirements]({{version}}/installation#requirements)
+- [Installing Mosets Tree]({{version}}/installation#install)
+- [Accessing Mosets Tree Back-end]({{version}}/installation#back-end)
+- [Publish Mosets Tree to Front-end]({{version}}/installation#publish-to-front-end)
+
+## Server Requirements {#requirements}
 
 Mosets Tree has a few basic server requirements:
 
@@ -12,7 +17,7 @@ Mosets Tree has a few basic server requirements:
 
 If your site runs on Joomla 3.4, chances are your server can run Mosets Tree.
 
-### Installing Mosets Tree
+## Installing Mosets Tree {#install}
 
 Installation of Mosets Tree requires you to install a single package file that you receive when you purchase Mosets Tree. You can also download the latest version of Mosets Tree package from your [Mosets account](http://www.mosets.com/login/). The package includes all the modules, plugins and component that comes with Mosets Tree.
 
@@ -25,11 +30,11 @@ To install:
 
 If your installation is successful, you will see the message "_Installing package was successful._".
 
-### Accessing Mosets Tree Back-end
+## Accessing Mosets Tree Back-end {#access-back-end}
 
 To access Mosets Tree's back-end, go to "**Components -> Mosets Tree**" from your admin menu.
 
-### Publish Mosets Tree to Front-end
+## Publish Mosets Tree to Front-end {#publish-to-front-end}
 
 You need to publish Mosets Tree to front-end in order for your user to be able to access your directory. You do this by creating a "Menu Item" for Mosets Tree's Home:
 
