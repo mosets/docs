@@ -244,4 +244,12 @@ INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configc
 ############################
 # Mosets Tree version 3.6.4
 # No upgrade queries.
+
+############################
+# Mosets Tree version 3.6.5
+UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Unique Pageviews' WHERE `field_type` = 'corehits';
+
+UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Website Clicks' WHERE `field_type` = 'corevisited';
+
+UPDATE `#__mt_config` SET `displayed` = '1' WHERE `varname` = 'limit_max_chars';
 ```
