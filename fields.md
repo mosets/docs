@@ -41,6 +41,7 @@
 	- [Time Zone]({{version}}/fields#fieldtype-timezone)
 	- [Vanity URL]({{version}}/fields#fieldtype-vanityurl)
 	- [Video Player]({{version}}/fields#fieldtype-videoplayer)
+	- [Vimeo]({{version}}/fields#fieldtype-vimeo)
 	- [Web link]({{version}}/fields#fieldtype-weblink)
 	- [Year]({{version}}/fields#fieldtype-year)
 	- [Youtube]({{version}}/fields#fieldtype-youtube)
@@ -284,7 +285,7 @@ E-mail allows your users to enter an e-mail address to your listings.
 File is an attachment fieldtype that allows you to create a file input field for your users to upload files along with their listings.
 
  #### Acceptable file extensions
- Enter the acceptable file type of extension for the field. If you have more than one extension, separate the extension with a bar `|`. For example, `gif|png|jpg|jpeg` or `pdf`, without quotes. Do not start or end the value with a bar.
+ Enter the acceptable file type of extension for the field. If you have more than one extension, separate the extension with a bar `|`. For example, `gif|png|jpg|jpeg` or `pdf`. Do not start or end the value with a bar.
  
  #### Maximum Size (in bytes)
  Set the maximum size for a file upload in bytes. By default, this is set to `10485760` bytes (10MB). Enter `0` for no limit. Note that your server may have a maximum upload limit.
@@ -453,6 +454,24 @@ Vanity URL is a simplified version of Weblink field type. Instead of accepting a
 ### Video Player {#fieldtype-videoplayer}
 Mosets Tree allows your users to submit video along with their new listings. You can specify the width and height of the video player and whether or not to start the video automatically. 
 
+### Vimeo {#fieldtype-vimeo}
+Use Vimeo field type to let your users share a Vimeo video to their listing. Your users will be asked to enter a Vimeo video URL and Mosets Tree will display the Vimeo video player.
+
+ #### Search's checkbox label
+ When the field is set as "_Searchable_", your users can search whether a listing contains a video. This option allows you to change the default search label.
+
+ #### Video player's width
+ This parameter lets you set the width of the video player to be displayed in Details view. If this parameter is left empty, default value will be set as width of the video player.
+ 
+ #### Video player's height
+ This parameter let you set the height of the video player to be displayed in details view. Leave this parameter empty for default value.
+ 
+ #### Parameter
+ Mosets Tree allows you to enter additional Vimeo parameters. Separate each parameter by `&`. This allows you to control how Vimeo is presented to your visitors. Visit [here](https://developer.vimeo.com/player/embedding) for more Vimeo's parameters information.
+ 
+ #### Vimeo's Input description
+ You can set an explanation for your Vimeo field and tell your users what to insert into this field. The best guide is provide your user an example along with the explanation.
+
 ### Web link {#fieldtype-weblink}
 Web link allows your users to add URL links to their listings.
 
@@ -504,10 +523,10 @@ Sometimes, you only want the information about years and nothing else. Mosets Tr
  Enter the latest year that available for selection. If this is left empty, the current year will be used.
 
 ### Youtube {#fieldtype-youtube}
-If you want your users to showcase a video, use Youtube field type. Your users will be asked to enter a Youtube video URL and Mosets Tree will display the Youtube video player.
+If you want your users to showcase a Youtube video, use Youtube field type. Your users will be asked to enter a Youtube video URL and Mosets Tree will display the Youtube video player.
 
  #### Search's checkbox label
- When the field is set as "_Searchable_", your users can search whether a listing contains a video. This option allows you to change the default search labe.
+ When the field is set as "_Searchable_", your users can search whether a listing contains a video. This option allows you to change the default search label.
 
  #### Video player's width
  This parameter lets you set the width of the video player to be displayed in Details view. If this parameter is left empty, default value will be set as width of the video player.
@@ -516,7 +535,7 @@ If you want your users to showcase a video, use Youtube field type. Your users w
  This parameter let you set the height of the video player to be displayed in details view. Leave this parameter empty for default value.
  
  #### Parameter
- Mosets Tree allows you to enter additional Youtube parameters. Separate each parameter by comma. This allows you to control how Youtube is presented to your visitors. Visit [here](https://developers.google.com/youtube/player_parameters#Parameters) for more information.
+ Mosets Tree allows you to enter additional Youtube parameters. Separate each parameter by `&`. This allows you to control how Youtube is presented to your visitors. Visit [here](https://developers.google.com/youtube/player_parameters#Parameters) for more Youtube's parameters information.
  
  #### Youtube's Input description
  You can set an explanation for your Youtube field. You can tell your users what to insert into this field and guide your users by providing an example along with the description.
