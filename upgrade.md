@@ -252,4 +252,15 @@ UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Unique Pageviews' WHERE `field_typ
 UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Website Clicks' WHERE `field_type` = 'corevisited';
 
 UPDATE `#__mt_config` SET `displayed` = '1' WHERE `varname` = 'limit_max_chars';
+
+############################
+# Mosets Tree version 3.6.6
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('vimeo', 'Vimeo', '1.0.0', '', '', 0, 1, 0, 0, 0, 0, 0);
+
+############################
+# Update Mosets Tree Version number
+UPDATE  `#__mt_config` SET  `value` =  '3.6.6' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
