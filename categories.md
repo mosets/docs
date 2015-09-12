@@ -115,3 +115,8 @@ In order to hide all the listings under each top level categories, you can go to
 
 set "**Number of listings under top level cats.**" to `0`. Make sure you check whether if you set to use Main Index template for category pages. This configuration will affect the index page and all the category pages that using main index template page.
 {/answer}
+
+{question}My categories are showing incorrect number of listings or categories. How can I fix that?{/question}
+{answer}
+You can fix this by performing a recount through the [**Operations**]({{version}}/categories#operations) tab when you're editing a category in back-end.
+{/answer}
