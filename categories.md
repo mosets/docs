@@ -54,6 +54,17 @@ By default, the category page's `<TITLE>` tag for each category is the name of t
 ### Template
 Allows you to select which [Mosets Tree template]({{version}}/template) to use in this category. Changing this only affects the template used by pages from this category only. If you want to apply the same template to all its sub-categories, check the "_Change all sub categories to use this template_" checkbox and save the category.
 
+### META Description & META Keywords
+
+META Description describes your category page to search engines. META Keywords, on the other hand, tells search engine what keywords or topic your category is related to. You can customise each individual category's META Description and Keywords in their respective Edit Screen.
+
+However, for your directory's index, you need to [override]({{version}}/language#overrides) these 2 language keys:
+
+	COM_MTREE_METADESC_ROOT
+    COM_MTREE_METAKEY_ROOT
+
+in order to set the directory index's META Description and Keywords.
+
 ## Fields Assignments {#fields-assignment}
 Instead of showing all your custom fields to all categories, Fields Assignment lets you to choose which field to appear in a top level category. Let's say if you are editing a top level category for "Real Estate Properties". You can assign "Rooms", "Bathroom" and "Facilities" custom fields to it. This way, the 3 fields only appear in Real Estate Properties and no where else.
 
