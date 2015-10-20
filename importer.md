@@ -189,6 +189,24 @@ MT Importer will import all types, companies, agents and properties from Hot Pro
 
 No data will be removed during or after the import process. Any data that you currently have in Mosets Tree will be retained.
 
+To prepare for the import:
+
+1. Have a running version of Mosets Tree 3.5+.
+2. Export the following database tables to your current database. Be sure the rename the database table prefix below (*jos_*) with your current site's database table prefix:
+	- jos_hp_agents
+	- jos_hp_companies
+	- jos_hp_photos
+	- jos_hp_properties
+	- jos_hp_properties2
+	- jos_hp_prop_ef
+	- jos_hp_prop_types
+3. Copy the following directories and the files in it from your old Hot Property site to your new Mosets Tree site:
+ - /media/com_hotproperty/images/std
+ - /media/com_hotproperty/images/thb
+ - /media/com_hotproperty/images/ori
+ - /media/com_hotproperty/images/agent
+ - /media/com_hotproperty/images/company
+
 To import:
 
 1. Login to your Joomla's administrator back-end.
