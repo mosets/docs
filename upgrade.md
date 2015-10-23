@@ -119,7 +119,9 @@ Both Mosets Tree 2.2 and 3.0 runs on Joomla 2.5, therefore the upgrade is very s
 If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by installing Mosets Tree 3.0.13's package. `pkg_mtree-3.0.13.zip` to your Joomla 2.5 site.
 
 ## Upgrading From 3.0 To 3.6 {#from-30-to-36}
-Once you’ve upgraded your Joomla site to Joomla 3.4, the upgrade from MT 3.0 to 3.6 is again very straightforward like above, by installing the latest version of Mosets Tree 3.6 package, `pkg_mtree-3.6.x.zip`.
+If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.4.
+
+Once you’ve done that, the upgrade from MT 3.0 to 3.6 is again very straightforward, by installing the latest version of Mosets Tree 3.6 package, `pkg_mtree-3.6.x.zip`.
 
 The following files are no longer used or have been moved to a new location. Remove these files:
 - `/modules/mod_mt_tagcloud/css`
