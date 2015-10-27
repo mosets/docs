@@ -35,6 +35,7 @@
 	- [Number]({{version}}/fields#fieldtype-number)
 	- [Skype]({{version}}/fields#fieldtype-skype)
 	- [Tags]({{version}}/fields#fieldtype-tags)
+	- [Telephone]({{version}}/fields#fieldtype-telephone)
 	- [Terms & Condition]({{version}}/fields#fieldtype-termsandcondition)
 	- [Text]({{version}}/fields#fieldtype-text)
 	- [Text Editor]({{version}}/fields#fieldtype-texteditor)
@@ -370,6 +371,12 @@ Tags let your users to organize information using keywords separated by commas. 
  
  #### Search Filed Type
  You can select the field type to use when your users search against Tags field. Field types provided are checkboxes, drop-down list and text.
+
+### Telephone {#fieldtype-telephone}
+Telephone allows your users to provide additional telephone number to a listing.
+
+ #### Show Link
+ When set to Yes, telephone number will be made as clickable link. This is useful to users using mobile device to make a phone call to the number by clicking the link.
 
 ### Terms & Condition {#fieldtype-termsandcondition}
 Depending on your type of directory, you may want your users to agree on certain terms and conditions before they can add any listings. This field type provides a link so your users can read the terms and conditions prescribed and a checkbox for them to check to agree.

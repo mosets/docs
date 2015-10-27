@@ -119,7 +119,9 @@ Both Mosets Tree 2.2 and 3.0 runs on Joomla 2.5, therefore the upgrade is very s
 If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by installing Mosets Tree 3.0.13's package. `pkg_mtree-3.0.13.zip` to your Joomla 2.5 site.
 
 ## Upgrading From 3.0 To 3.6 {#from-30-to-36}
-Once you’ve upgraded your Joomla site to Joomla 3.4, the upgrade from MT 3.0 to 3.6 is again very straightforward like above, by installing the latest version of Mosets Tree 3.6 package, `pkg_mtree-3.6.x.zip`.
+If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.4.
+
+Once you’ve done that, the upgrade from MT 3.0 to 3.6 is again very straightforward, by installing the latest version of Mosets Tree 3.6 package, `pkg_mtree-3.6.x.zip`.
 
 The following files are no longer used or have been moved to a new location. Remove these files:
 - `/modules/mod_mt_tagcloud/css`
@@ -252,4 +254,15 @@ UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Unique Pageviews' WHERE `field_typ
 UPDATE `#__mt_fieldtypes` SET `ft_caption` = 'Website Clicks' WHERE `field_type` = 'corevisited';
 
 UPDATE `#__mt_config` SET `displayed` = '1' WHERE `varname` = 'limit_max_chars';
+
+############################
+# Mosets Tree version 3.6.6
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('vimeo', 'Vimeo', '1.0.0', '', '', 0, 1, 0, 0, 0, 0, 0);
+
+############################
+# Update Mosets Tree Version number
+UPDATE  `#__mt_config` SET  `value` =  '3.6.6' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
