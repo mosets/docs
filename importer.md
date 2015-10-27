@@ -97,6 +97,8 @@ The first row define the columns of your data. Here are the column names of all 
 
 Only `link_name` is mandatory. Other columns are optional.
 
+These column names are mapped directly to the columns for `#__mt_links` database table (where *#__* is your Joomla's database table prefix). Therefore the column names are fixed regardless of the alias or caption you use for each fields above.
+
 ### Category {#csv-category}
 Use the `cat_id` column to specify the Category ID for your listings. This information can be found when you're browsing the category. If no category ID is specified, Importer will import the listing to Root category (0). To import a listing to more than one category, specify the category IDs separated by command. ie:
 
@@ -129,6 +131,8 @@ If you have multiple values in a column (eg: Checkbox or Select Multiple field),
 
  		link_name, mycheckbox
  		"Example", "value1|value2|value3"
+
+The order of the values are irrelevant. If the values you defined here are does not exists in any of your field elements, they will be removed when your listing is saved or updated. To fix this, edit your field and add the new value as part of your field elements.
 
 ### Owner {#csv-owner}
 Enter User ID to the `user_id` column. This information can be found from Joomla's User Manager. If no user ID is specified, the listing will be assigned to the current user running MT Importer.
@@ -165,6 +169,7 @@ Note that you still need to set up category association and create an [Associate
 - The field separator is comma `,`, and the fields should be enclosed by double quote `"` if the values contains comma.
 - Your CSV file should be saved with **UTF8** encoding and **LF** (Line Feed) line endings.
 - Use the "**Dry Run**" option to check if your CSV file is properly formatted. Dry run will scan your CSV file and report any errors if it finds any. Importing using the dry-run option does not write any data to your database.
+- The order of the column does not matter.
 
 > One of the most common issue importing CSV file is when your file is not using **UTF-8** encoding or **LF** line endings. When you're doing a dry-run, you may find out that MT Importer detects your entire file as the column header (not using LF line endings); or it may not import non-latin characters (not using UTF-8 encoding).
 
