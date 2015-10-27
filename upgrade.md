@@ -93,8 +93,8 @@ This section shows how you can migrate your data from Mosets Tree 2.1.x running 
 Mosets Tree 2.1 and 2.2 shares the same database and file structures, therefore the migration can be done simply by moving Mosets Tree 2.1 data over to your new site running Mosets Tree 2.2:
 
 1. On your new Joomla 2.5 site, install the latest version of Mosets Tree 2.2.
-2. Remove all jos_mt_* tables from your new site's database. This is to make way for your original data from your existing old site.
-3. Move all jos_mt_* tables from old site to new site's database by exporting all Mosets Tree tables (tables that starts with jos_mt_ prefix) from your old site and import it back to your new site's database.
+2. Remove all `jos_mt_*` tables from your new site's database. This is to make way for your original data from your existing old site.
+3. Move all `jos_mt_*` tables from old site to new site's database by exporting all Mosets Tree tables (tables that starts with `jos_mt_` prefix) from your old site and import it back to your new site's database.
 4. If you have images uploaded to your old site, migrate these directories over to your new site:
 - `/components/com_mtree/img/listings/m/`
 - `/components/com_mtree/img/listings/o/`
