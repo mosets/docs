@@ -334,7 +334,7 @@ Mosets Tree allows you to create a field for users to enter only month and year,
 	%B %Y
 
 ### Listings {#fieldtype-listings}
-Listings field type allows you to create a special type of custom fields that shows other listings from your directory. You can choose customize the custom field to show the listings with images and/or any of their custom fields. This field type is great when you want to show related listings. 
+Listings field type allows you to create a special type of custom fields that shows other listings from your directory. You can customize the custom field to show the listings with images and/or any of their custom fields. This field type is great when you want to show related listings. 
 
 Listings custom fields are not searchable. 
 
