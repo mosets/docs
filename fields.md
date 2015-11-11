@@ -32,6 +32,8 @@
 	- [Image]({{version}}/fields#fieldtype-image)
 	- [Listing ID]({{version}}/fields#fieldtype-listingid)
 	- [Month & Year]({{version}}/fields#fieldtype-monthandyear)
+	- [Listings]({{version}}/fields#fieldtype-listings)
+	- [Multi Dates]({{version}}/fields#fieldtype-multidates)
 	- [Number]({{version}}/fields#fieldtype-number)
 	- [Skype]({{version}}/fields#fieldtype-skype)
 	- [Tags]({{version}}/fields#fieldtype-tags)
@@ -327,6 +329,26 @@ Mosets Tree allows you to create a field for users to enter only month and year,
   Date Format lets you control how the date are formatted for display. Refer to [http://php.net/strftime](http://php.net/strftime) for the list of available formats. By default it shows the full month name and year using the following format:
 
 	%B %Y
+
+### Listings {#fieldtype-listings}
+Listings field type allows you to create a special type of custom fields that shows other listings from your directory. You can choose customize the custom field to show the listings with images and/or any of their custom fields. This field type is great when you want to show related listings. 
+
+Listings custom fields are not searchable. 
+
+
+### Multi Dates {#fieldtype-multidates}
+Multi Dates allows you to enter one or more dates by entering the dates directly or by selecting the date through the displayed calendar. If you're entering the dates manually, the dates must be entered in the following format, separated by comma(s):
+
+	YYYY-MM-DD
+	
+ #### Search's Start Month 
+ Your user will be able to search your dates based on month. Mosets Tree will offer a list of months for searching and this parameter allows you to specify which month the list will start with. By default, it will start with the current month.
+ 
+ #### Total Searchable Months
+ Select the total searchable months available to your users.
+ 
+ #### Date Format
+ Choose the format to use when outputting the dates in front-end.
 
 ### Number {#fieldtype-number}
 Number renders an input text field and specialized in handling only numeric value.
