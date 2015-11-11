@@ -395,7 +395,7 @@ Mosets Tree RSS contains your listing names, descriptions, URLs and images. Opti
 
 	<mtree:cust_1>value</mtree>
 
- where "*cust_1*" will be replaced by the custom field name and "_value_" is the value of the field for a listing.
+ where "*cust_1*" will be replaced by the custom field name and "_value_" is the value of the field for a listing. The caption and and the field's value will also be shown as part of the feed item's description.
 
 ## SEF URLs {#sefurls}
 Enable Search engine friendly (SEF) URLs to provide an easier way to access to your directory pages by using a succinct URLs in your directory. It also helps with Search Engine Optimization (SEO) by having relevant names and keywords in your URLs.
