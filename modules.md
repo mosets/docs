@@ -73,8 +73,12 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
  : You can see the example of filter module in _Movie_ category. It is placed under the top menu and contain search criteria that related to _Movie_ category such as "**Director**" and "**Genre**" to refine users' searches in this category.
 
  ### Search {#mod-mt-search}
- Displays a search box for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users filtering their searches through selected category.
-
+ Displays the Simple Search module for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users filtering their searches through selected category.
+ 
+ Keywords entered here are matched against all fields that are Simple Searchable. 
+ 
+ If you have "Search Completion" enabled, the entered keywords will matched against listing and category names and return up to 8 results. These results are shown as a drop down list below the search box. Search completion is activated once you enter 3 or more characters in the search box. Once you see the search completion results, you can press the Up or Down arrow to navigate between the results. Press the 'Enter' key to go directly to the listing or category. 
+ 
  ### Static Categories {#mod-mt-staticcats}
  Similar to Categories module, except that Static Categories does not change across different pages. Static Categories display from a specific configurable parent categories.
 
