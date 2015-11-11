@@ -179,6 +179,9 @@ Setting Required Field to `Yes` ensure that data is entered to a custom field be
 #### Hidden Field
 Setting Hidden Field to `Yes` will make this field unavailable during front-end editing. You can still however display this field in details and summary view. To completely hide a field in the front-end, you need to remove it from details, summary view and select `No` for Simple Searchable and Advanced Searchable.
 
+#### Back-end listings column
+When you browse a category in back-end, you will be shown the list of assigned listings with their name, number of reviews, published and featured status. This setting allows you to show this field in the listings column. This setting is only available for core fields.
+
 #### Ordering
 You can customize your custom fields' order when they are displayed. Current field will be displayed beneath the selected field when display in list form. By default, a new custom field is placed at the last position of the list.
 
