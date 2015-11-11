@@ -118,6 +118,13 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  
  : In this listing page, you can see user profile is displayed under listing details. Clicking the user name will direct you to view details of the user profile including user's listings, reviews and favoured listings.
  
+ ### Show Previous/Next listing link
+ Show 2 links in listing details view to allow your users to navigate to adjacent (previous or next) listing within a category. 
+ 
+ This only works well when you order your listings on a column where all your listings have unique values. For example, this works best when you order your listings by 'Name'. 
+ 
+ This does not work well when your category are ordered by column where some listings have no value or share the same value. For example, you can not use this feature when you order your listings by Featured or Random.
+
  ### Additional characters for Alpha Index
  By default, Mosets Tree displays Alpha Index in alphabetic and numeric characters for your users to select. This config allows you to add additional characters to the end of the alpha list as part of the selection.
 
