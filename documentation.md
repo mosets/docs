@@ -1,3 +1,6 @@
+- Prologue
+	- [What's New]({{version}}/what-is-new)
+
 - Setup
 	- [Installation]({{version}}/installation)
 	- [Upgrade]({{version}}/upgrade)
