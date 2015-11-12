@@ -60,3 +60,4 @@ Similar to the core Telephone field, Telephone fieldtype lets you create a telep
 - Listings' pending approval e-mails to admin now contains direct link to review listings in back-end.
 - Searching with empty keyword in mod_mt_search now brings you to All Listings page.
 - Minimum search characters' configuration is now visible.
+- Remove link in listing summary image when listing is pending for approval.
