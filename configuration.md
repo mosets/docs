@@ -199,6 +199,9 @@ Mosets Tree has three types of searching functions to help your user find the li
   #### Secondary ordering
   Secondary ordering works if two or more search results have the same order in primary ordering. 
 
+  #### Minimum & Maximum characters
+  Specify the required minimum and the maximum number of characters allowed when your user search through simple search. When you user enter less than the required minimum or more than the allowed maximum number of characters, they will be shown a message and retry their search.
+
  ### Advanced Search
  Advanced search appears in its own dedicated page. This page is accessible through a link in Search module. Advanced search allow users to locate listings with specific criteria.
 
