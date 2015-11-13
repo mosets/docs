@@ -315,7 +315,7 @@ Image is an attachment fieldtype that allows your users to upload image files al
 Listing ID is a display-only fieldtype that shows the listing ID assigned to your listings.
 
 ### Month & Year {#fieldtype-monthandyear}
-Mosets Tree allows you to create a field for users to enter only month and year, without day. 
+Month & Year field type allows you to create a field for users to enter only month and year, without day. 
  
  #### Start Year
  Set a starting year or earliest year available for selection. If left empty, it will default to 70 years ago from the current year.
