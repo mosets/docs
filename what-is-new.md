@@ -28,9 +28,9 @@ When showing a list of listings, they are typically ordered by a core fields. In
 
 Listings fieldtype allows you to create a special type of custom fields that shows other listings from your directory. You can customise the custom field to show the listings with images and/or any of their custom fields.
 
-### Multi Dates
+### Multiple Dates
 
-Multi Dates allows you to enter one or more dates by entering the dates directly or by selecting the date through a displayed calendar.
+Multiple Dates fieldtype allows you to enter one or more dates by entering dates directly or by selecting them through a displayed calendar.
 
 ### Telephone
 
