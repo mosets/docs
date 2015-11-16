@@ -62,3 +62,5 @@ Similar to the core Telephone field, Telephone fieldtype lets you create a telep
 - Minimum search characters' configuration is now visible.
 - Remove link in listing summary image when listing is pending for approval.
 - Approval e-mails for new & updated listing now contain links to the listing.
+- New option to sort listing based on one column only.
+- Always auto focus `Name` field when adding or editing a listing.
