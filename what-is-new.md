@@ -11,13 +11,13 @@
 
 ## Managers {#managers}
 
-You can now assign one or more user groups as Managers. Managers are users who can create, edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. This makes it extremely convenient to change or update your listings when you see them in front-end, without going back and forth between front and back-end.
+You can now assign one or more user groups as [Managers]({{version}}/acl#managers). Managers are users who can create, edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. This makes it extremely convenient to change or update your listings when you see them in front-end, without going back and forth between front and back-end.
 
 Since you can override this in category configuration, you can assign different user group to manage different categories.
 
 ## Search Completion {#search-completion}
 
-Search module (mod_mt_search) now has search completion. Search completion activates as soon as you start typing in the search box. Results are returned by matching the search keyword against category and listing names. The results are shown under the search box as a list of drop down. Clicking on any of the search results will bring you directly to the category or listing.
+[Search module]({{version}}/modules#mod-mt-search) (mod_mt_search) now has search completion. Search completion activates as soon as you start typing in the search box. Results are returned by matching the search keyword against category and listing names. The results are shown under the search box as a list of drop down. Clicking on any of the search results will bring you directly to the category or listing.
 
 ## Listing Owners {#listing-owners}
 
@@ -35,15 +35,15 @@ When showing a list of listings, they are typically ordered by a core fields. In
 
 ### Listings
 
-Listings fieldtype allows you to create a special type of custom fields that shows other listings from your directory. You can customise the custom field to show the listings with images and/or any of their custom fields.
+[Listings]({{version}}/fields#fieldtype-listings) fieldtype allows you to create a special type of custom fields that shows other listings from your directory. You can customise the custom field to show the listings with images and/or any of their custom fields.
 
 ### Multiple Dates
 
-Multiple Dates fieldtype allows you to enter one or more dates by entering dates directly or by selecting them through a displayed calendar.
+[Multiple Dates]({{version}}/fields#fieldtype-multipledates) fieldtype allows you to enter one or more dates by entering dates directly or by selecting them through a displayed calendar.
 
 ### Telephone
 
-Similar to the core Telephone field, Telephone fieldtype lets you create a telephone custom field with an option to show them with a tel: link.
+Similar to the core Telephone field, [Telephone]({{version}}/fields#fieldtype-telephone) fieldtype lets you create a telephone custom field with an option to show them with a tel: link.
 
 ## Back-end {#back-end}
 
