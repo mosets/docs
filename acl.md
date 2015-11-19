@@ -63,7 +63,7 @@ To access these configuration, go to:
 1. Edit a custom field.
 3. Change the access level at **View access level** or **Edit access level**.
 
-## Managers {#Managers}
+## Managers {#managers}
 
 Managers are users who can create, edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. 
 
