@@ -5,8 +5,8 @@
  - [Upgrading From 2.0 To 2.1.12]({{version}}/upgrade#from-20-to-21)
  - [Upgrading From 2.1 To 2.2.6]({{version}}/upgrade#from-21-to-22)
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
- - [Upgrading From 3.0 To 3.6]({{version}}/upgrade#from-30-to-36)
- - [Upgrading To 3.6]({{version}}/upgrade#to-36)
+ - [Upgrading From 3.0 To 3.7]({{version}}/upgrade#from-30-to-37)
+ - [Upgrading To 3.7]({{version}}/upgrade#to-36)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
 
 ## Introduction {#intro}
@@ -23,7 +23,7 @@ If you are few version behind the latest version, upgrading to the latest versio
 4. [Upgrade Mosets Tree 2.1 to 2.2.6]({{version}}/upgrade#from-21-to-22)
 5. [Upgrade Mosets Tree 2.2 to 3.0.13]({{version}}/upgrade#from-22-to-30)
 6. Upgrade to Joomla 3.4
-7. [Upgrading From 3.0 To 3.6]({{version}}/upgrade#from-30-to-36)
+7. [Upgrading From 3.0 To 3.7]({{version}}/upgrade#from-30-to-37)
 
 You can also refer to the steps above if you are upgrading from other version. For example, if you're upgrading from 2.2, you can start with Step 5 above.
 
@@ -48,7 +48,7 @@ Joomla 1.0 | Mosets Tree 2.0.9
 Joomla 1.5 | Mosets Tree 2.1.12
 Joomla 2.5 | Mosets Tree 2.2.6 & 3.0.13
 Joomla 3.3 | Mosets Tree 3.5.9
-Joomla 3.4 | Mosets Tree 3.6
+Joomla 3.4 | Mosets Tree 3.6 & 3.7
 </div>
 
 ## Upgrading From 2.0 To 2.1.12 {#from-20-to-21}
@@ -118,40 +118,40 @@ Both Mosets Tree 2.2 and 3.0 runs on Joomla 2.5, therefore the upgrade is very s
 
 If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by installing Mosets Tree 3.0.13's package. `pkg_mtree-3.0.13.zip` to your Joomla 2.5 site.
 
-## Upgrading From 3.0 To 3.6 {#from-30-to-36}
+## Upgrading From 3.0 To 3.7 {#from-30-to-37}
 If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.4.
 
-Once you’ve done that, the upgrade from MT 3.0 to 3.6 is again very straightforward, by installing the latest version of Mosets Tree 3.6 package, `pkg_mtree-3.6.x.zip`.
+Once you’ve done that, the upgrade from MT 3.0 to 3.7 is again very straightforward, by installing the latest version of Mosets Tree 3.7 package, `pkg_mtree-3.7.x.zip`.
 
 The following files are no longer used or have been moved to a new location. Remove these files:
 - `/modules/mod_mt_tagcloud/css`
 - `/administrator/components/com_mtree/models/listing.xml`
 - `/language/en-GB/en-GB.fld_mfile.ini`
 
-## Upgrading To 3.6 {#to-36}
-This section shows how you can upgrade Mosets Tree from earlier version of 3.6.x to the latest version.
+## Upgrading To 3.7 {#to-37}
+This section shows how you can upgrade Mosets Tree from earlier version of 3.7.x to the latest version.
 
 ### Requirement
-This upgrade requires Joomla! 3.4 and Mosets Tree 3.6.x.
+This upgrade requires Joomla! 3.4 and Mosets Tree 3.7.x.
 
 ### Full site backup
 It is recommended that you perform a full site backup (files and database) before proceeding with the following upgrade.
 
 ### Upgrading through Joomla's back-end interface
-The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.6 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
+The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.7 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
 
 - `/components/com_mtree/templates/kinabalu/`
 
-1. Download the latest package for Mosets Tree 3.6.x. This is the same package you use to install Mosets Tree 3.6 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.6.4.
+1. Download the latest package for Mosets Tree 3.7.x. This is the same package you use to install Mosets Tree 3.7 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.7.0.
 2. Log in to your site's back-end and go to:
 	1. Goto "**Extensions -> Extension Manager**"
-	2. Click "**Browse...**" to select "pkg_mtree-3.6.x.zip" from your computer.
+	2. Click "**Browse...**" to select "pkg_mtree-3.7.x.zip" from your computer.
 	3. Click "**Upload & Install**" to start the upgrade.
 	4. If the upgrade is successful, you will see a "_Installing package was successful._" message.
 3. If you have backed up your modified template files prior to the upgrade, restore these files, replacing the ones that have been replace by the upgrade.
 
 ### Upgrade completed
-If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.6 on Joomla 3.4.
+If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.7 on Joomla 3.4.
 
 ## Database Schema Updates {#db-schema}
 
@@ -260,9 +260,43 @@ UPDATE `#__mt_config` SET `displayed` = '1' WHERE `varname` = 'limit_max_chars';
 INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('vimeo', 'Vimeo', '1.0.0', '', '', 0, 1, 0, 0, 0, 0, 0);
 
 ############################
+# Mosets Tree version 3.7.0
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('mtelephone', 'Telephone', '1.0.0', '', '', 0, 1, 0, 1, 0, 0, 0);
+
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('listings', 'Listings', '1.0.3', 'www.mosets.com', 'Allows you to select listings within your directory and show them as part of a listing.', 0, 0, 0, 0, 0, 0, 0);
+
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('multipledates', 'Multiple Dates', '1.0.2', 'www.mosets.com', 'Show multiple dates.', 0, 1, 0, 0, 0, 0, 0);
+
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES  ('group_ids_authorised_to_create_listing', 'permission', '8', '8', 'user_groups', '13050', '1', '1'), ('group_ids_authorised_to_edit_listing', 'permission', '8', '8', 'user_groups', '13100', '1', '1'), ('group_ids_authorised_to_delete_listing', 'permission', '8', '8', 'user_groups', '13200', '1', '1');
+
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('note_managers', 'permission', '', '', 'note', '13000', '1', '1');
+
+INSERT INTO `#__mt_configgroup` (`groupname`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('permission', 200, 1, 1);
+
+DELETE FROM `#__mt_config` WHERE `varname` IN ('note_permission');
+
+UPDATE `#__mt_config` SET `groupname` = 'permission' WHERE `varname` = 'link_to_configure_permission';
+
+UPDATE `#__mt_config` SET `displayed` = '1' WHERE `varname` = 'limit_min_chars';
+
+UPDATE `#__mt_config` SET `configcode` = 'second_listing_order' WHERE `varname` = 'second_listing_order1';
+
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_previous_next_listing_in_listing_details', 'listing', '1', '1', 'yesno', '2550', '1', '1'), ('sef_adjacentlisting_next', 'sef', 'next-listing', 'next-listing', 'text', '1651', '1', '0'), ('sef_adjacentlisting_previous', 'sef', 'previous-listing', 'previous-listing', 'text', '1652', '1', '0'), ('rss_firstname', 'rss', '0', '0', 'yesno', '1075', '1', '1'), ('rss_lastname', 'rss', '0', '0', 'yesno', '1076', '1', '1'), ('rss_contactperson', 'rss', '0', '0', 'yesno', '1080', '1', '1'), ('rss_mobile', 'rss', '0', '0', 'yesno', '1090', '1', '1'), ('rss_date', 'rss', '0', '0', 'yesno', '1091', '1', '1'), ('rss_year', 'rss', '0', '0', 'yesno', '1092', '1', '1'), ('fe_num_of_random', 'listing', '20', '20', 'text', '6710', '1', '1'), ('random_listings_shuffle_frequency', 'listing', '3600', '3600', 'random_listings_shuffle_frequency', '3530', '1', '0'), ('sef_random', 'sef', 'random', 'random', 'text', '2650', '1', '0'), ('fe_num_of_owners', 'listing', '', '20', 'text', '6730', '0', '0'), ('search_completion_max_listings', 'search', '', '8', 'text', '2300', '0', '0'), ('max_num_of_listings_per_user', 'listing', '', '0', 'text', '3590', '1', '0'), ('show_add_listing_link', 'listing', '', '1', 'show_requirements', '3520', '1', '1');
+
+ALTER TABLE `#__mt_links` ADD lastname VARCHAR(255) NOT NULL DEFAULT '' AFTER link_visited;
+
+ALTER TABLE `#__mt_links` ADD firstname VARCHAR(255) NOT NULL DEFAULT '' AFTER link_visited;
+
+INSERT IGNORE INTO `#__mt_customfields` (`field_type`, `caption`, `alias`, `default_value`, `size`, `field_elements`, `prefix_text_mod`, `suffix_text_mod`, `prefix_text_display`, `suffix_text_display`, `placeholder_text`, `cat_id`, `ordering`, `hidden`, `required_field`, `published`, `view_access_level`, `hide_caption`, `advanced_search`, `simple_search`, `tag_search`, `filter_search`, `details_view`, `summary_view`, `search_caption`, `params`, `iscore`) VALUES ('corefirstname', 'First Name', 'first-name', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1), ('corelastname', 'Last Name', 'last-name', '', 0, '', '', '', '', '', '', 0, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, '', '', 1);
+
+ALTER TABLE `#__mt_customfields` ADD `shown_in_backend_listings_column` TINYINT(3)  UNSIGNED  NOT NULL  DEFAULT '0'  AFTER `edit_access_level`;
+
+ALTER TABLE `#__mt_images` ADD INDEX `ordering` (`ordering`);
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.6.6' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.7.0' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
-UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '7' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '0' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
