@@ -293,6 +293,10 @@ ALTER TABLE `#__mt_customfields` ADD `shown_in_backend_listings_column` TINYINT(
 
 ALTER TABLE `#__mt_images` ADD INDEX `ordering` (`ordering`);
 
+UPDATE `#__mt_customfields` SET `field_type` = 'mselectmultiple' WHERE `field_type` = 'selectmultiple';
+
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('mselectmultiple', 'Select Multiple', '1.0.0', 'www.mosets.com', 'Select Multiple field allows you to select one or more value in a multiple select list.', 1, 1, 0, 0, 0, 1, 0);
+
 ############################
 # Update Mosets Tree Version number
 UPDATE  `#__mt_config` SET  `value` =  '3.7.0' WHERE  `#__mt_config`.`varname` =  'version';

@@ -73,3 +73,4 @@ Similar to the core Telephone field, [Telephone]({{version}}/fields#fieldtype-te
 - Approval e-mails for new & updated listing now contain links to the listing.
 - New option to sort listing based on one column only.
 - Always auto focus `Name` field when adding or editing a listing.
+- Select Multiple fields now has the option to use Single Select List or Multiple Select List for their search type.
