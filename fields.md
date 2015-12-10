@@ -32,6 +32,8 @@
 	- [Image]({{version}}/fields#fieldtype-image)
 	- [Listing ID]({{version}}/fields#fieldtype-listingid)
 	- [Month & Year]({{version}}/fields#fieldtype-monthandyear)
+	- [Listings]({{version}}/fields#fieldtype-listings)
+	- [Multiple Dates]({{version}}/fields#fieldtype-multipledates)
 	- [Number]({{version}}/fields#fieldtype-number)
 	- [Skype]({{version}}/fields#fieldtype-skype)
 	- [Tags]({{version}}/fields#fieldtype-tags)
@@ -177,6 +179,9 @@ Setting Required Field to `Yes` ensure that data is entered to a custom field be
 #### Hidden Field
 Setting Hidden Field to `Yes` will make this field unavailable during front-end editing. You can still however display this field in details and summary view. To completely hide a field in the front-end, you need to remove it from details, summary view and select `No` for Simple Searchable and Advanced Searchable.
 
+#### Back-end listings column
+When you browse a category in back-end, you will be shown the list of assigned listings with their name, number of reviews, published and featured status. This setting allows you to show this field in the listings column. This setting is only available for core fields.
+
 #### Ordering
 You can customize your custom fields' order when they are displayed. Current field will be displayed beneath the selected field when display in list form. By default, a new custom field is placed at the last position of the list.
 
@@ -315,7 +320,7 @@ Image is an attachment fieldtype that allows your users to upload image files al
 Listing ID is a display-only fieldtype that shows the listing ID assigned to your listings.
 
 ### Month & Year {#fieldtype-monthandyear}
-Mosets Tree allows you to create a field for users to enter only month and year, without day. 
+Month & Year field type allows you to create a field for users to enter only month and year, without day. 
  
  #### Start Year
  Set a starting year or earliest year available for selection. If left empty, it will default to 70 years ago from the current year.
@@ -327,6 +332,26 @@ Mosets Tree allows you to create a field for users to enter only month and year,
   Date Format lets you control how the date are formatted for display. Refer to [http://php.net/strftime](http://php.net/strftime) for the list of available formats. By default it shows the full month name and year using the following format:
 
 	%B %Y
+
+### Listings {#fieldtype-listings}
+Listings field type allows you to create a special type of custom fields that shows other listings from your directory. You can customize the custom field to show the listings with images and/or any of their custom fields. This field type is great when you want to show related listings. 
+
+Listings custom fields are not searchable. 
+
+
+### Multiple Dates {#fieldtype-multipledates}
+Multiple Dates allows you to enter one or more dates by entering the dates directly or by selecting the date through the displayed calendar. If you're entering the dates manually, the dates must be entered in the following format, separated by comma(s):
+
+	YYYY-MM-DD
+	
+ #### Search's Start Month 
+ Your user will be able to search your dates based on month. Mosets Tree will offer a list of months for searching and this parameter allows you to specify which month the list will start with. By default, it will start with the current month.
+ 
+ #### Total Searchable Months
+ Select the total searchable months available to your users.
+ 
+ #### Date Format
+ Choose the format to use when outputting the dates in front-end.
 
 ### Number {#fieldtype-number}
 Number renders an input text field and specialized in handling only numeric value.

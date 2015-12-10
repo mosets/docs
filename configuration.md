@@ -2,6 +2,7 @@
 
 - [Introduction]({{version}}/configuration#intro)
 - [Main]({{version}}/configuration#main)
+- [Permission]({{version}}/configuration#permission)
 - [Category]({{version}}/configuration#category)
 - [Listing]({{version}}/configuration#listing)
 - [Search]({{version}}/configuration#search)
@@ -56,8 +57,13 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Use WYSIWYG Editor in front-end Description field
  By selecting `Yes` in this parameter will allow you to use HTML tags in description field. Please note that HTML tags will be stripped in summary view and only shown in details view. 
 
- ### Permission
+## Permission
+
+ ### Edit Permission
  Permission allows you to control which user group will gain access to certain functions in Mosets Tree.
+
+ ### Managers 
+  By default, only listing owners can edit and delete their listings in front-end. Managers are users who can edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. Check the checkboxes for "Edit listings" and "Delete listings" to choose which user group can manage listings in front-end.
 
 ## Category {#category}
 
@@ -112,11 +118,27 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  
  : In this listing page, you can see user profile is displayed under listing details. Clicking the user name will direct you to view details of the user profile including user's listings, reviews and favoured listings.
  
+ ### Show Previous/Next listing link
+ Show 2 links in listing details view to allow your users to navigate to adjacent (previous or next) listing within a category. 
+ 
+ This only works well when you order your listings on a column where all your listings have unique values. For example, this works best when you order your listings by 'Name'. 
+ 
+ This does not work well when your category are ordered by column where some listings have no value or share the same value. For example, you can not use this feature when you order your listings by Featured or Random.
+
  ### Additional characters for Alpha Index
  By default, Mosets Tree displays Alpha Index in alphabetic and numeric characters for your users to select. This config allows you to add additional characters to the end of the alpha list as part of the selection.
 
  ### Allow listings submission in root
  If you allow listings submission in root, your users will be able to submit listings through Index page.
+
+ ### Show 'Add Listing' link
+  Configure when to show the 'Add your listing here' link in front-end.
+  
+  `Never`: The link will never be shown. Select this if you don't intend to allow users to register and submit listings.
+  
+  `All the time`: The link will be shown all the time, unless a category has explicitly set not to allow listing submission. Select this if you want to encourage your users to submit listings to your directory.
+  
+  `Only when user has permission`: The link will only be shown when a user has permission to do so and the category allows listing submission.
 
  ### Allow changing of category in Add Listing
  Set this parameter to `Yes` to allow changing of category when users add listings. Otherwise, listing added will be assigned to the category from where your users click the "Add your listing here" link.
@@ -135,6 +157,9 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  ### Max. number of assignable secondary categories
  This config lets you limit the maximum number of categories which a listing can be assigned to.
 
+ ### Max. number of listings per user
+ Set the maximum number of listings a user can have in the directory. This includes all published, unpublished and unapproved listings. When your users reached a limit, they will not be able to submit additional listing. Setting this to `0`, will disable the limit.
+ 
  ### Display listings in root
  Set whether to display listings in Index page. Setting this to `No` will not show any listings in Index page.
 
@@ -173,6 +198,9 @@ Mosets Tree has three types of searching functions to help your user find the li
 
   #### Secondary ordering
   Secondary ordering works if two or more search results have the same order in primary ordering. 
+
+  #### Minimum & Maximum characters
+  Specify the required minimum and the maximum number of characters allowed when your user search through simple search. When you user enter less than the required minimum or more than the allowed maximum number of characters, they will be shown a message and retry their search.
 
  ### Advanced Search
  Advanced search appears in its own dedicated page. This page is accessible through a link in Search module. Advanced search allow users to locate listings with specific criteria.
@@ -395,7 +423,7 @@ Mosets Tree RSS contains your listing names, descriptions, URLs and images. Opti
 
 	<mtree:cust_1>value</mtree>
 
- where "*cust_1*" will be replaced by the custom field name and "_value_" is the value of the field for a listing.
+ where "*cust_1*" will be replaced by the custom field name and "_value_" is the value of the field for a listing. The caption and and the field's value will also be shown as part of the feed item's description.
 
 ## SEF URLs {#sefurls}
 Enable Search engine friendly (SEF) URLs to provide an easier way to access to your directory pages by using a succinct URLs in your directory. It also helps with Search Engine Optimization (SEO) by having relevant names and keywords in your URLs.
