@@ -11,12 +11,18 @@ Simple Search is one of the popular module of Mosets Tree. It provides a text bo
 
 By default, the search is performed within the entire directory because its "Parent Cat. ID" is set to `0`, which is the root's category ID. You can set a `parent ID` and if "Show Category" is set to `No`, users' searches through Search module will be limited to the appointed parent category. Note that you can get the "Parent Cat. ID" in left hand side table of the "Category" page in back-end.
 
+### Search Completion {#simple-search}
+
+The Search module has built in support for search completion, or popularly known as Ajax Search. This is activated as soon as you start typing on the search box. Search completion will match your listing and category's names and return up to 8 results. You can then press the Up or Down arrow to navigate between the results. Press the 'Enter' key to go directly to the listing or category. 
+
+For performance reason, results that are returned when using search completion are not sorted in any specific order.
+
 ## Advanced Search {#adv-search}
 Advanced Search provides users a more precise search to a listing in your directory. It allows your user to enter several search criteria and only display those listings that match all or any of the criteria entered by users. You can customize which fields to be shown here for your user by setting the fields to [Advanced Searchable]({{version}}/fields#advanced-searchable).
 
 Advanced Search usually search against all your directory pages. In order to search within a specific category, you can modify the directory's URL. With [SEF URLs]({{version}}/configuration#sefurls) enabled, you can direct to the specific category advanced search page by entering the category's alias in front of `/advanced-search`. For example: 
     
-    http://www.example.com/directory/movies/advanced-search  
+    http://www.example.com/directory/movies/advanced-search
     
 When no SEF URLs is enable, you can go to any of the category page and replace `listcats` to `advsearch` in URL for entering to the category Advanced Search.
 

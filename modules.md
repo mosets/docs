@@ -73,12 +73,12 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
  : You can see the example of filter module in _Movie_ category. It is placed under the top menu and contain search criteria that related to _Movie_ category such as "**Director**" and "**Genre**" to refine users' searches in this category.
 
  ### Search {#mod-mt-search}
- Displays the Simple Search module for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users filtering their searches through selected category.
+ Displays the Simple Search module for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users to filter their searches through selected category.
  
- Keywords entered here are matched against all fields that are Simple Searchable. 
+ By default, the search module has search completion enabled. This activates as soon as you start typing in the module's search input field and return up to 8 matching listings and categories. When you press the "Enter" key or click on the "Search" button, you will be redirected to Search Results page showing the full results matching your search keyword.
  
- If you have "Search Completion" enabled, the entered keywords will matched against listing and category names and return up to 8 results. These results are shown as a drop down list below the search box. Search completion is activated once you start typing in the search box. When you see the search completion results, you can press the Up or Down arrow to navigate between the results. Press the 'Enter' key to go directly to the listing or category. 
- 
+ Go to [Simple Search]({{version}}/search#simple-search) to learn more.
+  
  ### Static Categories {#mod-mt-staticcats}
  Similar to Categories module, except that Static Categories does not change across different pages. Static Categories display from a specific configurable parent categories.
 
