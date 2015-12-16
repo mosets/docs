@@ -322,7 +322,9 @@ Features allows you to configure most of the functions in the listing page of yo
  Each users on your site will have a user profile page that show all their listings, reviews and favoured listings. This config lets you choose which tab (either `Listings`, `Favourites` or `Reviews`) is to be shown first when one enters a user profile.
   
  ### Show contact
- "Contact" link allows users to contact the listing's owner by sending an e-mail to them.
+ "Contact" link allows users to contact the listing's owner by sending an e-mail to them through a contact form. 
+ 
+ E-mails that are sent through this contact form are sent to the e-mail address entered in the listing's `E-mail` field. If this field is empty and `Use user's e-mail address if listing e-mail is empty` config is set to `Yes`, the e-mail will be sent to the owner of the listing.
  
  ### Display contact form in
  Contact form will be shown in a dedicated page if you select to display contact form in `Standalone Page`. Otherwise you can select to display contact form in `Listing Details Page` so your users can see the contact form by scrolling down the page.
