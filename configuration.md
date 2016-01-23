@@ -413,6 +413,14 @@ In sharing, you can control whether to insert social bookmarking buttons in list
   #### Twitter Card Type
   Select one of these values: `summary`, `summary_large_image` or `photo`. To check out more about Twitter Card Types, click [here](https://dev.twitter.com/cards/types).
 
+  If you're using `summary_large_image` or `photo` card type, be sure to allow Twitter crawler to access your photos. Mosets Tree's listings' photos are located at /media/com_mtree directory and Joomla's robots.txt file by default prevents any crawler to access `/media` directory. 
+  
+  To lift this restriction, edit your site's robots.txt file and remove the following Disallow line:
+   
+	Disallow: /media/
+  
+  For more information, refer to [Twitter's Getting Started Guide for Cards](https://dev.twitter.com/cards/getting-started#crawling).
+  
 ## RSS{#rss}
 
 Mosets Tree generates an RSS Feed for all categories' recently added and recently updated page. This is often useful when you want to let users know of changes in your directory without needing them to check your website constantly through use of RSS feed readers or news aggregator.
