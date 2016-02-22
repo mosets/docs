@@ -132,10 +132,14 @@ Some fields such as Select List, Select Multiple, Checkbox and Radio Button requ
  	Apartment|Condominium|Penthouse|Terrace House
 
 #### Prefix and Suffix text to display during field modification:
-This option allow you to display additional information about a field when user is adding or modifying a listing. Prefix text will appear before a custom field while suffix text will appear after a custom field.
+This option allow you to display additional information about a field when user is adding or modifying a listing. Prefix text will appear before a custom field while suffix text will appear after a custom field. This is great when you want to provide instruction or more information about a field. 
+
+You can use HTML elements in your prefix and suffix text. 
 
 #### Prefix and Suffix text during display:
 The option is similar with Prefix and Suffix text to display during field modification with the exception that these only appears during output in front-end. This is useful when you're displaying values which has associated metrics such as kg, acres and the others.
+
+You can use HTML elements in your prefix and suffix text.
 
 #### Alias {#alias}
 When you enable SEF URLs in Joomla's Configuration, alias is used to create SEF URLs for taggable fields. Alias is also used as a human-friendly column name when you[ import CSV data to a custom field]({{version}}/importer#csv-existing-fields).
@@ -192,7 +196,7 @@ Select List provides a drop-down list that allows your users to choose a value f
 
 ### Select Multiple {#fieldtype-selectmultiple}
 Unlike Select List, Select Multiple enables users to choose one or more values from the list. In order to make multiple selection, after the first value is selected, users have to work in combination with `Shift` or `Ctrl` key to select the next desired value.
-
+ix
 ### Radio Button {#fieldtype-radiobutton}
 Radio Button works similar to a Select List which allows users to choose only one value from multiple choice. However, Radio Button makes each choice permanently visible on the form while Select List only shows one value from the list at a time.
 
