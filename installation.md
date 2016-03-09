@@ -10,8 +10,8 @@
 
 Mosets Tree has a few basic server requirements:
 
-- Joomla >= 3.4
-- PHP >= 5.3.10
+- Joomla = 3.4.x
+- PHP = 5.3.10+, 5.4.x, 5.5.x, 5.6.x
 - MySQL >= 5.1
 - Apache >= 2.0
 - GD Library >= 2.0
