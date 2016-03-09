@@ -322,7 +322,9 @@ Features allows you to configure most of the functions in the listing page of yo
  Each users on your site will have a user profile page that show all their listings, reviews and favoured listings. This config lets you choose which tab (either `Listings`, `Favourites` or `Reviews`) is to be shown first when one enters a user profile.
   
  ### Show contact
- "Contact" link allows users to contact the listing's owner by sending an e-mail to them.
+ "Contact" link allows users to contact the listing's owner by sending an e-mail to them through a contact form. 
+ 
+ E-mails that are sent through this contact form are sent to the e-mail address entered in the listing's `E-mail` field. If this field is empty and `Use user's e-mail address if listing e-mail is empty` config is set to `Yes`, the e-mail will be sent to the owner of the listing.
  
  ### Display contact form in
  Contact form will be shown in a dedicated page if you select to display contact form in `Standalone Page`. Otherwise you can select to display contact form in `Listing Details Page` so your users can see the contact form by scrolling down the page.
@@ -411,6 +413,14 @@ In sharing, you can control whether to insert social bookmarking buttons in list
   #### Twitter Card Type
   Select one of these values: `summary`, `summary_large_image` or `photo`. To check out more about Twitter Card Types, click [here](https://dev.twitter.com/cards/types).
 
+  If you're using `summary_large_image` or `photo` card type, be sure to allow Twitter crawler to access your photos. Mosets Tree's listings' photos are located at /media/com_mtree directory and Joomla's robots.txt file by default prevents any crawler to access `/media` directory. 
+  
+  To lift this restriction, edit your site's robots.txt file and remove the following Disallow line:
+   
+	Disallow: /media/
+  
+  For more information, refer to [Twitter's Getting Started Guide for Cards](https://dev.twitter.com/cards/getting-started#crawling).
+  
 ## RSS{#rss}
 
 Mosets Tree generates an RSS Feed for all categories' recently added and recently updated page. This is often useful when you want to let users know of changes in your directory without needing them to check your website constantly through use of RSS feed readers or news aggregator.

@@ -4,6 +4,7 @@
 - Setup
 	- [Installation]({{version}}/installation)
 	- [Upgrade]({{version}}/upgrade)
+	- [Migration Guide]({{version}}/migration-guide)
 	- [Configuration]({{version}}/configuration)
 
 - Features

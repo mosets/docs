@@ -118,6 +118,14 @@ Both Mosets Tree 2.2 and 3.0 runs on Joomla 2.5, therefore the upgrade is very s
 
 If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by installing Mosets Tree 3.0.13's package. `pkg_mtree-3.0.13.zip` to your Joomla 2.5 site.
 
+> **Note**: At this point, you have Mosets Tree 3.0.13 running on Joomla 2.5. 
+
+> If your intention is to migrate your Mosets Tree data to a Joomla 3.4 site running Mosets Tree {{version}}.x, you can follow the [migration instructions]({{version}}/migration) to migrate your existing data from Mosets Tree 3.0.13 site to your new Mosets Tree {{version}} site. Once you've completed the migration, head on to [Database Schema Updates]({{version}}/upgrade#db-schema) and execute the queries specified there to bring your newly migrated data up-to-date with Mosets Tree's latest version schema.
+ 
+> A couple of notes:
+> - In the migration instruction, you can safely ignore the requirement where you need both sites to be on the same version.
+> - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree 3.7's default `kinabalu` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
+
 ## Upgrading From 3.0 To 3.7 {#from-30-to-37}
 If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.4.
 
@@ -142,7 +150,7 @@ The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3
 
 - `/components/com_mtree/templates/kinabalu/`
 
-1. Download the latest package for Mosets Tree 3.7.x. This is the same package you use to install Mosets Tree 3.7 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.7.0.
+1. Download the latest package for Mosets Tree 3.7.x. This is the same package you use to install Mosets Tree 3.7 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.7.x.
 2. Log in to your site's back-end and go to:
 	1. Goto "**Extensions -> Extension Manager**"
 	2. Click "**Browse...**" to select "pkg_mtree-3.7.x.zip" from your computer.
@@ -298,9 +306,13 @@ UPDATE `#__mt_customfields` SET `field_type` = 'mselectmultiple' WHERE `field_ty
 INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('mselectmultiple', 'Select Multiple', '1.0.0', 'www.mosets.com', 'Select Multiple field allows you to select one or more value in a multiple select list.', 1, 1, 0, 0, 0, 1, 0);
 
 ############################
+# Mosets Tree version 3.7.1
+UPDATE `#__mt_fieldtypes` SET use_placeholder = 1 WHERE field_type IN ('mselectmultiple', 'multipledates');
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.7.0' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.7.1' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '7' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '0' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
