@@ -4,6 +4,7 @@
 - [Miscellaneous]({{version}}/what-is-new#miscellaneous)
 - [Keyword search in filters]({{version}}/what-is-new#filter-keyword-search)
 - [Owners module]({{version}}/what-is-new#mod-mt-owners)
+- [Reviews RSS]({{version}}/what-is-new#reviews-rss-feed)
 
 ## Joomla 3.5 and PHP 7 support {#joomla-35-php-7}
 
@@ -19,7 +20,12 @@ Filter module has been one of the popular module used by our users. In this upda
 
 New module showing listing owners.
 
+## Reviews RSS Feed {#reviews-rss-feed}
+
+Supports individual listing reviews RSS feed.
+
 ## Miscellaneous {#miscellaneous}
 - An indicator is shown in "Notes' tab when there are listing notes while editing listing in back-end.
 - A new config to add secondary sorting in All Listings page.
 - An all new audio player field type that supports audio playing in mobile devices.
+- 3.8.3: Ability to sort by more core fields in All Listings, Advanced Search and Filter Search results page.

@@ -325,9 +325,17 @@ INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_we
 # No upgrade queries.
 
 ############################
+# Mosets Tree version 3.8.2
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('attachments_noindex_nofollow', 'listing', '', '1', 'yesno', '3700', '0', '1');
+
+############################
+# Mosets Tree version 3.8.3
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_listingreviewsrss', 'rss', '1', '1', 'yesno', '250', '1', '1'), ('sef_rss_listingreviews', 'sef', 'listing-reviews', 'listing-reviews', 'text', '3650', '1', '0');
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.8.1' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.8.3' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
