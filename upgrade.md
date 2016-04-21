@@ -333,9 +333,13 @@ INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configc
 INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_listingreviewsrss', 'rss', '1', '1', 'yesno', '250', '1', '1'), ('sef_rss_listingreviews', 'sef', 'listing-reviews', 'listing-reviews', 'text', '3650', '1', '0');
 
 ############################
+# Mosets Tree version 3.8.4
+# No upgrade queries.
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.8.3' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.8.4' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
