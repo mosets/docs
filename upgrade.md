@@ -121,7 +121,7 @@ If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by in
 
 > **Note**: At this point, you have Mosets Tree 3.0.13 running on Joomla 2.5. 
 
-> If your intention is to migrate your Mosets Tree data to a Joomla 3.5 site running Mosets Tree {{version}}.x, you can follow the [migration instructions]({{version}}/migration) to migrate your existing data from Mosets Tree 3.0.13 site to your new Mosets Tree {{version}} site. Once you've completed the migration, head on to [Database Schema Updates]({{version}}/upgrade#db-schema) and execute the queries specified there to bring your newly migrated data up-to-date with Mosets Tree's latest version schema.
+> If your intention is to migrate your Mosets Tree data to a Joomla 3.5 site running Mosets Tree {{version}}.x, you can follow the [migration instructions]({{version}}/migration-guide) to migrate your existing data from Mosets Tree 3.0.13 site to your new Mosets Tree {{version}} site. Once you've completed the migration, head on to [Database Schema Updates]({{version}}/upgrade#db-schema) and execute the queries specified there to bring your newly migrated data up-to-date with Mosets Tree's latest version schema.
  
 > A couple of notes:
 > - In the migration instruction, you can safely ignore the requirement where you need both sites to be on the same version.
