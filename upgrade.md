@@ -337,9 +337,17 @@ INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `
 # No upgrade queries.
 
 ############################
+# Mosets Tree version 3.8.5
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_userfavouritesrss', 'rss', '1', '1', 'yesno', '260', '1', '1'), ('sef_rss_userfavourites', 'sef', 'user-favourites', 'user-favourites', 'text', '3660', '1', '0'), ('fe_num_of_rss_favourite', 'listing', '100', '100', 'text', '6900', '0', '0');
+
+############################
+# Mosets Tree version 3.8.6
+# No upgrade queries.
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.8.4' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.8.6' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
