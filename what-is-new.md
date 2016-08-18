@@ -1,10 +1,10 @@
 # What Is New in Mosets Tree {{version}}
 
 - [Joomla 3.5 and PHP 7 support]({{version}}/what-is-new#joomla-35-php-7)
-- [Miscellaneous]({{version}}/what-is-new#miscellaneous)
 - [Keyword search in filters]({{version}}/what-is-new#filter-keyword-search)
 - [Owners module]({{version}}/what-is-new#mod-mt-owners)
 - [Reviews RSS]({{version}}/what-is-new#reviews-rss-feed)
+- [Miscellaneous]({{version}}/what-is-new#miscellaneous)
 
 ## Joomla 3.5 and PHP 7 support {#joomla-35-php-7}
 
