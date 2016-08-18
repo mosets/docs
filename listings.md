@@ -3,6 +3,8 @@
 - [Introduction]({{version}}/listings#intro)
     - [Summary view]({{version}}/listings#summary)
     - [Details view]({{version}}/listings#details)
+- [Category]({{version}}/listings#category)
+	- [Multi-category]({{version}}/listings#multi-category)
 - [Edit Screen]({{version}}/listings#edit-screen)
 	- [Images]({{version}}/listings#images)
 	- [Map]({{version}}/listings#map)
@@ -27,6 +29,21 @@ A listing is displayed in two forms in the front-end - Details view and Summary 
  Details view is the dedicated page that shows all published information about your listing. This includes all your fields data, images, ratings, reviews, user profile and maps. Listing details view is also the primary place where you can find links to or perform interaction with your listing.
  
  Demo: http://demo.mosetstree.com/models/970-alex-pettyfer.html
+
+## Category {#category}
+Listings are always assigned to the Root of your directory or one of your [Categories]({{version}}/categories). There are 2 ways you can choose which category you want your listings to be in when you create a listing:
+- You browse to your desired category and then click "Add Listing" in Mosets Tree's back-end.
+- You browse to your desired category and then click "Add your listing here" in Mosets Tree's front-end.
+- You can click "Change Category" while you're editing a listing to browse and assign the listing to your desired category.
+
+### Multi-category {#multi-category}
+Mosets Tree has multi category or cross categorization support that allows you to assign listings to 2 or more categories. 
+ 
+This is useful when you have listings that belongs to 2 or more categories while maintaining only one instance of a listing. Updates to the listing will be reflected in all categories it's assigned to. 
+
+The first category that it's assigned to is called the Primary category, while subsequent categories are referred to as Secondary categories. 
+
+To assign secondary categories, click on "`Change Category`" when you're editing a listing. Browse to a category, and click "`Also appear in this category`". Click "*Save*" to save the changes.
 
 ## Edit Screen {#edit-screen}
 
