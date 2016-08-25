@@ -22,6 +22,7 @@
 	- [Radio Button]({{version}}/fields#fieldtype-radiobutton)
 	- [Associated Listing]({{version}}/fields#fieldtype-associatedlisting)
 	- [Audio Player]({{version}}/fields#fieldtype-audioplayer)
+	- [Audio Player 2.0]({{version}}/fields#fieldtype-audioplayer2)
 	- [Captcha]({{version}}/fields#fieldtype-captcha)
 	- [Category]({{version}}/fields#fieldtype-category)
 	- [Checkbox]({{version}}/fields#fieldtype-checkbox)
@@ -214,7 +215,23 @@ Audio Player allows your users to upload an audio file along with their listing.
  
  #### Loop
  By default, Loop is set to `No` so the audio track will not start over again when it is finished. If you want the track to loop indefinitely, set it to `Yes` then.
+
+### Audio Player 2.0 {#fieldtype-audioplayer2}
+The is a newer version of audio player that supersede the previous non-2.0 version of audio player. Audio Player 2.0 uses MediaElement.js audio player for the playback and supports playing in mobile device.
+
+ #### Audio Player's Width
+ Set the width of the audio player in 'px'.
  
+ #### Auto Start
+ Set Auto Start to `Yes` so the audio plays automatically once users enter listings details view.
+ 
+ #### Display Filename
+ It allows the audio's filename to be displayed below the player.
+ 
+ #### Loop
+ By default, Loop is set to `No` so the audio track will not start over again when it is finished. If you want the track to loop indefinitely, set it to `Yes` then.
+
+
 ### Captcha {#fieldtype-captcha}
 If you've set the permission to allow Public to submit listings to Mosets Tree, you can use Captcha to make sure the person submitting the listings are human and not an automated bot. Make sure you [enable Captcha in Joomla](https://docs.joomla.org/How_do_you_use_Recaptcha_in_Joomla%3F) in order to use this.
 

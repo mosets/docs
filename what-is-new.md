@@ -1,76 +1,37 @@
-# What Is New in Mosets Tree 3.7
+# What Is New in Mosets Tree 3.9
 
-- [Managers]({{version}}/what-is-new#managers)
-- [Search Completion]({{version}}/what-is-new#search-completion)
-- [Listings Owners]({{version}}/what-is-new#listing-owners)
-- [Next/Previous Listings]({{version}}/what-is-new#next-previous-listings)
-- [Random Listings]({{version}}/what-is-new#random-listings)
-- [3 New Fieldtypes]({{version}}/what-is-new#3-new-fieldtypes)
-- [Back-end]({{version}}/what-is-new#back-end)
-- [Miscellaneous]({{version}}/what-is-new#miscellaneous)
+- [Cluster Maps]({{version}}/what-is-new#cluster-maps)
+- [JSON Output]({{version}}/what-is-new#json-output)
+- [Listing Renewal]({{version}}/what-is-new#listing-renewal)
+- [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
+- [Miscellaneous]({{version}}/what-is-new#misc)
 
-## Managers {#managers}
+## Cluster Maps {#cluster-maps}
 
-You can now assign one or more user groups as [Managers]({{version}}/acl#managers). Managers are users who can create, edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. This makes it extremely convenient to change or update your listings when you see them in front-end, without going back and forth between front and back-end.
+Mosets Tree 3.9 introduces Cluster Maps that lets you show Google Maps with markers from multiple listings. You can show Cluster Maps in Category, Index, Search Results, Top Listings and All Listings pages. 
 
-Since you can override this in category configuration, you can assign different user group to manage different categories.
+## JSON Output {#json-output}
 
-## Search Completion {#search-completion}
+JSON output allows other app or services to consume data from Mosets Tree in a machine readable way. This is disabled by default and can be enabled through Mosets Tree Configuration. Check out the [full documentation]({{version}}/configuration#allow_json_output) to learn more about this. 
 
-[Search module]({{version}}/modules#mod-mt-search) (mod_mt_search) now has search completion. Search completion activates as soon as you start typing in the search box. Results are returned by matching the search keyword against category and listing names. The results are shown under the search box as a list of drop down. Clicking on any of the search results will bring you directly to the category or listing.
+## Listing Renewal {#listing-renewal}
 
-## Listing Owners {#listing-owners}
+Mosets Tree has always allow you to set the number of days new listings stay published before they expire. Mosets Tree 3.9 introduces a new feature that allow your users to renew their listings before they expire. Check out the [full documentation]({{version}}/configuration#allow_listing_renewal) to learn more about listing renewal.
 
-There is now a dedicated page showing all listings owners. These are users who has one or more listings in the directory.
+## Featuring a Listing in Front-end {#feature-listing-front-end}
 
-## Next/Previous Listings {#next-previous-listings}
-
-Often times, you want to check out one listing details after another. This update brings a new feature to let you navigate between your listings details page, one after another through a Previous and Next listing link at the bottom of each listing details page.
-
-## Random Listings {#random-listings}
-
-When showing a list of listings, they are typically ordered by a core fields. In this update, you have a new option to order your listings randomly. Surprise your users and let them discover more listings from your directory.
-
-## 3 new fieldtypes {#3-new-fieldtypes}
-
-### Listings
-
-[Listings]({{version}}/fields#fieldtype-listings) fieldtype allows you to create a special type of custom fields that shows other listings from your directory. You can customise the custom field to show the listings with images and/or any of their custom fields.
-
-### Multiple Dates
-
-[Multiple Dates]({{version}}/fields#fieldtype-multipledates) fieldtype allows you to enter one or more dates by entering dates directly or by selecting them through a displayed calendar.
-
-### Telephone
-
-Similar to the core Telephone field, [Telephone]({{version}}/fields#fieldtype-telephone) fieldtype lets you create a telephone custom field with an option to show them with a tel: link.
-
-## Back-end {#back-end}
-
-- When you browse a category or edit a listing in back-end, there is an easy to access link to let you open a listing in front-end in a new window. 
-- Core fields has a new setting called "Back-end listings column". This setting allows you to show additional core fields in back-end's listings column.
-
-## Miscellaneous {#miscellaneous}
-
-- SEO improvement to allow sprintf to searchby and sub-category's title and header.
-- Adds support for detecting https in parsing description field's URL.
-- Listing ID field is now searchable.
-- mod_mt_listings now can have up to 3 filters.
-- RSS now outputs raw custom fields data as part of description.
-- Adds a menu item type for "All Listings".
-- Adds "Alternative Layout" option to all modules.
-- mod_mt_search: Drop-down categories now only show top level categories for the current user who is authorized to access.
-- Advanced Search and Edit Listing's categories option now only show top level categories for the current user who is authorized to access.
-- Adds a new config to control when to show "Add your listing here" link.
-- Adds a new config to limit the number of listings a user can have.
-- Add Year & Date field as sorting options.
-- Adds 2 new core fields: firstname, lastname
-- Addresses now displays according to ordering.
-- Listings' pending approval e-mails to admin now contains direct link to review listings in back-end.
-- Searching with empty keyword in mod_mt_search now brings you to All Listings page.
-- Minimum search characters' configuration is now visible.
-- Remove link in listing summary image when listing is pending for approval.
-- Approval e-mails for new & updated listing now contain links to the listing.
-- New option to sort listing based on one column only.
-- Always auto focus `Name` field when adding or editing a listing.
-- Select Multiple fields now has the option to use Single Select List or Multiple Select List for their search type.
+ Featuring a listing has always been a privilege for administrator in back-end. Mosets Tree 3.9 introduces support for listing owner to feature their own listing in front-end.
+ 
+## Miscellaneous {#misc}
+ 
+- Number based fields now defaults to a Slider based ranged search.
+- Filter module (mod_mt_filter) now has auto search.
+- Number fieldtype now uses number input field.
+- E-mails sent through contact and recommended form now originates from the site's sender name & email.
+- Google Maps in listing details page now uses API Keys.
+- New cron controller that execute scheduled tasks within Mosets Tree's context. Hook name: onMTreeExecuteCron
+- "Search By" values are now sorted naturally instead of frequency.
+- Listing Owners page now supports category.
+- mod_mt_owners now links to 'Read more...' page.
+- Don't show Reviews data in Listing Owners page when Reviews are disabled.
+- E-mails to admin for pending reviews now contains URL to the listing.

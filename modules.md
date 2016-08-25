@@ -25,6 +25,7 @@
     - [Directory's Last Update]({{version}}/modules#mod-mt-lastupdate)
     - [Dynamic Tree]({{version}}/modules#mod-mt-dtree)
     - [Filter]({{version}}/modules#mod-mt-filter)
+    - [Owners]({{version}}/modules#mod-mt-owner)
     - [Search]({{version}}/modules#mod-mt-search)
     - [Static Categories]({{version}}/modules#mod-mt-staticcats)
     - [Tag Cloud]({{version}}/modules#mod-mt-tagcloud)
@@ -72,6 +73,9 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
  
  : You can see the example of filter module in _Movie_ category. It is placed under the top menu and contain search criteria that related to _Movie_ category such as "**Director**" and "**Genre**" to refine users' searches in this category.
 
+ ### Owners {#mod-mt-owners}
+ Displays listing owners sorted by Most Listings or Most Reviews.
+ 
  ### Search {#mod-mt-search}
  Displays the Simple Search module for searching the directory and optionally a link to the Advanced Search page. It can also be configured to display a list of categories in a drop down menu to allow users to filter their searches through selected category.
  

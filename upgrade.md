@@ -5,8 +5,8 @@
  - [Upgrading From 2.0 To 2.1.12]({{version}}/upgrade#from-20-to-21)
  - [Upgrading From 2.1 To 2.2.6]({{version}}/upgrade#from-21-to-22)
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
- - [Upgrading From 3.0 To 3.7]({{version}}/upgrade#from-30-to-37)
- - [Upgrading To 3.7]({{version}}/upgrade#to-36)
+ - [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
+ - [Upgrading To {{version}}]({{version}}/upgrade#to-39)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
 
 ## Introduction {#intro}
@@ -15,15 +15,15 @@ This article documents the process involved in upgrading Mosets Tree.
 
 If you're running version 2.2 or later, upgrading to the next subsequent version is very straight forward because you only need to install the subsequent version over your existing Mosets Tree installation. This will update all Mosets Tree files and database table schema while retaining your existing data on your directory.
 
-If you are few version behind the latest version, upgrading to the latest version requires you to perform multi-steps upgrade. For example, if you're currently running 2.0 on Joomla 1.0 and wish to upgrade to run {{version}} on Joomla 3.4, these are the steps to upgrade:
+If you are few version behind the latest version, upgrading to the latest version requires you to perform multi-steps upgrade. For example, if you're currently running 2.0 on Joomla 1.0 and wish to upgrade to run {{version}} on Joomla 3.6, these are the steps to upgrade:
 
 1. Upgrade to Joomla 1.5.
 2. [Upgrade Mosets Tree 2.0 to 2.1.12]({{version}}/upgrade#from-20-to-21)
 3. Upgrade to Joomla 2.5
 4. [Upgrade Mosets Tree 2.1 to 2.2.6]({{version}}/upgrade#from-21-to-22)
 5. [Upgrade Mosets Tree 2.2 to 3.0.13]({{version}}/upgrade#from-22-to-30)
-6. Upgrade to Joomla 3.4
-7. [Upgrading From 3.0 To 3.7]({{version}}/upgrade#from-30-to-37)
+6. Upgrade to Joomla 3.6
+7. [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
 
 You can also refer to the steps above if you are upgrading from other version. For example, if you're upgrading from 2.2, you can start with Step 5 above.
 
@@ -49,6 +49,8 @@ Joomla 1.5 | Mosets Tree 2.1.12
 Joomla 2.5 | Mosets Tree 2.2.6 & 3.0.13
 Joomla 3.3 | Mosets Tree 3.5.9
 Joomla 3.4 | Mosets Tree 3.6 & 3.7
+Joomla 3.5 | Mosets Tree 3.8
+Joomla 3.6 | Mosets Tree 3.8 & 3.9
 </div>
 
 ## Upgrading From 2.0 To 2.1.12 {#from-20-to-21}
@@ -120,46 +122,46 @@ If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by in
 
 > **Note**: At this point, you have Mosets Tree 3.0.13 running on Joomla 2.5. 
 
-> If your intention is to migrate your Mosets Tree data to a Joomla 3.4 site running Mosets Tree {{version}}.x, you can follow the [migration instructions]({{version}}/migration) to migrate your existing data from Mosets Tree 3.0.13 site to your new Mosets Tree {{version}} site. Once you've completed the migration, head on to [Database Schema Updates]({{version}}/upgrade#db-schema) and execute the queries specified there to bring your newly migrated data up-to-date with Mosets Tree's latest version schema.
+ If your intention is to migrate your Mosets Tree data to a Joomla 3.6 site running Mosets Tree {{version}}.x, you can follow the [migration instructions]({{version}}/migration-guide) to migrate your existing data from Mosets Tree 3.0.13 site to your new Mosets Tree {{version}} site. Once you've completed the migration, head on to [Database Schema Updates]({{version}}/upgrade#db-schema) and execute the queries specified there to bring your newly migrated data up-to-date with Mosets Tree's latest version schema.
  
 > A couple of notes:
 > - In the migration instruction, you can safely ignore the requirement where you need both sites to be on the same version.
-> - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree 3.7's default `kinabalu` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
+> - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree 3.9's default `kinabalu` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
 
-## Upgrading From 3.0 To 3.7 {#from-30-to-37}
-If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.4.
+## Upgrading From 3.0 To 3.9 {#from-30-to-39}
+If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.6.
 
-Once you’ve done that, the upgrade from MT 3.0 to 3.7 is again very straightforward, by installing the latest version of Mosets Tree 3.7 package, `pkg_mtree-3.7.x.zip`.
+Once you’ve done that, the upgrade from MT 3.0 to 3.9 is again very straightforward, by installing the latest version of Mosets Tree 3.9 package, `pkg_mtree-3.9.x.zip`.
 
 The following files are no longer used or have been moved to a new location. Remove these files:
 - `/modules/mod_mt_tagcloud/css`
 - `/administrator/components/com_mtree/models/listing.xml`
 - `/language/en-GB/en-GB.fld_mfile.ini`
 
-## Upgrading To 3.7 {#to-37}
-This section shows how you can upgrade Mosets Tree from earlier version of 3.7.x to the latest version.
+## Upgrading To {{version}} {#to-39}
+This section shows how you can upgrade Mosets Tree from earlier version of 3.9.x to the latest version.
 
 ### Requirement
-This upgrade requires Joomla! 3.4 and Mosets Tree 3.7.x.
+This upgrade requires Joomla! 3.6 and Mosets Tree 3.9.x.
 
 ### Full site backup
 It is recommended that you perform a full site backup (files and database) before proceeding with the following upgrade.
 
 ### Upgrading through Joomla's back-end interface
-The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.7 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
+The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.9 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
 
 - `/components/com_mtree/templates/kinabalu/`
 
-1. Download the latest package for Mosets Tree 3.7.x. This is the same package you use to install Mosets Tree 3.7 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.7.x.
+1. Download the latest package for Mosets Tree 3.9.x. This is the same package you use to install Mosets Tree 3.9 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.9.x.
 2. Log in to your site's back-end and go to:
 	1. Goto "**Extensions -> Extension Manager**"
-	2. Click "**Browse...**" to select "pkg_mtree-3.7.x.zip" from your computer.
+	2. Click "**Browse...**" to select "pkg_mtree-3.9.x.zip" from your computer.
 	3. Click "**Upload & Install**" to start the upgrade.
 	4. If the upgrade is successful, you will see a "_Installing package was successful._" message.
 3. If you have backed up your modified template files prior to the upgrade, restore these files, replacing the ones that have been replace by the upgrade.
 
 ### Upgrade completed
-If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.7 on Joomla 3.4.
+If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.9 on Joomla 3.6.
 
 ## Database Schema Updates {#db-schema}
 
@@ -310,9 +312,43 @@ INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_we
 UPDATE `#__mt_fieldtypes` SET use_placeholder = 1 WHERE field_type IN ('mselectmultiple', 'multipledates');
 
 ############################
+# Mosets Tree version 3.8.0
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('all_listings_sort_by2', 'listing', 'none', 'none', 'sort2', 100, 1, 1), ('note_filter_search', 'search', '', '', 'note', '2400', '1', '1'), ('filter_show_keyword_search', 'search', '1', '1', 'yesno', '2500', '1', '1'), ('redirect_url_needapproval_addlisting', 'listing', '', '', 'text', '3640', '0', '1'), ('sef_attachment', 'sef', 'attachment', 'attachment', 'text', 250, 1, 0);
+
+UPDATE `#__mt_config` SET `ordering` = '200' WHERE `varname` = 'all_listings_sort_by_options';
+
+UPDATE `#__mt_fieldtypes` SET `use_elements` = '1' WHERE `field_type` = 'coreyear';
+
+INSERT INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('audioplayer2', 'Audio Player 2.0', '1.0.0', '', 'Audio Player allows users to upload audio files and play the music from within the listing page. Provides basic playback options such as play, pause and volumne control. Made possible by http://mediaelementjs.com/.', '0', '0', '0', '0', '1', '0', '0');
+
+############################
+# Mosets Tree version 3.8.1
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.8.2
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('attachments_noindex_nofollow', 'listing', '', '1', 'yesno', '3700', '0', '1');
+
+############################
+# Mosets Tree version 3.8.3
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_listingreviewsrss', 'rss', '1', '1', 'yesno', '250', '1', '1'), ('sef_rss_listingreviews', 'sef', 'listing-reviews', 'listing-reviews', 'text', '3650', '1', '0');
+
+############################
+# Mosets Tree version 3.8.4
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.8.5
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('show_userfavouritesrss', 'rss', '1', '1', 'yesno', '260', '1', '1'), ('sef_rss_userfavourites', 'sef', 'user-favourites', 'user-favourites', 'text', '3660', '1', '0'), ('fe_num_of_rss_favourite', 'listing', '100', '100', 'text', '6900', '0', '0');
+
+############################
+# Mosets Tree version 3.8.6
+# No upgrade queries.
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.7.1' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.8.6' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
-UPDATE  `#__mt_config` SET  `value` =  '7' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
