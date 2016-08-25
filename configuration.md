@@ -108,6 +108,9 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  
  : Once users enter this page, they will see the most recent listings first because sorting is set to "**Recently Added**". Mosets Tree provides several options to let you decide how you want your listings to be displayed to users. 
  
+ ### Default secondary sorting in All Listings
+ This config lets you choose the secondary sorting in "All Listings" page. The default is set to "None".
+ 
  ### All Listings page sort options
  Sort options allows you to select which "Sort by" options are available in "All Listings" page.
 
@@ -207,6 +210,11 @@ Mosets Tree has three types of searching functions to help your user find the li
 
   #### Default sorting in results page
   This config allows you to choose how listings in advanced search results are ordered.
+
+ ### Filter Search
+ 
+  #### Show keyword search
+  Enabling keyword search will show a text input filter in category page's filter form. This allows your users to enter a keyword and search against all simple searchable fields. This is in addition to other custom fields you've made as filter searchable.
 
 ## Rating/Rev {#ratingrev}
 

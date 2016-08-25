@@ -1,76 +1,31 @@
-# What Is New in Mosets Tree 3.7
+# What Is New in Mosets Tree {{version}}
 
-- [Managers]({{version}}/what-is-new#managers)
-- [Search Completion]({{version}}/what-is-new#search-completion)
-- [Listings Owners]({{version}}/what-is-new#listing-owners)
-- [Next/Previous Listings]({{version}}/what-is-new#next-previous-listings)
-- [Random Listings]({{version}}/what-is-new#random-listings)
-- [3 New Fieldtypes]({{version}}/what-is-new#3-new-fieldtypes)
-- [Back-end]({{version}}/what-is-new#back-end)
+- [Joomla 3.5 and PHP 7 support]({{version}}/what-is-new#joomla-35-php-7)
+- [Keyword search in filters]({{version}}/what-is-new#filter-keyword-search)
+- [Owners module]({{version}}/what-is-new#mod-mt-owners)
+- [Reviews RSS]({{version}}/what-is-new#reviews-rss-feed)
 - [Miscellaneous]({{version}}/what-is-new#miscellaneous)
 
-## Managers {#managers}
+## Joomla 3.5 and PHP 7 support {#joomla-35-php-7}
 
-You can now assign one or more user groups as [Managers]({{version}}/acl#managers). Managers are users who can create, edit or delete listings in front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. This makes it extremely convenient to change or update your listings when you see them in front-end, without going back and forth between front and back-end.
+The biggest changes in Mosets Tree 3.8 is the support for Joomla 3.5 and PHP 7. Both of these new updates brings a lot of improvements to performance and your site.
 
-Since you can override this in category configuration, you can assign different user group to manage different categories.
+For more information, visit https://www.joomla.org/announcements/release-news/5640-timeline-update-for-3-5.html and http://www.zend.com/en/resources/php-7.
 
-## Search Completion {#search-completion}
+## Keyword search in filters {#filter-keyword-search}
 
-[Search module]({{version}}/modules#mod-mt-search) (mod_mt_search) now has search completion. Search completion activates as soon as you start typing in the search box. Results are returned by matching the search keyword against category and listing names. The results are shown under the search box as a list of drop down. Clicking on any of the search results will bring you directly to the category or listing.
+Filter module has been one of the popular module used by our users. In this update, we've added keyword search in Filter module. This allows your users to enter a keyword and match it against all your simple searchable fields in additional to your other filters.
 
-## Listing Owners {#listing-owners}
+## Owners module {#mod-mt-owners}
 
-There is now a dedicated page showing all listings owners. These are users who has one or more listings in the directory.
+New module showing listing owners.
 
-## Next/Previous Listings {#next-previous-listings}
+## Reviews RSS Feed {#reviews-rss-feed}
 
-Often times, you want to check out one listing details after another. This update brings a new feature to let you navigate between your listings details page, one after another through a Previous and Next listing link at the bottom of each listing details page.
-
-## Random Listings {#random-listings}
-
-When showing a list of listings, they are typically ordered by a core fields. In this update, you have a new option to order your listings randomly. Surprise your users and let them discover more listings from your directory.
-
-## 3 new fieldtypes {#3-new-fieldtypes}
-
-### Listings
-
-[Listings]({{version}}/fields#fieldtype-listings) fieldtype allows you to create a special type of custom fields that shows other listings from your directory. You can customise the custom field to show the listings with images and/or any of their custom fields.
-
-### Multiple Dates
-
-[Multiple Dates]({{version}}/fields#fieldtype-multipledates) fieldtype allows you to enter one or more dates by entering dates directly or by selecting them through a displayed calendar.
-
-### Telephone
-
-Similar to the core Telephone field, [Telephone]({{version}}/fields#fieldtype-telephone) fieldtype lets you create a telephone custom field with an option to show them with a tel: link.
-
-## Back-end {#back-end}
-
-- When you browse a category or edit a listing in back-end, there is an easy to access link to let you open a listing in front-end in a new window. 
-- Core fields has a new setting called "Back-end listings column". This setting allows you to show additional core fields in back-end's listings column.
+Supports individual listing reviews RSS feed.
 
 ## Miscellaneous {#miscellaneous}
-
-- SEO improvement to allow sprintf to searchby and sub-category's title and header.
-- Adds support for detecting https in parsing description field's URL.
-- Listing ID field is now searchable.
-- mod_mt_listings now can have up to 3 filters.
-- RSS now outputs raw custom fields data as part of description.
-- Adds a menu item type for "All Listings".
-- Adds "Alternative Layout" option to all modules.
-- mod_mt_search: Drop-down categories now only show top level categories for the current user who is authorized to access.
-- Advanced Search and Edit Listing's categories option now only show top level categories for the current user who is authorized to access.
-- Adds a new config to control when to show "Add your listing here" link.
-- Adds a new config to limit the number of listings a user can have.
-- Add Year & Date field as sorting options.
-- Adds 2 new core fields: firstname, lastname
-- Addresses now displays according to ordering.
-- Listings' pending approval e-mails to admin now contains direct link to review listings in back-end.
-- Searching with empty keyword in mod_mt_search now brings you to All Listings page.
-- Minimum search characters' configuration is now visible.
-- Remove link in listing summary image when listing is pending for approval.
-- Approval e-mails for new & updated listing now contain links to the listing.
-- New option to sort listing based on one column only.
-- Always auto focus `Name` field when adding or editing a listing.
-- Select Multiple fields now has the option to use Single Select List or Multiple Select List for their search type.
+- An indicator is shown in "Notes' tab when there are listing notes while editing listing in back-end.
+- A new config to add secondary sorting in All Listings page.
+- An all new audio player field type that supports audio playing in mobile devices.
+- 3.8.3: Ability to sort by more core fields in All Listings, Advanced Search and Filter Search results page.
