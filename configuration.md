@@ -7,6 +7,7 @@
 - [Listing]({{version}}/configuration#listing)
 - [Search]({{version}}/configuration#search)
 - [Rating/Rev]({{version}}/configuration#ratingrev)
+- [Map]({{version}}/configuration#map)
 - [Features]({{version}}/configuration#features)
 - [Notify]({{version}}/configuration#notify)
 - [Image]({{version}}/configuration#image)
@@ -57,6 +58,9 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Use WYSIWYG Editor in front-end Description field
  By selecting `Yes` in this parameter will allow you to use HTML tags in description field. Please note that HTML tags will be stripped in summary view and only shown in details view. 
 
+ ### Allow JSON Output {#allow_json_output}
+ JSON is a data format that produce human-readable text and data that are easily parsable by other app. If JSON output is enabled, you can access some of the pages in Mosets Tree in JSON format by appending <strong>&format=json</strong> query string to its URL.<p />e.g.: < yoursite >/index.php?option=com_mtree&format=json
+ 
 ## Permission
 
  ### Edit Permission
@@ -110,7 +114,7 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  
  ### Default secondary sorting in All Listings
  This config lets you choose the secondary sorting in "All Listings" page. The default is set to "None".
- 
+  
  ### All Listings page sort options
  Sort options allows you to select which "Sort by" options are available in "All Listings" page.
 
@@ -189,6 +193,14 @@ Data entered to a field is displayed in two places in Mosets Tree front-end, Sum
  ### Number of days to expire listing {#days_to_expire}
  Specify the number of days for a listing to remain published upon submission. Once this number of days has passed, the listing will be published down and not visible in front-end. Enter 0 to disable this feature. This config is useful for setting up a classified-like directories.
 
+ ### Allow Listing Renewal {#allow_listing_renewal}
+ You can set a listing to expire by setting their 'Publish Down' date. Once a listing has expired, they will not be visible in front-end. If you allow 'Listing Renewal', listing owners can edit their listings that are nearing their expiration date and click 'Submit' to renew their listings.
+ 
+ The renewed listings will have their expiry date extended by the same number of days set in 'Number of days to expire listing'.
+
+ ### Days Remaining To Renew
+ Set the number of days prior to a listing expiry before a listing can be renewed.
+ 
 ## Search {#search}
 Mosets Tree has three types of searching functions to help your user find the listings in your directory: _Simple Search_, _Advanced Search_ and _Filters Search_. [Filter Search]({{version}}/configuration#filters) is displayed in "All Listing" page which has been explained earlier.
 
@@ -212,10 +224,10 @@ Mosets Tree has three types of searching functions to help your user find the li
   This config allows you to choose how listings in advanced search results are ordered.
 
  ### Filter Search
- 
-  #### Show keyword search
-  Enabling keyword search will show a text input filter in category page's filter form. This allows your users to enter a keyword and search against all simple searchable fields. This is in addition to other custom fields you've made as filter searchable.
 
+  #### Show keyword search
+  Enabling keyword search will show a text input filter in category page's filter form. This allows your users to enter a keyword and search against all  simple searchable fields. This is in addition to other custom fields you've made as filter searchable.
+ 
 ## Rating/Rev {#ratingrev}
 
  ### Rating
@@ -297,11 +309,10 @@ Mosets Tree has three types of searching functions to help your user find the li
   #### Pre-defined replies
   You are able to enter up to 5 pre-defined e-mail replies. Every pre-defined reply you entered will become the option of the selection list in Mosets Tree back-end review's pending approval interface. If you checked the "Send e-mail to reviewer upon approval/rejection" checkbox, this selection list will be appeared and allowed you to choose a pre-defined e-mail reply to be sent along with the approval or rejection of a review.
   
-## Features {#features}
-Features allows you to configure most of the functions in the listing page of your directory.
+## Map {#map}
 
- ### Show map
- Mosets Tree comes with support for Google Maps in listings details page which showed a marker on the listing's address. Setting this to `No` will disable this feature.
+ ### Show map in listing details page
+ Mosets Tree comes with support for Google Maps in listings details page which shows a marker on the listing's address. Setting this to `No` will disable this feature. This config also decides if Map is available for you or your user to place a marker when editing a listing. 
  
  ### Default Country, State & City
  If your users does not enter a country, state or city to a listing when they click to "Locate listing in map", the default value set in this config will be used for the geocoding process.
@@ -310,6 +321,26 @@ Features allows you to configure most of the functions in the listing page of yo
 
  ### Show link to map
  Enable this feature to provide users a link to view the listing's location in Google Maps.
+ 
+
+ ### Show map in category, index, search results, top listings and list all pages
+ These are the individual settings for Cluster Maps. Cluster Map shows a map with multiple markers from your listings. This appear near the top of the pages before listing summaries are shown with a toggle to Show or Hide map. 
+
+ ### Google Maps API Key
+ Enter your Google Maps API Key.
+
+ ### Google Maps Types
+ Select the type of maps you want to make available to your user in your Cluster Maps.
+
+
+ ### Default Google Maps Type
+ Choose the map type to load by default. 
+
+ ### Google Maps' 'Styled Map' JS style array
+ Enter the javascript style array codes to define a custom style to your map. You can find some popular styles at https://snazzymaps.com/.
+
+## Features {#features}
+Features allows you to configure most of the functions in the listing page of your directory.
  
  ### Show Favourite
  This shows "Add as Favourite" link on listings details page for readers to favourite a listing. 

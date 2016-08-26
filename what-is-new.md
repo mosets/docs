@@ -1,31 +1,37 @@
-# What Is New in Mosets Tree {{version}}
+# What Is New in Mosets Tree 3.9
 
-- [Joomla 3.5 and PHP 7 support]({{version}}/what-is-new#joomla-35-php-7)
-- [Keyword search in filters]({{version}}/what-is-new#filter-keyword-search)
-- [Owners module]({{version}}/what-is-new#mod-mt-owners)
-- [Reviews RSS]({{version}}/what-is-new#reviews-rss-feed)
-- [Miscellaneous]({{version}}/what-is-new#miscellaneous)
+- [Cluster Maps]({{version}}/what-is-new#cluster-maps)
+- [JSON Output]({{version}}/what-is-new#json-output)
+- [Listing Renewal]({{version}}/what-is-new#listing-renewal)
+- [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
+- [Miscellaneous]({{version}}/what-is-new#misc)
 
-## Joomla 3.5 and PHP 7 support {#joomla-35-php-7}
+## Cluster Maps {#cluster-maps}
 
-The biggest changes in Mosets Tree 3.8 is the support for Joomla 3.5 and PHP 7. Both of these new updates brings a lot of improvements to performance and your site.
+Mosets Tree 3.9 introduces Cluster Maps that lets you show Google Maps with markers from multiple listings. You can show Cluster Maps in Category, Index, Search Results, Top Listings and All Listings pages. 
 
-For more information, visit https://www.joomla.org/announcements/release-news/5640-timeline-update-for-3-5.html and http://www.zend.com/en/resources/php-7.
+## JSON Output {#json-output}
 
-## Keyword search in filters {#filter-keyword-search}
+JSON output allows other app or services to consume data from Mosets Tree in a machine readable way. This is disabled by default and can be enabled through Mosets Tree Configuration. Check out the [full documentation]({{version}}/configuration#allow_json_output) to learn more about this. 
 
-Filter module has been one of the popular module used by our users. In this update, we've added keyword search in Filter module. This allows your users to enter a keyword and match it against all your simple searchable fields in additional to your other filters.
+## Listing Renewal {#listing-renewal}
 
-## Owners module {#mod-mt-owners}
+Mosets Tree has always allow you to set the number of days new listings stay published before they expire. Mosets Tree 3.9 introduces a new feature that allow your users to renew their listings before they expire. Check out the [full documentation]({{version}}/configuration#allow_listing_renewal) to learn more about listing renewal.
 
-New module showing listing owners.
+## Featuring a Listing in Front-end {#feature-listing-front-end}
 
-## Reviews RSS Feed {#reviews-rss-feed}
-
-Supports individual listing reviews RSS feed.
-
-## Miscellaneous {#miscellaneous}
-- An indicator is shown in "Notes' tab when there are listing notes while editing listing in back-end.
-- A new config to add secondary sorting in All Listings page.
-- An all new audio player field type that supports audio playing in mobile devices.
-- 3.8.3: Ability to sort by more core fields in All Listings, Advanced Search and Filter Search results page.
+ Featuring a listing has always been a privilege for administrator in back-end. Mosets Tree 3.9 introduces support for listing owner to feature their own listing in front-end.
+ 
+## Miscellaneous {#misc}
+ 
+- Number based fields now defaults to a Slider based ranged search.
+- Filter module (mod_mt_filter) now has auto search.
+- Number fieldtype now uses number input field.
+- E-mails sent through contact and recommended form now originates from the site's sender name & email.
+- Google Maps in listing details page now uses API Keys.
+- New cron controller that execute scheduled tasks within Mosets Tree's context. Hook name: onMTreeExecuteCron
+- "Search By" values are now sorted naturally instead of frequency.
+- Listing Owners page now supports category.
+- mod_mt_owners now links to 'Read more...' page.
+- Don't show Reviews data in Listing Owners page when Reviews are disabled.
+- E-mails to admin for pending reviews now contains URL to the listing.
