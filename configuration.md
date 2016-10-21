@@ -431,6 +431,9 @@ When an image is uploaded, system will save the image in three formats: the orig
  ### Images per listing
  Images per listing lets you set the maximum number of images can be uploaded to a listing.
 
+ ### Maximum image size (in bytes)
+ Set the maximum file size for images. Any uploaded images that exceed this maximum file size will be discarded and the user will be notified about this.  
+ 
 ## Sharing {#sharing}
 In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Facebook, Twitter, Pinterest, Google+ and LinkedIn.
 
