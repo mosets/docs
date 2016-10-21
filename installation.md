@@ -53,4 +53,6 @@ You have successfully publish Mosets Tree to your Joomla website. A link for Mos
 Although Joomla specify PHP 5.3.10 as the minimum requirement, it is an [End-of-life](http://php.net/supported-versions.php) (EOL) version that is not supported by PHP project any more.
 
 PHP 5.6 is the minimum recommended version because it currently has active support and is not estimated to be EOL'd until 1 Jan 2019.
+
+PHP 7 is the recommended version to use. It's actively supported until December 2017 and it performs much better in terms of speed and memory usage.
 {/answer}
