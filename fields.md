@@ -317,6 +317,10 @@ File is an attachment fieldtype that allows you to create a file input field for
  #### Maximum Size (in bytes)
  Set the maximum size for a file upload in bytes. By default, this is set to `10485760` bytes (10MB). Enter `0` for no limit. Note that your server may have a maximum upload limit.
  
+ Files uploaded through this field must be equal or less than the maximum size configured here. If a file exceed the maximum size, the file will be discarded and user will be prompted to re-uploaded the file again, within the specified file size. 
+  
+  The maximum file size limit is only enforced when a file is uploaded in front-end. Files uploaded in back-end are not restricted to this limit.  
+ 
  #### Image
  You can use an image to link to the uploaded file to be displayed in listing details view. Enter the URL to the image you would like to use to link to the file. You can use `{live_site}` as the replacement for the value of site's domain. For example:
 
