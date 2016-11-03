@@ -12,15 +12,15 @@
 
 ## Introduction {#intro}
 
-Categories in Mosets Tree are the primary way to structure your Mosets Tree directory. Categories are among the first thing your users will see when they visit your directory. The categories will also dictate how search engine friendly (SEF) URLs are created for your listings.
+Categories in Mosets Tree are the primary way to structure your directory in Mosets Tree. Categories are among the first thing your users will see when they visit your directory. They also dictate how search engine friendly (SEF) URLs are generated for your listings.
 
-Categories can be added to your directory in a few ways. You can add them through the Mosets Tree back-end component interface; or you can allow your users to add categories in the directory front-end.
+Categories can be added to your directory in a few ways. You can them through Mosets Tree back-end interface or you can allow your users to add them in front-end.
 
 ## Top Level Categories {#tlc}
 
-Top Level categories are the first level of categories in your directory. They have an additional capability that is called Category Configuration. Category Configuration lets you override [Mosets Tree configuration]({{version}}/configuration) that will only affects this Top Level category and its sub-categories.
+Top level categories are the first level of categories in your directory. They have the additional capability called Category Configuration. Category Configuration lets you override [Mosets Tree configuration]({{version}}/configuration) that will only affects this category and its sub-categories.
 
-For example, you can disable reviews in a top level category while reviews are still accepted in other categories. Or you can show User Profiles in a top level category while they are not shown in categories.
+For example, you can disable reviews in a top level categories while they are accepted in other categories. Or you can show User Profile in a top level category while they are not shown in others.
 
 Top Level Categories and Category Configuration are part of the system that make the [Multi Directory]({{version}}/multi-directory) support possible.
 
@@ -29,34 +29,34 @@ Top Level Categories and Category Configuration are part of the system that make
 
 ### Related Categories
 
-Related Categories allow you to select one or more categories that are related to the current category. This allows your users who are browsing the current category to have access to relevant categories through the links provided.
+Related Categories allows you to select one or more categories that are related to a current category. This allows your users who are browsing the current category can access to relevant categories through the links provided.
 
 ### Allow listing submission
-"_Add your listing here_" link appears in all category pages if you set the "Allow listing submission" function to "Yes". It allows your users to submit listings on the directory category pages.
+"_Add your listing here_" link appears in all category pages if you set the "Allow listing submission" function to "Yes". It allows your users to submit listings to the categories.
 
-Setting this to "_No_" will hide this link in your category pages and will prevent users from being able to submit listings on those pages.
+Setting this to "_No_" will hide this link in your category page and will prevent user from being able to submit listings here.
 
 ### Use Main Index template page
-By enabling this option, the category page will look and function like the directory Index page.
+By enabling this function, the category page will look and work like the Index page.
 
 Demo: http://demo.mosetstree.com/properties.html
 
-: When using the main index template in a category page, you can see the category page displays some modules that are the same as what you see in the Main Index, for example, the Alpha Index and the Directory Menu. You can customize this template through the Mosets Tree back-end component to position the modules where you want them to display.
+: When using main index template in a category page, you can see the category page displays some modules that same as what you have seen in main Index, for example Alpha Index and Directory Menu. You can customized through Mosets Tree back-end for where you want to show these modules.
 
 ### Alias
-Aliases are the text that represent the title of your category. They are used to make Search Engine Friendly URLs. Mosets Tree will generates an alias for your category if you leave this field empty when saving category edits.
+Aliases are short pieces of text that represent the title of your category. They are used to make Search Engine Friendly URLs. Mosets Tree will generates one for your category if you leave it empty.
 
-It is recommended that the Alias should only contain lowercase letters and dashes(-), and no blank spaces, because it is used to create the category URL.
+Alias preferably should contain only lowercase letters and dashes(-).
 
 ### Custom Title
-By default, the category page's `<TITLE>` tag for each category is the name of the category itself. The Custom Title field allows you to replace the title tag text with a custom title.
+By default, the category page's `<TITLE>` tag for each category is the name of the category itself. Custom Title allows you to override this with a custom title.
 
 ### Template
-Allows you to select which [Mosets Tree template]({{version}}/template) to use in this category. Changing this only affects the template used by pages for this category only. If you want to apply the same template to all of its sub-categories, then check the "_Change all sub categories to use this template_" checkbox and save the category.
+Allows you to select which [Mosets Tree template]({{version}}/template) to use in this category. Changing this only affects the template used by pages from this category only. If you want to apply the same template to all its sub-categories, check the "_Change all sub categories to use this template_" checkbox and save the category.
 
 ### META Description & META Keywords
 
-META Description describes your category page to search engines. META Keywords, on the other hand, tells the search engines what keywords or topics your category uses. You can customize each individual category's META Description and Keywords in their fields in the category Edit page.
+META Description describes your category page to search engines. META Keywords, on the other hand, tells search engine what keywords or topic your category is related to. You can customise each individual category's META Description and Keywords in their respective Edit Screen.
 
 However, for your directory's index, you need to [override]({{version}}/language#overrides) these 2 language keys:
 
@@ -66,56 +66,56 @@ However, for your directory's index, you need to [override]({{version}}/language
 in order to set the directory index's META Description and Keywords.
 
 ## Fields Assignments {#fields-assignment}
-Instead of showing all your custom fields in all categories, Fields Assignment lets you choose which field(s) you want to display in a top level category. For example, let's say you are editing a top level category for "Real Estate Properties". You can assign the "Rooms", "Bathroom" and "Facilities" custom fields to this category. In this situation, the 3 fields will only appear in the Real Estate Properties top level category, and no where else.
+Instead of showing all your custom fields to all categories, Fields Assignment lets you to choose which field to appear in a top level category. Let's say if you are editing a top level category for "Real Estate Properties". You can assign "Rooms", "Bathroom" and "Facilities" custom fields to it. This way, the 3 fields only appear in Real Estate Properties and no where else.
 
-Alternatively, you can also select which top level categories you want specific custom field(s) to display in by editing the Custom Field section in the Mosets Tree back-end component.
+Alternatively, you can select which top level categories a custom field will appear through Custom Field section in Mosets Tree back-end interface.
 
 ## Association {#association}
 
-Category association allows you to create a "is a member of" relationship with an associated category. For example, a "_Persons_" category can be associated with a "_Companies_" category. In this type of association, the listings created under the "_Persons_" category will have the option to associate those listings with one of the listings listed under the "_Companies_" category.
+Category association allows you to create "is a member of" relationship with an associated category. For example, a "_Persons_" category can be associated with "_Companies_" category. In such association, listings created under "_Persons_" category will have an option to associate itself with one of the listings listed under "_Companies_" category.
 
 ### Setting up category association {#setting-up-association}
 
-1. To set up a category association in Mosets Tree, start by creating two top level categories. Following the example above, the two categories will be "_Companies_" and "_Persons_".
-2. In our example, listings under the "_Persons_" category will be a member of company listings in the "_Companies_" category. In this type of association, edit the "_Persons_" category and set its "_Associated Category_" to the "_Companies_" category.
-3. Next, go to the "_Custom Fields_" section and create a new custom field based on [Associated Listing]({{version}}/fields#fieldtype-associatedlisting) field type. Enter its caption as "_Company_". Since this field will only be used in the "_Persons_" category, assign this custom field to the "_Persons_" category only.
+1. To set up category association in Mosets Tree, start by creating two top level categories. Following the example above, the two categories will be "_Companies_" and "_Persons_".
+2. In our example, listings under "_Persons_" category will be a member of company listings in "_Companies_" category. To such association, edit the "_Persons_" category and set its "_Associated Category_" to "_Companies_" category.
+3. Next, go to "_Custom Fields_" section and create a new custom field based on [Associated Listing]({{version}}/fields#fieldtype-associatedlisting) field type. Enter its caption as "_Company_". Because this field is only used in "_Persons_" category, assign this custom field to "_Persons_" category only.
 
 ### Using category association {#using-association}
 
-1. Now that you have setup the category association, then you can start creating a few companies under the "Companies" category. For this example, create 2 listings under the "Companies" category, ie: 'Mosets' and 'Joomla' as their name.
-2. Next, create 2 listings under the "Persons" category. For this exmaple, let's name them "_Amy_" and "_Ben_". You will see the "_Company_" custom field you've created in the steps above while doing this. This is a special type of custom field that shows you the selection based upon the listings available in the associated category you set up above. In this example, it will show you 2 listings from the "_Companies_" category.
+1. Now that you've done setting up category association, you can start by creating a few companies under "Companies" category. For this example, create 2 listings under "Companies" category, ie: 'Mosets' and 'Joomla' as their name.
+2. Next, create 2 listings under "Persons" category. Let's name them "_Amy_" and "_Ben_". You will see the "_Company_" custom field you've created in steps above while doing this. This is a special type of custom field that shows you the selection based on the listings available in the associated category you set up above. In this example, it will show you 2 listings from "_Companies_" category.
 Choose "_Mosets_" as the company for both "_Amy_" and "_Ben_" listings.
-3. Go to your site's front-end and view the "_Mosets_" listing. If you have set up everything correctly, you will see the Mosets listing, just like any other listing in Mosets Tree. Scroll down the page and you will see "_Amy_" and "_Ben_" listings underneath it.
+3. Go to your site's front-end and view the "_Mosets_" listing. If you've set up everything correctly, you will see the Mosets listing, just like any other listing in Mosets Tree. Scroll down the page and you will see "_Amy_" and "_Ben_" listings underneath it.
 
-This is the result of setting up the category association in the "_Persons_" category to the "_Companies_" and then using the "_Associated Listing_" field type which enables you to define the listing relationships between the 2 categories.
+This is the result of setting up the category association in "_Persons_" category to "_Companies_" and then using "_Associated Listing_" field type to let you define listings relationship between the 2 categories.
 
 Demo: http://demo.mosetstree.com/real-estate-companies/957-joomla-estate.html
 
-: _Properties_ category is associated with _Real Estate Companies_ company. We have a couple of listings from _Properties_ that are associated with the "_Joomla Estate_" listing from _Real Estate Companies_. On that page, you can see all the listings that are associated with it.
+: _Properties_ category is associated with _Real Estate Companies_ company. We have a couple of listings from _Properties_ that is associated with "_Joomla Estate_" listing from _Real Estate Companies_. In this page, you can see all the listings that are associated with it.
 
 ## Operations {#operations}
-For performance reasons, Mosets Tree keeps track of the total number of sub-categories and listings for each category in its own database table. Sometimes these number might be inaccurate and you can use the Operations tab features to recount the categories and listings to correct the total number inaccuracy.
+For performance reason, Mosets Tree keeps track on the total number of sub-categories and listings for each category in its own database table. Some times, these number might be inaccurate. Thus, operations help you to recount categories and listings to fix this.
 
 ### Force recount of categories and listings
-Full recount that will force Mosets Tree to recount all sub-categories of the current category. If you have a big category, this method may be very slow and might cause a PHP execution timeout. However, this method is the most accurate.
+Full recount will force Mosets Tree to recount all sub-categories of the current category. If you have a big category, this method may be very slow and might cause PHP execution timeout. However this method is the most accurate.
 
 ### Full recount of categories and listings
-Fast recount will only count the current active category's listings and add all sub-category listings (if available) based on the total stored in database. This is a faster method but will not be as accurate if the subcategories totals are not correct.
+Fast recount will only count the current active category's listings and add all sub-category listings(if available) based on the total stored in database. This is a faster method but will not be accurate if the subcategories total are not correct.
 
 ## Frequently Asked Questions {#faqs}
 
-{question}How do I show category images in the Mosets Tree's Index?{/question}
+{question}How do I show category images in Mosets Tree's Index?{/question}
 {answer}
-Category images by default are shown only when you view the category page. You can configure this in:
+Categories image by default is shown only when you view the category page. You can configure in:
 
 **Mosets Tree -> Templates -> current default template**
 
- set "**Show Categories' images**" to `Yes` to have the images display in the directory Main Index.
+ set "**Show Categories' images**" to `Yes` to have the images to show in Main Index.
 {/answer}
 
 {question}Is it possible to hide all listings of a specific category?{/question}
 {answer}
-Yes. You can hide all listings of a category by using the Mosets Tree back-end component. Go to the edit category page, set "**Show Listing**" to `No` in the category's _Edit Screen_.
+Yes. You can hide a category's listings through Mosets Tree back end. Go to edit category page, set "**Show Listing**" to `No` in the category's _Edit Screen_.
 {/answer}
 
 {question}I don't want listings to be shown underneath every category in Main Index. How can I do that?{/question}
@@ -124,10 +124,10 @@ In order to hide all the listings under each top level categories, you can go to
 
 **Mosets Tree back-end -> Templates -> [current default template]**
 
-set "**Number of listings under top level cats.**" to `0`. Make sure you check whether your settings use the Main Index template for the category pages. This configuration will affect the index page and all the category pages that use the main index template page.
+set "**Number of listings under top level cats.**" to `0`. Make sure you check whether if you set to use Main Index template for category pages. This configuration will affect the index page and all the category pages that using main index template page.
 {/answer}
 
-{question}My categories are showing an incorrect number of listings or categories. How can I fix that?{/question}
+{question}My categories are showing incorrect number of listings or categories. How can I fix that?{/question}
 {answer}
-You can fix this by performing a recount through the [**Operations**]({{version}}/categories#operations) tab when you're editing a category in the Mosets Tree back-end.
+You can fix this by performing a recount through the [**Operations**]({{version}}/categories#operations) tab when you're editing a category in back-end.
 {/answer}
