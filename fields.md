@@ -58,7 +58,7 @@ Fields are the attributes for your listings. Mosets Tree comes with a host of fi
 
 ## Core Fields {#core-fields}
 
-Core fields are an important part of your listings. Their data is stored in a dedicated database table column, as a result they have better performance. Whenever possible use core fields. Since there is a limited amount of core fields, prioritize them as the fields you include as simple searchable fields. Generally, simple searchable core fields are have better performance than custom fields.
+Core fields are an important part of your listings. Their data is stored in a dedicated database table column, as a result they have better performance. Whenever possible use core fields. Since there is a limited amount of core fields, prioritize them as the fields you include as simple searchable fields. Generally, simple searchable core fields have better performance than custom fields.
 
 Mosets Tree comes with the following set of core fields:
 <style>
