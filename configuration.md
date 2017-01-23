@@ -329,6 +329,9 @@ Mosets Tree has three types of searching functions to help your user find listin
  ### Google Maps API Key
  Enter your Google Maps API Key.
 
+ ### Cluster Map's Max Zoom Level
+ Specify the maximum zoom level for cluster maps. This is useful when a cluster map is showing only one marker or a few markers that are very close together. Having a maximum zoom level will show these marker within a larger map area. Enter a value between 1 - 22. Default value is 14. Leave empty to use the default zoom level.
+ 
  ### Google Maps Types
  Select the type of maps you want to make available to your users in your Cluster Maps.
 
