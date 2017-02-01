@@ -24,3 +24,9 @@
 <!--	- ⭕️ [Search Plugin]({{version}}/plugin-search) -->
 <!--	- ⭕️ [Profile Picture Plugin]({{version}}/profile-picture) -->
 	- [Importer]({{version}}/importer)
+
+- Help
+
+	- [FAQ]({{version}}/faq)
+	- [Pre-Sales]({{version}}/pre-sales)
+	- [Account & Subscription]({{version}}/account)
