@@ -1,5 +1,6 @@
 # Importer
 
+- [Installing MT Importer]({{version}}/importer#install)
 - [Import from CSV]({{version}}/importer#csv)
 	- [Formatting your CSV file]({{version}}/importer#csv-format)
 	- [Category]({{version}}/importer#csv-category)
@@ -14,9 +15,22 @@
 - [Import from SobiPro 1.1]({{version}}/importer#sobipro)
 - [Import from K2 2.6 & 2.7]({{version}}/importer#k2)
 
-MT Importer is a standalone extension that helps you to import your external data in to Mosets Tree as listings.
+MT Importer is a standalone extension that helps you to import your external data in to Mosets Tree.
 
 If you're an active Mosets Tree subscriber, you can download MT Importer from your [Mosets account](http://www.mosets.com/login/).
+
+## Installing MT Importer
+
+Installation of MT Importer is similar to other component's installation in Joomla. 
+
+To install:
+
+1. Login to your Joomla's administrator back-end.
+2. Goto "**Extensions -> Manage -> Install**".
+3. Click "**Browse...**" to select "`com_mtimporter-xxx.zip`" from your computer.
+4. Click "**Upload & Install**" to start the installation.
+
+If your installation is successful, you will see the message "_Installing package was successful._".
 
 ## Import from CSV {#csv}
 
