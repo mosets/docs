@@ -12,6 +12,7 @@
 	- [Basic Rules & Tips]({{version}}/importer#csv-basic-rules-tips)
 - [Import from Hot Property]({{version}}/importer#hot-property)
 - [Import from SobiPro 1.1]({{version}}/importer#sobipro)
+- [Import from K2 2.6 & 2.7]({{version}}/importer#k2)
 
 MT Importer is a standalone extension that helps you to import your external data in to Mosets Tree as listings.
 
@@ -235,3 +236,18 @@ To import from SobiPro:
 
 You will be notified and redirected to Mosets Tree main page once the import is complete. Since you're importing data from another component, you need to perform "**Recount Cats/Listings**" after the import process is complete to recount the number of categories and listings you have in Mosets Tree. This function is available under the "**Tools**" section in Mosets Tree back-end.
 
+## Import from K2 2.6 & 2.7 {#k2}
+
+ MT Importer will import all items, categories, images and extra fields from K2 2.6 or 2.7 to Mosets Tree version 3.6. This import tool does not import your items' Image Gallery, Media, Attachments, Videos, Tags and Comments. 
+
+The import is fairly straight forward. All you need to to have your K2 data resides in same MySQL database using the same table prefix and images in your server's filesystem.
+
+> **Warning**: Your data in Mosets Tree will be erased when you're importing from K2. If you have any data you wish to retain, please backup your site prior to running the import.
+
+To import from K2:
+
+1. Login to your Joomla's administrator back-end.
+2. Goto "**Components -> MT Importer -> Import from K2**".
+3. Click "**Import**" to start the import process.
+
+You will be notified and redirected to Mosets Tree main page once the import is complete. Since you're importing data from another component, you need to perform "**Recount Cats/Listings**" after the import process is complete to recount the number of categories and listings you have in Mosets Tree. This function is available under the "**Tools**" section in Mosets Tree back-end.
