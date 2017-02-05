@@ -523,9 +523,10 @@ This section lets you control some aspects of Mosets Tree's back-end interface.
 {answer}
 You can manage all the reviews from your directory through the Mosets Tree's back-end component. Under the _Listings_ section, you will see a "_Reviews_" column which shows the total number of reviews for each listing in hyperlink. Click on the link to manage reviews for a particular listing.
 Demo: http://demo.mosetstree.com/administrator/index.php?option=com_mtree&task=reviews_list&link_id=878
+
 {/answer}
 
-{question}Why is "Report" link still displayed in Reviews when I set "Show Report" to `No` under the _Feature_ tab in configuration?{/question}
+{question}Why is "Report" link still displayed in Reviews when I set "Show Report" to 'No' under the 'Feature' tab in configuration?{/question}
 {answer}
 **Show Report** under the _Feature_ tab is used for reporting a listing, not a review. To disable "_Report_" link in reviews, you can configure it under _Permission_. Go to:
 
