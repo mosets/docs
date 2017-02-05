@@ -152,6 +152,7 @@ If your listings contain images or attachments, go to these directories on your 
 - **/media/com_mtree/attachments/**
 
 > **Warning**: Running the above SQL queries will remove all listings in your directory. Make sure you know what you're doing before running it.
+
 {/answer}
 
 {question}Resetting hits, visits, votes and reviews.{/question}
