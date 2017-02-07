@@ -19,6 +19,8 @@ MT Importer is a standalone extension that helps you to import your external dat
 
 If you're an active Mosets Tree subscriber, you can download MT Importer from your [Mosets account](http://www.mosets.com/login/).
 
+> Note: MT Importer can not be used to import or upgrade from older version of Mosets Tree. Refer to the [Migration]({{version}}/migration-guide) section for migrating your Mosets Tree directory to another site. Refer to the [Upgrade]({{version}}/upgrade) section for upgrading Mosets Tree to the latest version.
+
 ## Installing MT Importer
 
 Installation of MT Importer is similar to other component's installation in Joomla. 
