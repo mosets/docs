@@ -2,7 +2,7 @@
 
 - [Server Requirements]({{version}}/installation#requirements)
 - [Installing Mosets Tree]({{version}}/installation#install)
-- [Accessing Mosets Tree Back-end]({{version}}/installation#back-end)
+- [Accessing Mosets Tree Back-end]({{version}}/installation#access-back-end)
 - [Publish Mosets Tree to Front-end]({{version}}/installation#publish-to-front-end)
 - [Frequently Asked Question]({{version}}/installation#faq)
 
