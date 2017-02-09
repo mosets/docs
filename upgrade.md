@@ -8,6 +8,7 @@
  - [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
  - [Upgrading To {{version}}]({{version}}/upgrade#to-39)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
+ - [Frequently Asked Questions]({{version}}/upgrade#faqs)
 
 ## Introduction {#intro}
 
@@ -378,3 +379,24 @@ UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'm
 UPDATE  `#__mt_config` SET  `value` =  '9' WHERE  `#__mt_config`.`varname` =  'minor_version';
 UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
+
+## Frequently Asked Questions{#faqs}
+
+{question}How to update Mosets Tree 2.1 (running on Joomla 1.5) to Mosets Tree 3.9 (Joomla 3.6)?{/question}
+
+{answer}
+These are the steps you need to perform to incrementally upgrade from Mosets Tree 2.1 to 3.9:
+
+1. **Migrate Mosets Tree 2.1(Joomla 1.5) to Mosets Tree 2.2 (Joomla 2.5)**
+
+	[You can refer to the full migration instruction here.](https://docs.mosets.com/{version}/upgrade#from-21-to-22)
+	
+2. **Update Mosets Tree 2.2 to Mosets Tree 3.0 (Joomla 2.5)**
+
+	This update is straightforward as it involves installing MT 3.0 package to your Joomla 2.5 site.
+
+3. **Update Mosets Tree 3.0 to Mosets Tree 3.9 (Joomla 3.6)**
+
+	Once you've upgraded your Joomla site to Joomla 3.6, the upgrade from MT 3.0 to 3.9 is again straightforward like above, by installing the latest version of Mosets Tree 3.9 package.
+
+{/answer}
