@@ -506,3 +506,11 @@ Mosets Tree uses listing names as page titles. This article shows how you can ma
 This instruction is based on Mosets Tree 3.5.6, but it should work on any recent versions of Mosets Tree from version 2.1 up.
 
 {/answer}
+
+{question}Removing 'Add your listing here' link{/question}
+
+{answer}
+'Add your listing here' is added to each category's page to allow users to submit listings to your directory.
+
+To remove this link in a category, edit the category in Mosets Tree's back-end. To the right of the page, you'll find an option called 'Allow listing submission'. Set this to 'No'. This will disable listing submission in front-end for that particular category and remove the 'Add your listing here' link.
+{/answer}
