@@ -67,9 +67,7 @@ No. Mosets Tree does not support any payment gateway at the moment.
 {/answer}
 
 
-{question}
-Does Mosets Tree uses responsive web design?
-{/question}
+{question}Does Mosets Tree uses responsive web design?{/question}
 
 {answer}
 Starting from Mosets Tree 3.5, both the front and back-end interface of Mosets Tree is mobile ready. Mosets Tree makes use of Bootstrap v2 framework that is shipped with Joomla 3 to achieve this.
