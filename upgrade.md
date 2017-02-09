@@ -389,7 +389,7 @@ These are the steps you need to perform to incrementally upgrade from Mosets Tre
 
 1. **Migrate Mosets Tree 2.1(Joomla 1.5) to Mosets Tree 2.2 (Joomla 2.5)**
 
-	[You can refer to the full migration instruction here.](https://docs.mosets.com/{version}/upgrade#from-21-to-22)
+	[You can refer to the full migration instruction here.](https://docs.mosets.com/{{version}}/upgrade#from-21-to-22)
 	
 2. **Update Mosets Tree 2.2 to Mosets Tree 3.0 (Joomla 2.5)**
 
