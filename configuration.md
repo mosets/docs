@@ -61,7 +61,7 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Allow JSON Output {#allow_json_output}
  JSON is a data format that produces human-readable text and data that are easily parsable by other apps. If JSON output is enabled, you can access some of the pages in Mosets Tree in JSON format by appending the <strong>&format=json</strong> query string to its URL.<p />e.g.: < yoursite >/index.php?option=com_mtree&format=json
  
-## Permission
+## Permission {#permission}
 
  ### Edit Permission
  Permissions allow you to control which user groups will gain access to certain functions in Mosets Tree.
