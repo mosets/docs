@@ -4,6 +4,7 @@
 - Setup
 	- [Installation]({{version}}/installation)
 	- [Upgrade]({{version}}/upgrade)
+	- [Access Key]({{version}}/access-key)
 	- [Migration Guide]({{version}}/migration-guide)
 	- [Configuration]({{version}}/configuration)
 
