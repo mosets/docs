@@ -4,6 +4,7 @@
 - [JSON Output]({{version}}/what-is-new#json-output)
 - [Listing Renewal]({{version}}/what-is-new#listing-renewal)
 - [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
+- [Joomla Update Support]({{version}}/what-is-new#joomla-update-support)
 - [Miscellaneous]({{version}}/what-is-new#misc)
 
 ## Cluster Maps {#cluster-maps}
@@ -21,6 +22,10 @@ Mosets Tree has always allow you to set the number of days new listings stay pub
 ## Featuring a Listing in Front-end {#feature-listing-front-end}
 
  Featuring a listing has always been a privilege for administrator in back-end. Mosets Tree 3.9 introduces support for listing owner to feature their own listing in front-end.
+
+## Joomla Update Support {#joomla-update-support}
+
+ Mosets Tree 3.9.6 introduces Joomla Update support through the use of Access Key. Easily check for Mosets Tree update and update your Mosets Tree on site in 2 clicks. For more information, please refer to the [Access Key documentation]({{version}}/access-key).
  
 ## Miscellaneous {#misc}
  
