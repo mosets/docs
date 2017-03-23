@@ -126,7 +126,7 @@ Data entered into a field is displayed in two places in the Mosets Tree front-en
  : In this listing page, you can see user profile is displayed under the listing details. Clicking the user name will allow you to view details of the user profile, including the user's listings, reviews and favored listings.
  
  ### Show Previous/Next listing link
- This will disply 2 links at the bottom of the listing details pages to allow users to navigate to adjacent (previous or next) listings within a category.
+ This will display 2 links at the bottom of the listing details pages to allow users to navigate to adjacent (previous or next) listings within a category.
  
  This only works well when you order your listings based upon a column where all your listings have unique values. For example, this works best when you order your listings by 'Name'. 
  
