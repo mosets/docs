@@ -1,5 +1,26 @@
 # Mosets Account & Subscription
 
+When you purchase Mosets Tree on our website, you are purchasing a subscription. A subscription entitles you to one year of the following benefits:
+
+- Priority support on Mosets Private Support Form.
+- Access to download the latest version of the purchased product including bug fixes and new features.
+- Access Key to register your website for Automatic Updates through Joomla Update System.
+
+## Auto-Renew
+Starting from April 2017, all new subscription will be set up to automatically renew every 12 months. As long as your subscription remains active, you will get the above benefits.
+
+If you have purchased Mosets Tree before April 2017, you need to turn on Auto-Renew to set up automatic payments when your subscription is up for renewal. You can turn this on in your Mosets account.
+
+Turning on Auto-Renew for your subscription ensures that you get uninterrupted services from us, including Automatic Update and support. 
+
+{question}How do I turn off Auto-Renew?{/question}
+
+{answer}
+To disable automatic payments when your subscription is up for renewal, login to your <a href="https://www.mosets.com/login/">Mosets account</a> and toggle the "Auto Renew" button to "Off" for your subscription.
+
+**Note**: you can still renew your subscription manually by clicking the the "Renew subscription" or "Extend my subscription" link.
+{/answer}
+
 {question}I just purchased, but not receiving any e-mail yet. Help!{/question}
 
 {answer}
