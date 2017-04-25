@@ -2,7 +2,7 @@
 
 When you purchase Mosets Tree on our website, you are purchasing a subscription. A subscription entitles you to one year of the following benefits:
 
-- Priority support on Mosets Private Support Form.
+- Priority support on Mosets Private Support Forum.
 - Access to download the latest version of the purchased product including bug fixes and new features.
 - Access Key to register your website for Automatic Updates through Joomla Update System.
 
