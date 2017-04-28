@@ -10,13 +10,13 @@
 
 Mosets Tree has a few basic server requirements:
 
-- Joomla = 3.6.x
+- Joomla = 3.7.x
 - PHP = 5.6.x and 7.0.x
 - MySQL >= 5.1
 - Apache >= 2.0
 - GD Library >= 2.0
 
-If your site runs on Joomla 3.6, chances are your server can run Mosets Tree.
+If your site runs on Joomla 3.7, chances are your server can run Mosets Tree.
 
 ## Installing Mosets Tree {#install}
 
