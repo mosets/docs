@@ -6,6 +6,8 @@ When you purchase Mosets Tree on our website, you are purchasing a subscription.
 - Access to download the latest version of the purchased product including bug fixes and new features.
 - Access Key to register your website for Automatic Updates through Joomla Update System.
 
+Each of the benefits above is only applicable to 1 registered website with each subscription. If you have 2 or more websites runnning Mosets Tree that requires support or Automatic Updates, you need to purchase additional subscription. 
+
 ## Auto-Renew
 Starting from April 2017, all new subscription will be set up to automatically renew every 12 months. As long as your subscription remains active, you will get the above benefits.
 
