@@ -374,11 +374,23 @@ INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `
 # No upgrade queries.
 
 ############################
+# Mosets Tree version 3.9.5
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('cluster_map_max_zoom', 'map', '', '14', 'text', 4111, 1, 1);
+
+UPDATE `#__mt_fieldtypes` SET `use_elements` = '0', `use_columns` = '0' WHERE `field_type` = 'mweblink';
+
+############################
+# Mosets Tree version 3.9.6
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('access_key', 'subscription', '', '', 'text', '100', '0', '0'), ('subs_first_name', 'subscription', '', '', 'text', '100', '1', '0'), ('subs_last_name', 'subscription', '', '', 'text', '200', '1', '0'), ('subs_url', 'subscription', '', '', 'text', '300', '1', '0'), ('subs_expiry', 'subscription', '', '', 'text', '400', '1', '0'), ('subs_last_checked', 'subscription', '', '', 'text', 500, 1, 0), ('subs_last_checked_status', 'subscription', '', '', 'text', 600, 1, 0), ('subs_last_checked_verified', 'subscription', '', '', 'text', 700, 1, 0) ;
+
+INSERT INTO `#__mt_configgroup` (`groupname`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('subscription', '999', '0', '0');
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.9.4' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.9.6' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '9' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
 
 ## Frequently Asked Questions{#faqs}
