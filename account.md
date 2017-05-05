@@ -8,12 +8,19 @@ When you purchase Mosets Tree on our website, you are purchasing a subscription.
 
 Each of the benefits above is only applicable to 1 registered website with each subscription. If you have 2 or more websites runnning Mosets Tree that requires support or Automatic Updates, you need to purchase additional subscription. 
 
-## Auto-Renew
+## Auto-Renew {#auto-renew}
 Starting from April 2017, all new subscription will be set up to automatically renew every 12 months. As long as your subscription remains active, you will get the above benefits.
 
 If you have purchased Mosets Tree before April 2017, you need to turn on Auto-Renew to set up automatic payments when your subscription is up for renewal. You can turn this on in your Mosets account.
 
 Turning on Auto-Renew for your subscription ensures that you get uninterrupted services from us, including Automatic Update and support. 
+
+### Turning ON Auto-Renew {#turning-on-auto-renew}
+![Turning ON Auto-Renew](https://docs.mosets.com/assets/img/content/auto-renew.gif)
+
+If you're a Mosets Tree subscriber, you can turn on Auto-Renew by toggling On the Auto-Renew button in your [Mosets account](https://www.mosets.com/login/). You'll be prompted to Add a Payment card if this is the first time you toggle Auto-Renew.
+
+If you're purchasing a new subscription, Auto-Renew will be enabled by default. You can turn off Auto-Renew anytime by toggling it Off.
 
 {question}How do I turn off Auto-Renew?{/question}
 
