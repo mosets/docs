@@ -202,9 +202,8 @@ Clicking on this link will bring you to an interface where you can manage review
 {answer}
 Mosets Tree do not have support for paid listings at the moment. There are however third party addons that helps you to do this with Mosets Tree:
 
-- [Account Expiration Control (AEC)](http://valanx.org/)
-- [PayPlans](http://www.jpayplans.com/app-ville/item/moset-tree.html)
-- [Open Source Joomla Membership Control](http://membership.opensource-excellence.com/blog/41/89)
+- [PayPlans](http://www.readybytes.net/payplans/)
+- [Payments by Coding Mall](https://codingmall.com/products-mainmenu-8/90-payment-system-for-mosets-tree)
 
 {/answer}
 
