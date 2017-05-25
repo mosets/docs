@@ -16,6 +16,8 @@ If you have an active subscription:
 
 ## Using an Access Key
 
+In order to use an Access Key on your Mosets Tree website, make sure you have Mosets Tree version 3.9.6 or later.
+
 1. Login to your site's back-end.
 2. Go to "**Mosets Tree -> My Subscription**"
 3. Copy the Access Key you see in previous step above and paste it to the field named "**Access Key**".
