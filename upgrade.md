@@ -386,11 +386,19 @@ INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `
 INSERT INTO `#__mt_configgroup` (`groupname`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('subscription', '999', '0', '0');
 
 ############################
+# Mosets Tree version 3.9.7
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.9.8
+# No upgrade queries.
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.9.6' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.9.8' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '9' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
 
 ## Frequently Asked Questions{#faqs}
