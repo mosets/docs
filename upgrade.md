@@ -6,7 +6,8 @@
  - [Upgrading From 2.1 To 2.2.6]({{version}}/upgrade#from-21-to-22)
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
  - [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
- - [Upgrading To {{version}}]({{version}}/upgrade#to-39)
+ - [Upgrading From 3.9.x to the latest version of {{version}}]({{version}}/upgrade#to-39)
+ - [Upgrading From 3.9.6 to the latest version of {{version}}]({{version}}/upgrade#from-396-to-39)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
  - [Frequently Asked Questions]({{version}}/upgrade#faqs)
 
@@ -140,7 +141,7 @@ The following files are no longer used or have been moved to a new location. Rem
 - `/administrator/components/com_mtree/models/listing.xml`
 - `/language/en-GB/en-GB.fld_mfile.ini`
 
-## Upgrading To {{version}} {#to-39}
+## Upgrading From 3.9.x to the latest version of {{version}} {#to-39}
 This section shows how you can upgrade Mosets Tree from earlier version of 3.9.x to the latest version.
 
 ### Requirement
@@ -164,6 +165,22 @@ The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3
 
 ### Upgrade completed
 If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.9 on Joomla 3.7.
+
+
+## Upgrading From 3.9.6 to the latest version of {{version}} {#from-396-to-39}
+
+In Mosets Tree version 3.9.6, we introduce support for Joomla Update System, which means you can update Mosets Tree to the latest version with just a few clicks in your Joomla website's back-end.
+
+To do this, first, you need to setup and verify your Mosets Access Key. Head on to the [Access Key]({{version}}/access-key) documentation to learn how to set this up for your site.
+
+Once you have the Access Key set up and verified, you can update Mosets Tree as follows:
+
+1. Go to "**Extensions -> Manage -> Update**"
+2. Click "**Find Updates**" from the toolbar on top of the page. This will take a couple of seconds for your site to check for updates.
+3. If there is a Mosets Tree update available for your site, you'll see an entry for "Mosets Tree". Check the checkbox for "Mosets Tree" and click the "**Update**" button.
+4. The upgrade typically takes a couple of seconds. If all goes well, you'll see message informing you of the completed upgrade.
+
+Going forward, if there is an update to Mosets Tree, you will be notified when you login to your Joomla's website back-end. Just select "Mosets Tree" and click "Update" to update Mosets Tree. 
 
 ## Database Schema Updates {#db-schema}
 
