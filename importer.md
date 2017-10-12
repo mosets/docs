@@ -9,6 +9,7 @@
 	- [Select Multiple & Checkbox Field]({{version}}/importer#csv-select-multiple-checkbox)
 	- [Owner]({{version}}/importer#csv-owner)
 	- [Images]({{version}}/importer#csv-images)
+	- [Map Data]({{version}}/importer#csv-map-data)
 	- [Listing Association]({{version}}/importer#csv-listing-assoc)
 	- [Basic Rules & Tips]({{version}}/importer#csv-basic-rules-tips)
 - [Import from Hot Property]({{version}}/importer#hot-property)
@@ -170,6 +171,16 @@ Once you've imported these data, follow these steps:
 4. Click the "_Import Images_" link.
 
 Mosets Tree will read through the selected custom field and import images through the specified URLs to your listings.
+
+### Map Data {#csv-map-data}
+You can import geolocation data to you listings. This is done through 3 columns: `lat`, `lng` and `zoom`. 
+
+`lat` and `lng` are the columns for latitude and longitude values of your listing locations. 
+
+Because Mosets Tree uses Google Maps to display its maps, the `zoom` column defines the zoom level or resolution of the map view ([learn more](https://developers.google.com/maps/documentation/static-maps/intro#Zoomlevels)). Zoom levels are from 0 (entire world) up to 20, where you can see the streets and buildings. Typically a zoom level between 10 and 16 is a good range if you don't know what value to use. 
+
+> You must populate your listings with values for all 3 columns : `lat`, `lng` and `zoom` in your CSV file. These values are required in order to show your listings in map.  
+Add 
 
 ### Listing Associations {#csv-listing-assoc}
 If you have setup [Category Association]({{version}}/categories#association) in your directory, you can use `link_id1` column to specify your listings association with the associated listing's ID as the value.
