@@ -180,7 +180,7 @@ You can import geolocation data to you listings. This is done through 3 columns:
 Because Mosets Tree uses Google Maps to display its maps, the `zoom` column defines the zoom level or resolution of the map view ([learn more](https://developers.google.com/maps/documentation/static-maps/intro#Zoomlevels)). Zoom levels are from 0 (entire world) up to 20, where you can see the streets and buildings. Typically a zoom level between 10 and 16 is a good range if you don't know what value to use. 
 
 > You must populate your listings with values for all 3 columns : `lat`, `lng` and `zoom` in your CSV file. These values are required in order to show your listings in map.  
-Add 
+
 
 ### Listing Associations {#csv-listing-assoc}
 If you have setup [Category Association]({{version}}/categories#association) in your directory, you can use `link_id1` column to specify your listings association with the associated listing's ID as the value.
