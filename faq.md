@@ -144,7 +144,7 @@ The quickest way to clear all listings in your directory is by running these SQL
 	TRUNCATE TABLE `jos_mt_links_associations`;
 	TRUNCATE TABLE `jos_mt_reviews`;
 
-The query above assume you have '_jos\_' as your database table prefix. Replace it with your site's database table prefix before running the queries.
+The query above assume you have '_jos\__' as your database table prefix. Replace it with your site's database table prefix before running the queries.
 
 If your listings contain images or attachments, go to these directories on your server and delete all files:
 
