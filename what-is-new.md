@@ -1,37 +1,41 @@
-# What Is New in Mosets Tree 3.9
+# What Is New in Mosets Tree 3.10
 
-- [Cluster Maps]({{version}}/what-is-new#cluster-maps)
-- [JSON Output]({{version}}/what-is-new#json-output)
-- [Listing Renewal]({{version}}/what-is-new#listing-renewal)
-- [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
+- [Banyan Template]({{version}}/what-is-new#banyan)
+    - [Image Slider]({{version}}/what-is-new#image-slider)
+    - [Search Bar]({{version}}/what-is-new#search-bar)
+    - [Browse By Tags]({{version}}/what-is-new#browse-by)
+    - [Main Attribute & Focus Fields]({{version}}/what-is-new#main-attr-focus-fields)
+- [PHP 7.2 Compatible]({{version}}/what-is-new#php-72)
 - [Miscellaneous]({{version}}/what-is-new#misc)
 
-## Cluster Maps {#cluster-maps}
+## Banyan Template {#banyan}
 
-Mosets Tree 3.9 introduces Cluster Maps that lets you show Google Maps with markers from multiple listings. You can show Cluster Maps in Category, Index, Search Results, Top Listings and All Listings pages. 
+Mosets Tree 3.10 introduces Banyan template, the new default template for Mosets Tree. It comes with number of different styles for your Index, Listing Summary and Listing Details pages.
 
-## JSON Output {#json-output}
+### Image Slider {#image-slider}
 
-JSON output allows other app or services to consume data from Mosets Tree in a machine readable way. This is disabled by default and can be enabled through Mosets Tree Configuration. Check out the [full documentation]({{version}}/configuration#allow_json_output) to learn more about this. 
+Banyan uses a new image slider, [FlexSlider 2](http://flexslider.woothemes.com/). This image slider replaces the lightbox that is used in the details page. It is also used in listing summary view, allowing your users to browse your listings' images without clicking in to thei details page.
 
-## Listing Renewal {#listing-renewal}
+### Search Bar {#search-bar}
 
-Mosets Tree has always allow you to set the number of days new listings stay published before they expire. Mosets Tree 3.9 introduces a new feature that allow your users to renew their listings before they expire. Check out the [full documentation]({{version}}/configuration#allow_listing_renewal) to learn more about listing renewal.
+Search bar is now available by default on top of every Index page. It supports auto-complete which means they can quickly look for what they want and go to the listing directly.
 
-## Featuring a Listing in Front-end {#feature-listing-front-end}
+### Browse By Tags {#browse-by}
 
- Featuring a listing has always been a privilege for administrator in back-end. Mosets Tree 3.9 introduces support for listing owner to feature their own listing in front-end.
- 
+Banyan the ability show list of tags from one or more taggable fields in Index page. For example, if you run a movie review websites and you might be categorising your movies by genres. So with this new feature, your user can browse by genres (your categories) and by any other taggable fields you choose to show. In this example, it might be list of Directors, Actors, Year Released and so on.
+
+Demo: http://demo.mosetstree.com/autos.html
+
+: Take a look at _Autos_ category where we have the list of car brands in Index page, in addition to the type of cars.
+
+### Main Attribute & Focus Fields {#main-attr-focus-fields}
+
+Some of the new listing summary and listing details styles allows you to define fields as "Main Attribute" or "Focus" field. These fields when selected will be shown in special placement within the listing style. This allows you to call to attention to some of the important information about your listings.
+
+## PHP 7.2 Compatible
+
+Mosets Tree 3.10 is now compatible with PHP 7.2. Going forward, PHP 7.2 is our recommended version of PHP to use with Mosets Tree.
+
 ## Miscellaneous {#misc}
- 
-- Number based fields now defaults to a Slider based ranged search.
-- Filter module (mod_mt_filter) now has auto search.
-- Number fieldtype now uses number input field.
-- E-mails sent through contact and recommended form now originates from the site's sender name & email.
-- Google Maps in listing details page now uses API Keys.
-- New cron controller that execute scheduled tasks within Mosets Tree's context. Hook name: onMTreeExecuteCron
-- "Search By" values are now sorted naturally instead of frequency.
-- Listing Owners page now supports category.
-- mod_mt_owners now links to 'Read more...' page.
-- Don't show Reviews data in Listing Owners page when Reviews are disabled.
-- E-mails to admin for pending reviews now contains URL to the listing.
+
+- New Share with WhatsApp.
