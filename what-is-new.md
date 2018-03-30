@@ -10,7 +10,7 @@
 
 ## Banyan Template {#banyan}
 
-Mosets Tree 3.10 introduces Banyan template, the new default template for Mosets Tree. It comes with number of different styles for your Index, Listing Summary and Listing Details pages.
+Mosets Tree 3.10 introduces [Banyan template]({{version}}/template#banyan), the new default template for Mosets Tree. It comes with number of different styles for your Index, Listing Summary and Listing Details pages.
 
 ### Image Slider {#image-slider}
 
