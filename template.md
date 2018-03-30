@@ -2,6 +2,9 @@
 
 - [Introduction]({{version}}/template#intro)
 - [Requirement]({{version}}/template#requirement)
+- [Banyan Template]({{version}}/template#banyan)
+    - [Index Styles]({{version}}/template#banyan-index-styles)
+    - [Listing Summary Styles]({{version}}/template#banyan-ls-styles)
 - [Path & Files]({{version}}/template#path-and-files)
 - [Copying A Template]({{version}}/template#copy)
 - [Inheritance]({{version}}/template#inheritance)
@@ -29,12 +32,86 @@ You'll find many template parameters that lets you control many of the visual as
 ## Requirement {#requirement}
 Mosets Tree requires Bootstrap version 2 that is shipped with Joomla.
 
+## Banyan Template {#banyan}
+Banyan is the default Mosets Tree template that comes with every Mosets Tree package since 3.10. It comes with 7 Index styles and 9 Listing Summary styles.
+
+### Index Styles {#banyan-index-styles}
+
+#### Index Style 1
+![Mosets Tree Index Style 1](assets/img/content/template/index-style-1-root.jpg)
+
+#### Index Style 2
+![Mosets Tree Index Style 2](assets/img/content/template/index-style-2-auto.png)
+Demo: http://demo.mosetstree.com/autos.html
+
+#### Index Style 3
+![Mosets Tree Index Style 3](assets/img/content/template/index-style-3-business.png)
+Demo: http://demo.mosetstree.com/business.html
+
+#### Index Style 4
+![Mosets Tree Index Style 4 ](assets/img/content/template/index-style-4-architecture.png)
+Demo: http://demo.mosetstree.com/architecture.html
+
+#### Index Style 5
+![Mosets Tree Index Style 5 ](assets/img/content/template/index-style-5-health.png)
+Demo: http://demo.mosetstree.com/health.html
+
+#### Index Style 6
+![Mosets Tree Index Style 6 ](assets/img/content/template/index-style-6-travel.png)
+Demo: http://demo.mosetstree.com/travel.html
+
+#### Index Style 7
+![Mosets Tree Index Style 7 ](assets/img/content/template/index-style-7-softwares.png)
+Demo: http://demo.mosetstree.com/softwares.html
+
+### Listing Summary Styles {#banyan-ls-styles}
+
+#### Listing Summary Style 1
+![Mosets Tree Listing Summary Style 1](assets/img/content/template/ls1.jpg)
+Demo: http://demo.mosetstree.com/
+
+#### Listing Summary Style 2
+![Mosets Tree Listing Summary Style 2](assets/img/content/template/ls2.jpg)
+Demo: http://demo.mosetstree.com/travel/all.html
+
+#### Listing Summary Style 3
+![Mosets Tree Listing Summary Style 3](assets/img/content/template/ls3.jpg)
+Demo: http://demo.mosetstree.com/restaurants/all.html
+
+#### Listing Summary Style 4
+![Mosets Tree Listing Summary Style 4](assets/img/content/template/ls4.jpg)
+Demo: http://demo.mosetstree.com/autos/all.html
+
+#### Listing Summary Style 5
+![Mosets Tree Listing Summary Style 5](assets/img/content/template/ls5.jpg)
+Demo: http://demo.mosetstree.com/models/all.html
+
+#### Listing Summary Style 6
+![Mosets Tree Listing Summary Style 6](assets/img/content/template/ls6.jpg)
+Demo: http://demo.mosetstree.com/softwares/all.html
+
+#### Listing Summary Style 7
+![Mosets Tree Listing Summary Style 7](assets/img/content/template/ls7.jpg)
+Demo: http://demo.mosetstree.com/movies/all.html
+
+#### Listing Summary Style 8
+![Mosets Tree Listing Summary Style 8](assets/img/content/template/ls8.jpg)
+Demo: http://demo.mosetstree.com/architecture/all.html
+
+#### Listing Summary Style 9
+![Mosets Tree Listing Summary Style 9](assets/img/content/template/ls9.jpg)
+Demo: http://demo.mosetstree.com/apps/all.html
+
 ## Path & Files {#path-and-files}
-Mosets Tree comes with a default template called _Kinabalu_. The template files are located at this path:
+Mosets Tree templates are located at this path:
 
-	/components/com_mtree/templates/kinabalu/
+	/components/com_mtree/templates/
 
-This is where all the component's template files, `*.tpl.php` are located at. Files that starts with `page_*` prefix are the main files that constitute a page in Mosets Tree. Files with `sub_*` prefix are child pages that are called and use by `page_*` template file.
+For _Banyan_ template, all its template files are located at:
+
+	/components/com_mtree/templates/banyan/
+
+Files that starts with `page_*` prefix are the main files that constitute a page in Mosets Tree. Files with `sub_*` prefix are child pages that are called and use by `page_*` template files.
 
 Template files are named according to the page they output to. For example:
 
@@ -48,7 +125,7 @@ Many of these page template includes sub template. Whenever you see statement li
 
 	include $this->loadTemplate( 'sub_map.tpl.php' );
 
-it means that the page template includes the `sub_map.tpl.php` sub template file. If you look at listing details page template file, you will see that it includes the following sub template files:
+it means that the page template includes the `sub_map.tpl.php` sub template file. If you look at listing details page template file, `page_listing.tpl.php`, you will see that it includes the following sub template files:
 
 - `sub_listingDetails.tpl.php`
 - `sub_map.tpl.php`
