@@ -4,6 +4,7 @@
 - Setup
 	- [Installation]({{version}}/installation)
 	- [Upgrade]({{version}}/upgrade)
+	- [Access Key]({{version}}/access-key)
 	- [Migration Guide]({{version}}/migration-guide)
 	- [Configuration]({{version}}/configuration)
 
@@ -22,5 +23,11 @@
 
 	- [Modules]({{version}}/modules)
 <!--	- ⭕️ [Search Plugin]({{version}}/plugin-search) -->
-<!--	- ⭕️ [Profile Picture Plugin]({{version}}/profile-picture) -->
 	- [Importer]({{version}}/importer)
+	- [Profile Picture]({{version}}/profile-picture)
+
+- Help
+
+	- [FAQ]({{version}}/faq)
+	- [Pre-Sales]({{version}}/pre-sales)
+	- [Account & Subscription]({{version}}/account)

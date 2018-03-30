@@ -11,6 +11,7 @@
 	- [Publishing]({{version}}/listings#publishing)
 	- [Parameters]({{version}}/listings#parameters)
 	- [Notes]({{version}}/listings#notes)
+- [Front-end Submissions]({{version}}/listings#front-end-submissions)
 - [Claim]({{version}}/listings#claim)
 - [Frequently Asked Questions]({{version}}/listings#faqs)
 
@@ -115,6 +116,14 @@ Listing's parameter configuration overrides Mosets Tree global configuration. Pa
 
 ### Notes {#notes}
 Internal notes provides a place for you to record any comments about a listing. If you have multiple editor managing your directory, you can use this as a place to comment and collaborate on a listing.
+
+## Front-end Submissions {#front-end-submissions}
+Your users in front-end can submit listings to your directory. They can do this by clicking the _Add Listing_ link in [Browse module]({{version}}/modules#mod-mt-menu) or _Add your listing here_ link when they browse to a category in Mosets Tree. 
+ 
+Through the use of [Permission]({{version}}/configuration#permission) you can control which user group has the permission to submit new listings. You can even configure to allow _Public_ user group (ie: non-logged in users) to submit listings. 
+  
+By default, listings that are submitted by your users in front-end are sent to an approval queue in Mosets Tree's back-end. You as the admin will be notified on this through e-mail. You can choose to either Ignore, Accept or Reject the submission. This approval process can be disabled in [Configuration]({{version}}/configuration#main), in which any newly submitted listings will be published immediately to your directory.
+
 
 ## Claim {#claim}
 If any of your listings are owned by user from _Super Users_, _Administrator_ or _Manager_ group, they can be claimed by users. When a user claim a listing, you will be notified by e-mail. You can then view this claim in Mosets Tree's back-end to approve or reject the claim.
