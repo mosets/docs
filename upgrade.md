@@ -5,9 +5,8 @@
  - [Upgrading From 2.0 To 2.1.12]({{version}}/upgrade#from-20-to-21)
  - [Upgrading From 2.1 To 2.2.6]({{version}}/upgrade#from-21-to-22)
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
- - [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
- - [Upgrading From 3.9.x to the latest version of {{version}}]({{version}}/upgrade#to-39)
- - [Upgrading From 3.9.6 to the latest version of {{version}}]({{version}}/upgrade#from-396-to-39)
+ - [Upgrading From 3.0 To {{version}}]({{version}}/upgrade#from-30-to-latest)
+ - [Upgrading From 3.9.6+ or 3.10.x, to the latest version of {{version}}]({{version}}/upgrade#from-396-to-latest)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
  - [Frequently Asked Questions]({{version}}/upgrade#faqs)
 
@@ -24,8 +23,8 @@ If you are few version behind the latest version, upgrading to the latest versio
 3. Upgrade to Joomla 2.5
 4. [Upgrade Mosets Tree 2.1 to 2.2.6]({{version}}/upgrade#from-21-to-22)
 5. [Upgrade Mosets Tree 2.2 to 3.0.13]({{version}}/upgrade#from-22-to-30)
-6. Upgrade to Joomla 3.7
-7. [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
+6. Upgrade to Joomla 3.8
+7. [Upgrading From 3.0 To {{version}}]({{version}}/upgrade#from-30-to-latest)
 
 You can also refer to the steps above if you are upgrading from other version. For example, if you're upgrading from 2.2, you can start with Step 5 above.
 
@@ -54,6 +53,7 @@ Joomla 3.4 | Mosets Tree 3.6 & 3.7
 Joomla 3.5 | Mosets Tree 3.8
 Joomla 3.6 | Mosets Tree 3.8 & 3.9
 Joomla 3.7 | Mosets Tree 3.9
+Joomla 3.8 | Mosets Tree 3.10
 </div>
 
 ## Upgrading From 2.0 To 2.1.12 {#from-20-to-21}
@@ -131,45 +131,19 @@ If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by in
 > - In the migration instruction, you can safely ignore the requirement where you need both sites to be on the same version.
 > - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree 3.9's default `kinabalu` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
 
-## Upgrading From 3.0 To 3.9 {#from-30-to-39}
-If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.7.
+## Upgrading From 3.0 To {{version}} {#from-30-to-latest}
+If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.8.
 
-Once you’ve done that, the upgrade from MT 3.0 to 3.9 is again very straightforward, by installing the latest version of Mosets Tree 3.9 package, `pkg_mtree-3.9.x.zip`.
+Once you’ve done that, the upgrade from MT 3.0 to {{version}} is again very straightforward, by installing the latest version of Mosets Tree {{version}} package, `pkg_mtree-{{version}}.x.zip`.
 
 The following files are no longer used or have been moved to a new location. Remove these files:
 - `/modules/mod_mt_tagcloud/css`
 - `/administrator/components/com_mtree/models/listing.xml`
 - `/language/en-GB/en-GB.fld_mfile.ini`
 
-## Upgrading From 3.9.x to the latest version of {{version}} {#to-39}
-This section shows how you can upgrade Mosets Tree from earlier version of 3.9.x to the latest version.
+## Upgrading From 3.9.6+ or 3.10.x, to the latest version of {{version}} {#from-396-to-latest}
 
-### Requirement
-This upgrade requires Joomla! 3.6 and Mosets Tree 3.9.x.
-
-### Full site backup
-It is recommended that you perform a full site backup (files and database) before proceeding with the following upgrade.
-
-### Upgrading through Joomla's back-end interface
-The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.9 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
-
-- `/components/com_mtree/templates/kinabalu/`
-
-1. Download the latest package for Mosets Tree 3.9.x. This is the same package you use to install Mosets Tree 3.9 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.9.x.
-2. Log in to your site's back-end and go to:
-	1. Goto "**Extensions -> Extension Manager**"
-	2. Click "**Browse...**" to select "pkg_mtree-3.9.x.zip" from your computer.
-	3. Click "**Upload & Install**" to start the upgrade.
-	4. If the upgrade is successful, you will see a "_Installing package was successful._" message.
-3. If you have backed up your modified template files prior to the upgrade, restore these files, replacing the ones that have been replace by the upgrade.
-
-### Upgrade completed
-If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.9 on Joomla 3.7.
-
-
-## Upgrading From 3.9.6 to the latest version of {{version}} {#from-396-to-39}
-
-In Mosets Tree version 3.9.6, we introduce support for Joomla Update System, which means you can update Mosets Tree to the latest version with just a few clicks in your Joomla website's back-end.
+In Mosets Tree version 3.9.6, we introduce support for Joomla Update System, which means you can update Mosets Tree to the latest version with just a few clicks in your Joomla website's back-end. This feature is available to you if you're using Mosets Tree version 3.9.6 or above.
 
 To do this, first, you need to setup and verify your Mosets Access Key. Head on to the [Access Key]({{version}}/access-key) documentation to learn how to set this up for your site.
 
@@ -411,19 +385,29 @@ INSERT INTO `#__mt_configgroup` (`groupname`, `ordering`, `displayed`, `overrida
 # No upgrade queries.
 
 ############################
+# Mosets Tree version 3.10.0
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('index_search_by', 'category', '', '', 'taggable_fields', 3190, 1, 1), ('show_share_with_whatsapp', 'sharing', '1', '1', 'yesno', '700', '1', '1');
+
+INSERT IGNORE INTO `#__mt_templates` (`tem_name`) VALUES ('banyan');
+
+UPDATE `#__mt_config` SET `default` = 'banyan' WHERE `varname` = 'template';
+
+UPDATE `#__mt_customfields` SET `alias` = 'tags' WHERE `cf_id` = '28' AND `field_type` = 'mtags';
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.9.8' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.10.0' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
-UPDATE  `#__mt_config` SET  `value` =  '9' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '10' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '0' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
 
 ## Frequently Asked Questions{#faqs}
 
-{question}How to update Mosets Tree 2.1 (running on Joomla 1.5) to Mosets Tree 3.9 (Joomla 3.7)?{/question}
+{question}How to update Mosets Tree 2.1 (running on Joomla 1.5) to Mosets Tree {{version}} (Joomla 3.8)?{/question}
 
 {answer}
-These are the steps you need to perform to incrementally upgrade from Mosets Tree 2.1 to 3.9:
+These are the steps you need to perform to incrementally upgrade from Mosets Tree 2.1 to {{version}}:
 
 1. **Migrate Mosets Tree 2.1(Joomla 1.5) to Mosets Tree 2.2 (Joomla 2.5)**
 
@@ -433,8 +417,8 @@ These are the steps you need to perform to incrementally upgrade from Mosets Tre
 
 	This update is straightforward as it involves installing MT 3.0 package to your Joomla 2.5 site.
 
-3. **Update Mosets Tree 3.0 to Mosets Tree 3.9 (Joomla 3.7)**
+3. **Update Mosets Tree 3.0 to Mosets Tree {{version}} (Joomla 3.8)**
 
-	Once you've upgraded your Joomla site to Joomla 3.7, the upgrade from MT 3.0 to 3.9 is again straightforward like above, by installing the latest version of Mosets Tree 3.9 package.
+	Once you've upgraded your Joomla site to Joomla 3.8, the upgrade from MT 3.0 to {{version}} is again straightforward like above, by installing the latest version of Mosets Tree {{version}} package.
 
 {/answer}
