@@ -87,6 +87,13 @@ As part of Mosets Tree's [multi-directory]({{version}}/multi-directory) system, 
  ### Number of listings in index
  Set the number of top listings to be shown in index view. If you set the type of listing to show in the index to "Default", then the number of listings shown will be based on the "Number of listings per page" setting you have configured in the [Listing]({{version}}/configuration#listings) tab.
 
+ ### Display 'Browse By: Tag' in Index
+ Select the tags that will be displayed for '**Browse By**' section in Index view. This feature is enabled by default and can be disabled in Mosets Tree Template's "**Show 'Browse By'**" parameter.
+
+ The tags that you select here will list all its value in Index page. For example, if you run a movie review website and you might be categorising your movies by genres. So with this feature, your user can browse by genres (your categories) and by any other taggable fields you choose to show. In this example, it might be list of Directors, Actors, Year Released and so on.
+
+ Demo: http://demo.mosetstree.com/autos.html
+
  ### Display categories
  If this configuration is set to `No`, then categories will only be displayed to users on the "All Categories" page and nowhere else. 
  
@@ -438,7 +445,7 @@ When an image is uploaded the system will save the image in three formats: the o
  Set the maximum file size for images. Any uploaded images that exceed this maximum file size will be discarded and the user will be notified about this.
  
 ## Sharing {#sharing}
-In sharing you can control whether to insert social bookmarking buttons in the listings details view so that users can share your directory pages in popular social networks, such as, Facebook, Twitter, Pinterest, Google+ and LinkedIn.
+In sharing you can control whether to insert social bookmarking buttons in the listings details view so that users can share your directory pages in popular social networks, such as, Facebook, Twitter, Pinterest, Google+, Whatsapp and LinkedIn.
 
  ### Facebook Like
  By setting this to `Yes`, Facebook Like will show the like button on every listing details page.
