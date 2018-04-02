@@ -24,12 +24,14 @@ A listing is displayed in two forms in the front-end - Details view and Summary 
 
  In summary view, part of the listing's data is shown to your users in a limited amount of space. What will always be shown here is the listing name. Rating and the number of reviews are also shown if they are enabled. If you want to show additional custom fields or hide the default ones in this view, toggle the "_Shown in summary view_" setting by editing the field in "**Mosets Tree -> Custom Fields**".
  
- Demo: http://demo.mosetstree.com/models.html
+ Demo: http://demo.mosetstree.com/autos/all.html
+
+ : In the Autos category, we have _Description_, _Category_, _Price_, _Country_ and _Make_ set to be shown in Summary view.
 
  ### Details view {#details}
  Details view is the dedicated page that shows all published information about your listing. This includes all your fields data, images, ratings, reviews, user profile and maps. Listing details view is also the primary place where you can find links to or perform interaction with your listing.
  
- Demo: http://demo.mosetstree.com/models/970-alex-pettyfer.html
+ Demo: http://demo.mosetstree.com/autos/convertible/1128-tesla-roadster.html
 
 ## Category {#category}
 Listings are always assigned to the Root of your directory or one of your [Categories]({{version}}/categories). There are 2 ways you can choose which category you want your listings to be in when you create a listing:

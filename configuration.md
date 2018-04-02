@@ -185,7 +185,7 @@ Data entered into a field is displayed in two places in the Mosets Tree front-en
  ### Number of listings per page
  This configuration lets you set the maximum number of listings to be displayed on one page.
  
- Demo: http://demo.mosetstree.com/health.html
+ Demo: http://demo.mosetstree.com/health/all.html
  
  : In this page, we have set "**Number of listings per page**" to 20, as a result, you can see 20 listings at the most are shown on each page. Click on the page navigation link to view other listings on the subsequent pages. 
  
@@ -242,7 +242,7 @@ Mosets Tree has three types of searching functions to help your user find listin
   #### Show rating
   Setting this to `Yes` enables users to rate listings.
   
- Demo: http://demo.mosetstree.com/games/889-super-smash-bros-brawl.html
+ Demo: http://demo.mosetstree.com/travel/rome/1053-colosseum.html
 
  : In this page, you can see the rating is placed under the listing's description field to allow users to rate the listing. 
 
@@ -256,7 +256,7 @@ Mosets Tree has three types of searching functions to help your user find listin
   #### Prevent user from rating own listing
   You can prevent the listing owners from being able to rate their own listings by setting this to `Yes`.
   
-  Demo: http://demo.mosetstree.com/properties/lands/942-land-of-tulips.html
+  Demo: http://demo.mosetstree.com/softwares/852-bodega.html
   
   : By signing in to Mosets Tree's demo page as **Demo User**, you can see from the user profile, this listing belongs to the logged in user, thus rating their own listing is not allowed if "_Prevent user from rating own listing_" is set to `Yes`.
    
