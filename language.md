@@ -212,6 +212,7 @@ These are the language constants with their default language values that are ava
 	COM_MTREE_NEXT_LISTING_IN_CATEGORY="Next listing in %1$s <strong>&raquo;</strong> "
 	COM_MTREE_NO_NEXT_ADJACENT_LISTING_MSG="The previous listing was the last listing in the category. There are no listings after the previous listing. Click the back button in your browser to return to it, or browse another listing below."
 	COM_MTREE_NO_PREVIOUS_ADJACENT_LISTING_MSG="The previous listing was the first listing in the category. There are no listings before the previous listing. Click the back button in your browser to return to it, or browse another listing below."
+	COM_MTREE_SEARCH_PLACEHOLDER="Search listings here..."
 	
 
 ## Best Practise {#best-practise}
