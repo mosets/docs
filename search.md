@@ -3,6 +3,7 @@
 - [Simple Search]({{version}}/search#simple-search)
 - [Advanced Search]({{version}}/search#adv-search)
 - [Filters]({{version}}/search#filters)
+- [Joomla Search Plugin]({{version}}/search#joomla-plugin)
 
 It would be tedious if you have to browse through categories and look through many listings to find the listings you're looking for. Mosets Tree comes with 3 types of searches to help your users to search for listings quickly.
 
@@ -38,3 +39,14 @@ Filters are also available when your users view your category through 'All Listi
 Demo: http://demo.mosetstree.com/properties/all.html
 
 : In this page, users can click on the "**Filter Properties**" link to review filters. 
+
+## Joomla Search Plugin {#joomla-plugin}
+
+Mosets Tree comes with a Joomla Search Plugin that lets you search both Mosets Tree listings and categories. This plugin is already installed if you install the Mosets Tree plugin. To enable Mosets Tree Search Plugin:
+
+1. Login to your Joomla's administrator back-end.
+2. Goto "**Extensions -> Plugins**".
+3. Search for the plugin named "**Search - Mosets Tree**".
+4. Select the checkbox next to its name and click "**Enable**" to enable the plugin.
+
+Once this plugin is enabled, your users in front-end can search Mosets Tree listings and categories using Joomla's Search module.
