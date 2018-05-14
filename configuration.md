@@ -487,17 +487,19 @@ Mosets Tree RSS contains your listing names, descriptions, URLs and images. Opti
  where "*cust_1*" will be replaced by the custom field name and "_value_" is the value of the field for a listing. The caption and the field's value will also be shown as part of the feed item's description.
 
 ## SEF URLs {#sefurls}
-Enable Search engine friendly (SEF) URLs to provide an easier way for users to access your directory pages. SEF URLs also help with Search Engine Optimization (SEO) by having relevant names and keywords in your URLs.
+Enabling Search engine friendly (SEF) URLs allows you to product human-readable or clean URL that make sense to both your user and search engines. SEF URLs also help with Search Engine Optimization (SEO) by having relevant names and keywords in your URLs.
 
 To enable Mosets Tree' SEF URLs, turn on Joomla Search Engine Friendly URLs in Joomla's Configuration (Go to "**System -> Global Configuration**", under SEO Settings) and Mosets Tree will generate SEF URLs for your directory.
 
  ### Listing's slug type
- You can control how to represent each listing with an SEF URL.
+ You can control how to represent each listing with an SEF URL. You have 3 options as to how to generate the slug for your listings.
 
  #### Alias
  When a listing or category is added to Mosets Tree, an alias is created based on their title/name. This is typically done by lowercasing the name and replacing all the blank spaces with dashes. Choosing the "_Alias_" slug type will use this for your listing slug URL. eg:
 
  	http://www.example.com/directory/business/acme-inc
+
+> **Note**: Mosets Tree does not check if you already have the same alias in the directory when it generates one. If your directory tend to have listings with same name, we do not recommend using 'Alias' slug type. If you do, you need to make sure the alias are unique to each listing by editing your listing's alias or manually specify one when creating your listing.
 
  #### Link ID
  Instead of using an alias, "_Link ID_" will use the listing ID number as the listing slug URL. eg:
@@ -505,7 +507,9 @@ To enable Mosets Tree' SEF URLs, turn on Joomla Search Engine Friendly URLs in J
   	 	http://www.example.com/directory/business/119
 
  #### Link ID & Alias Hybrid
- "_Link ID & Alias Hybrid_" slug type uses both the listing alias and the listing ID number for your listing's URL slug. This gives the best of both worlds. Using link ID number guarantees that each of your listings have a unique URL, and using the alias gives each listing a human-friendly SEF URL.
+ "_Link ID & Alias Hybrid_" slug type uses both the listing alias and the listing ID number for your listing's URL slug. This gives the best of both worlds. Using link ID number guarantees that each of your listings have a unique URL, and using the alias gives each listing a human-friendly SEF URL. eg:
+
+   	 	http://www.example.com/directory/business/119-acme-inc
 
 ## Captcha {#captcha}
 You can decide which feature you want to use a [Captcha]({{version}}/fields#fieldtype-captcha) for submissions to verify that your site visitors are real humans and not bots or crawlers.
