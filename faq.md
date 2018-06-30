@@ -148,7 +148,9 @@ The query above assume you have '_jos\__' as your database table prefix. Replace
 
 If your listings contain images or attachments, go to these directories on your server and delete all files:
 
-- **/media/com_mtree/images/listings/**
+- **/media/com_mtree/images/listings/o/**
+- **/media/com_mtree/images/listings/m/**
+- **/media/com_mtree/images/listings/s/**
 - **/media/com_mtree/attachments/**
 
 > **Warning**: Running the above SQL queries will remove all listings in your directory. Make sure you know what you're doing before running it.
