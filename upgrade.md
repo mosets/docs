@@ -395,16 +395,48 @@ UPDATE `#__mt_config` SET `default` = 'banyan' WHERE `varname` = 'template';
 UPDATE `#__mt_customfields` SET `alias` = 'tags' WHERE `cf_id` = '28' AND `field_type` = 'mtags';
 
 ############################
+# Mosets Tree version 3.10.1
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.2
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.3
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.4
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.5
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.6
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES('sef_owner_page', 'sef', 'opage', 'opage', 'text', 1325, 1, 0), ('sef_owner_slug_type', 'sef', '1', '1', 'sef_owner_slug_type', 130, 1, 0);
+
+############################
+# Mosets Tree version 3.10.7
+# No upgrade queries.
+
+############################
+# Mosets Tree version 3.10.8
+# No upgrade queries.
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.10.0' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '3.10.8' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '10' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '0' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```
 
 ## Frequently Asked Questions{#faqs}
 
-{question}How to update Mosets Tree 2.1 (running on Joomla 1.5) to Mosets Tree {{version}} (Joomla 3.8)?{/question}
+{question}How to update Mosets Tree 2.1 (running on Joomla 1.5) to Mosets Tree {{version}} (Joomla 3.9)?{/question}
 
 {answer}
 These are the steps you need to perform to incrementally upgrade from Mosets Tree 2.1 to {{version}}:
@@ -417,8 +449,8 @@ These are the steps you need to perform to incrementally upgrade from Mosets Tre
 
 	This update is straightforward as it involves installing MT 3.0 package to your Joomla 2.5 site.
 
-3. **Update Mosets Tree 3.0 to Mosets Tree {{version}} (Joomla 3.8)**
+3. **Update Mosets Tree 3.0 to Mosets Tree {{version}} (Joomla 3.9)**
 
-	Once you've upgraded your Joomla site to Joomla 3.8, the upgrade from MT 3.0 to {{version}} is again straightforward like above, by installing the latest version of Mosets Tree {{version}} package.
+	Once you've upgraded your Joomla site to Joomla 3.9, the upgrade from MT 3.0 to {{version}} is again straightforward like above, by installing the latest version of Mosets Tree {{version}} package.
 
 {/answer}
