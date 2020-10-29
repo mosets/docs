@@ -304,10 +304,10 @@ Categories image by default is shown only when you view the category page. You c
 
 {answer}
 ### About CAPTCHA in Mosets Tree
-Mosets Tree 3 introduces CAPTCHA support by making use of Joomla 2.5 new feature that supports CAPTCHA. This article will refer to the use of reCAPTCHA service as it comes as the default CAPTCHA plugin.
+Mosets Tree supports CAPTCHA by making use of Joomla's CAPTCHA plugin. Joomla comes with 2 CAPTCHA plugins pre-installed and Mosets Tree works with both of them. This article will use reCAPTCHA service as an example, but you can use any other CAPTCHA plugin with Mosets Tree.
 
 ### Enable CAPTCHA in Joomla
-To use CAPTCHA in Mosets Tree, you first need to enable reCAPTCHA in Joomla. You can refer to [this article in Joomla's documentation](https://docs.joomla.org/How_do_you_use_Recaptcha_in_Joomla%3F) on the instructions to do this. Once you have done this, you'll see reCAPTCHA appears in your site's front-end Register and Contact Us form.
+To use CAPTCHA in Mosets Tree, you first need to enable reCAPTCHA in Joomla. You can refer to [this tutorial in Joomla's documentation](https://docs.joomla.org/J3.x:Google_ReCaptcha) on the instructions to do this. Once you have completed the tutorial, you'll see reCAPTCHA appearing om your site's front-end Register and Contact Us form. This means that you've successfully enabled reCAPTCHA on your site. 
 
 ### Enable CAPTCHA in Mosets Tree
 CAPTCHA is enabled by default in Mosets Tree. You can confirm this by going to Mosets Tree's Configuration and check under "Captcha" tab. This tab contains 4 configuration that lets you control which form (Review, Contact Owner, Report Listing, Report Review and Recommend) to use CAPTCHA. Once you have enabled CAPTCHA in Joomla from above section, you will see CAPTCHA appearing in each of the Mosets Tree forms you've selected to use CAPTCHA.
