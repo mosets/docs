@@ -12,7 +12,7 @@ The latest version of Profile Picture plugin is installed when you installed a M
 To use this:
  
  1. Login to your site's back-end.
- 2. Go to: **Extensions -> Plugins**
+ 2. Go to: **System -> Manage -> Plugins**
  3. Search for the plugin named **User - Profile Picture.**
  4. Make sure the plugin is enabled. If it is not, toggle the 'Status' icon to enable it. 
 

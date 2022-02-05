@@ -21,11 +21,11 @@ This allows you to assign [custom fields]({{version}}/fields#custom-fields) to s
 
 Custom fields' assignment to top level categories can be done while you're editing/adding a custom field or top level category in Mosets Tree's back-end. While you're editing a custom field, you can select which top level categories the custom field will appear. Similarly, when you are editing a category, you can select which custom field will appear in this top level category and its sub-categories.
 
-Demo: http://demo.mosetstree.com/properties/apartments/add.html
+Demo: http://demo.mosetstree.com/properties/apartments/add
 
 : You can see that the **Add Listing** form for _Apartment_ category has, among others, fields for _Bedrooms_, _Bathrooms_ and _Facilities_. These fields are only assigned to _Properties_ top level category.
 
-: Compare this with _Models_ category's [Add Listing form](http://demo.mosetstree.com/models/add.html). You will see fields like _Gender_, _Skin Color_ and _Body Type_. Again, these fields are assigned to _Models_ category, thus only available to listings created within it.
+: Compare this with _Models_ category's [Add Listing form](http://demo.mosetstree.com/models/add). You will see fields like _Gender_, _Skin Color_ and _Body Type_. Again, these fields are assigned to _Models_ category, thus only available to listings created within it.
 
 ## Category Configuration at Top Level Categories {#category-config-at-TLC}
 Category Configuration lets you override Mosets Tree's configuration in top level category. Any overrides configured here will be inherited to all listings and sub-categories underneath it.

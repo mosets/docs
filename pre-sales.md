@@ -23,7 +23,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 This means that you can install Mosets Tree on any number of websites.
 
-Note that our support is based on per site subscription. Which means when you purchase a site subscription, you are entitled to register a single site in which we will provide support for. If you wish to have support for 2 or more sites, you will need to purchase additional site subscription. You can find more about Mosets Tree's pricing at http://www.mosets.com/tree/pricing/.
+Note that our support is based on per site subscription. Which means when you purchase a site subscription, you are entitled to register a single site in which we will provide support for. If you wish to have support for 2 or more sites, you will need to purchase additional site subscription. You can find more about Mosets Tree's pricing at http://www.mosets.com/pricing/.
 {/answer}
 
 {question}What are the languages available?{/question}
@@ -47,17 +47,17 @@ No. All our extensions are developed for Joomla!. You must install Joomla! befor
 {question}Can I buy your extensions with Paypal?{/question}
 
 {answer}
-Yes, you can make the payment through paypal by sending it to our paypal address at:
+Yes, you can make the payment through paypal by using the following link:
 
-**paypal AT mosets.com**
+https://paypal.me/mosets
  
 and [let us know](https://www.mosets.com/contact/) right after you've made the payment.
 {/answer}
 
-{question}Do you support PHP 7?{/question}
+{question}Do you support PHP 8?{/question}
 
 {answer}
-Yes, Mosets Tree is compatible with PHP 7 since version [3.8](https://www.mosets.com/news/mosets+tree/mt%1138/).
+Yes, Mosets Tree is compatible with PHP 8 since version 4.
 {/answer}
 
 {question}Can I accept online payment using your extension?{/question}
@@ -70,9 +70,9 @@ No. Mosets Tree does not support any payment gateway at the moment.
 {question}Does Mosets Tree uses responsive web design?{/question}
 
 {answer}
-Starting from Mosets Tree 3.5, both the front and back-end interface of Mosets Tree is mobile ready. Mosets Tree makes use of Bootstrap v2 framework that is shipped with Joomla 3 to achieve this.
+Yes. Both the front and back-end interface of Mosets Tree is mobile ready. Mosets Tree uses of Bootstrap v5 framework that is shipped with Joomla 4 to achieve this.
 
-If your site template uses Bootstrap v2 and is mobile responsive, your site is ready to advantage of Mosets Tree's responsive web design.
+If your site template uses Bootstrap v5 and is mobile responsive, your site is ready to advantage of Mosets Tree's responsive web design.
 {/answer}
 
 {question}Can I use Mosets Tree with WordPress?{/question}

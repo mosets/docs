@@ -20,10 +20,17 @@ Mosets Tree's front-end and back-end language files are stored in these files:
 			/en-GB
 				en-GB.com_mtree.ini
 				en-GB.com_mtree.sys.ini
+				en-GB.plg_extension_mosets.ini
+				en-GB.plg_extension_mosets.sys.ini
+				en-GB.plg_finder_mtree_listings.ini
+				en-GB.plg_finder_mtree_listings.sys.ini
+				en-GB.plg_search_mtree.ini
+				en-GB.plg_search_mtree.sys.ini
 	/language
 		/en-GB
 			en-GB.com_mtree.ini
-			en-GB.fld_audioplayer.ini
+			en-GB.fld_audioplayer2.ini
+			en-GB.fld_coredesc.ini
 			en-GB.fld_corefeatured.ini
 			en-GB.fld_coreprice.ini
 			en-GB.fld_corewebsite.ini
@@ -36,6 +43,7 @@ Mosets Tree's front-end and back-end language files are stored in these files:
 			en-GB.fld_videoplayer.ini
 			en-GB.fld_weblink.ini
 			en-GB.fld_year.ini
+			en-GB.lib_profilepicture.sys.ini
 			en-GB.mod_mt_alphaindex.ini
 			en-GB.mod_mt_alphaindex.sys.ini
 			en-GB.mod_mt_browse.ini
@@ -54,6 +62,8 @@ Mosets Tree's front-end and back-end language files are stored in these files:
 			en-GB.mod_mt_listings.sys.ini
 			en-GB.mod_mt_menu.ini
 			en-GB.mod_mt_menu.sys.ini
+			en-GB.mod_mt_owners.ini
+			en-GB.mod_mt_owners.sys.ini
 			en-GB.mod_mt_search.ini
 			en-GB.mod_mt_search.sys.ini
 			en-GB.mod_mt_staticcats.ini
@@ -103,10 +113,9 @@ We are starting to use Transifex to let our users collaborate on translations wo
 
 You can easily override any texts in Mosets Tree through Joomla's Language Overrides:
 
-1. Go to "**Extensions -> Language Manager -> Add New Menu Item**"
-2. Click "**Overrides**" from your left hand side menu.
-3. Set "**Filter**" to "**English (en-GB) - Site**".
-4. Click "**New**" button.
+1. Go to "**System -> Manage -> Language Overrides**"
+2. Select the language and client you want to override through the drop down select box that says "Select Language & Client". In our example here, we are going to select "**English (United Kingdom) - Site**".
+3. Click the "**New**" button.
 
 You're now in the "**Create a New Override**" screen.
 

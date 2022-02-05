@@ -25,11 +25,12 @@
     - [Directory's Last Update]({{version}}/modules#mod-mt-lastupdate)
     - [Dynamic Tree]({{version}}/modules#mod-mt-dtree)
     - [Filter]({{version}}/modules#mod-mt-filter)
-    - [Owners]({{version}}/modules#mod-mt-owner)
+    - [Owners]({{version}}/modules#mod-mt-owners)
     - [Search]({{version}}/modules#mod-mt-search)
     - [Static Categories]({{version}}/modules#mod-mt-staticcats)
     - [Tag Cloud]({{version}}/modules#mod-mt-tagcloud)
     - [Top Listings]({{version}}/modules#mod-mt-listings)
+    - [Map]({{version}}/modules#mod-mt-map)
     - [Voted Best]({{version}}/modules#mod-mt-votedbest)
 </div>
 
@@ -91,6 +92,9 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
 
  ### Top Listings {#mod-mt-listings}
  This is a multipurpose module that allows you to display top listings in your directory. This module can be configured to show New, Recently Updated, Featured, Popular, Most Rated, Top Rated and Most Reviewed listings. This can also be used to show random listings.
+
+### Map {#mod-mt-map}
+ Shows a map with cluster of markers from your directory. There are options for you to show markers from a particular category and sort them in various ways.
 
  ### Voted Best {#mod-mt-votedbest}
  Voted Best module displays a table of top rated listings.

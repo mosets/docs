@@ -47,10 +47,10 @@ The steps outlined here applies to other component as well.
 3. Look for a Mosets Tree menu item in the list of menus. Otherwise you need to create one:
 	- Click the "New" icon.
 	- Click "Select" and choose "_Mosets Tree > Home_" for the 'Menu Item Type'.
-	- Enter a title to "Menu Title"
+	- Enter a title to "Title"
 	- Click the "Save" icon on top of the page to save this new menu item.
 	
-4. To publish this menu item to your site's frontpage, look for the menu item in the list of menu items and click on the 'star' icon under "_Home_" column. This will mark the menu item as your site's frontpage.
+4. To publish this menu item to your site's frontpage, look for the menu item in the list of menu items and click on the icon under "_Home_" column. This will mark the menu item as your site's frontpage.
 
 {/answer}
 
@@ -74,7 +74,7 @@ Assuming your database is using '_jos\__' as the database prefix, backup all tab
 
 **/components/com_mtree/templates/**	
 
-All Mosets Tree templates are stored in the above directory in its own sub-directory. Mosets Tree comes with a default template called '_kinabalu_' which is stored at `/components/com_mtree/templates/kinabalu/`. If you did not modify the default template, you can skip this directory, otherwise, backup all files and directories in this template directory.
+All Mosets Tree templates are stored in the above directory in its own sub-directory. Mosets Tree comes with a default template called '_Banyan_' which is stored at `/components/com_mtree/templates/banyan/`. If you did not modify the default template, you can skip this directory, otherwise, backup all files and directories in this template directory.
 
 {/answer}
 
@@ -124,7 +124,7 @@ Here are the details of the query:
 
 Once you have done the '_INSERT_'s, login to your site's back-end and run this URL:
  
-	http://www.example.com/administrator/index2.php?option=com_mtree&task=rebuild_tree
+	https://www.example.com/administrator/index2.php?option=com_mtree&task=rebuild_tree
 
 Replace '_www.example.com_' with your site's domain and path. This URL will build the '_lft_' and '_rgt_' column's value which is needed for use in Mosets Tree.
 {/answer}
@@ -178,35 +178,13 @@ You can use the following SQL queries to reset Unique Pageviews, Website Clicks,
 
 {/answer}
 
-{question}How do I hide listings under categories in index page?{/question}
-
-{answer}
-Mosets Tree's default template '_kinabalu_', displays 3 listings below each root category in the index page. Here is how you can disable this:
-
-1. Login to your site's back-end.
-2. Go to **Mosets Tree > Templates > kinabalu**
-
-Look for the parameter named 'Number of listings under top level cats.' and set it to `0`.
-{/answer}
-
 {question}Where do I manage reviews in Mosets Tree{/question}
 
 {answer}
-![Manage reviews in Mosets Tree](assets/img/content/manage-reviews.png)
-
+![Manage reviews in Mosets Tree](assets/img/content/manage-reviews-40.png)
 
 The screenshot above shows where you can click to manage reviews in Mosets Tree's back-end. The link to this page is available on the same row where you have your listings, under "Reviews" column.
 Clicking on this link will bring you to an interface where you can manage reviews for that particular listing.
-{/answer}
-
-{question}Does Mosets Tree accept payment for paid listings?{/question}
-
-{answer}
-Mosets Tree do not have support for paid listings at the moment. There are however third party addons that helps you to do this with Mosets Tree:
-
-- [PayPlans](http://www.readybytes.net/payplans/)
-- [Payments by Coding Mall](https://codingmall.com/products-mainmenu-8/90-payment-system-for-mosets-tree)
-
 {/answer}
 
 {question}How do I show breadcrumbs in Mosets Tree?{/question}
@@ -217,9 +195,9 @@ Mosets Tree uses Joomla's Breadcrumbs (mod_breadcrumbs) module to show show its 
 To publish the Breadcrumbs module:
 
 1. Login to your site's back-end.
-2. Go to: **Extensions -> Modules**
+2. Go to: **System -> Manage -> Site Modules**
 3. Click the "New" icon on top to create a new module instance.
-4. Click to select "**Breadcrumbs**" module.
+4. Search and select "**Breadcrumbs**" module.
 5. Fill in the module's "Title" and click "Save & Close".
  
 {/answer}
@@ -246,28 +224,13 @@ Follow the steps below to change this default location:
 {answer}
 The size of Google Maps in a listing details view are defined in this template file:
 
-/components/com_mtree/templates/kinabalu/sub_map.tpl.php
+/components/com_mtree/templates/banyan/sub_map.tpl.php
 in line 3 - 4:
 
 		$width = '100%';
 		$height = '300px';
 
 Changing the value of the width and height will resize the Google Maps in listing details view.
-{/answer}
-
-{question}How do I increase the number of listings shown under each categories in index view?{/question}
-
-{answer}
-When viewing Mosets Tree's front page or any category pages that uses index page, 3 listings are shown below each category by default.
-
-The number of listings shown here can be configure in your default Mosets Tree template:
-
-1. Login to your site's the back-end/
-2. Go to: **Mosets Tree -> Templates -> kinabalu**
-3. Look for the parameter named "_Number of Listings shown in Index_".
-4. This is the option that controls the number of listings shown under each category in index page. You can increase the value here to show more listings or all listings. You can also set this to "0" to show none.
-5. Click "Save" icon on top to save your changes.
-
 {/answer}
 
 {question}How can I hide the message "No records found"?{/question}
@@ -293,8 +256,8 @@ This setting will hide listings from being shown in the category that you have e
 Categories image by default is shown only when you view the category page. You can configure your template to have the images to show in index page:
 
 1. Login to your site's back-end.
-2. Go to: **Mosets Tree > Templates > Kinabalu**
-3. Look for the parameter named "**Show Categories**' images in Index" to `Yes`. This will display your category images in Index page.
+2. Go to: **Mosets Tree > Templates > Banyan**
+3. Look for the parameter named "**Show Categories' images**" to `Yes`. This will display your category images in Index page.
 4. Click the Save icon on top right of the page to save the changes.
 
 {/answer}
@@ -310,10 +273,10 @@ Mosets Tree supports CAPTCHA by making use of Joomla's CAPTCHA plugin. Joomla co
 To use CAPTCHA in Mosets Tree, you first need to enable reCAPTCHA in Joomla. You can refer to [this tutorial in Joomla's documentation](https://docs.joomla.org/J3.x:Google_ReCaptcha) on the instructions to do this. Once you have completed the tutorial, you'll see reCAPTCHA appearing om your site's front-end Register and Contact Us form. This means that you've successfully enabled reCAPTCHA on your site. 
 
 ### Enable CAPTCHA in Mosets Tree
-CAPTCHA is enabled by default in Mosets Tree. You can confirm this by going to Mosets Tree's Configuration and check under "Captcha" tab. This tab contains 4 configuration that lets you control which form (Review, Contact Owner, Report Listing, Report Review and Recommend) to use CAPTCHA. Once you have enabled CAPTCHA in Joomla from above section, you will see CAPTCHA appearing in each of the Mosets Tree forms you've selected to use CAPTCHA.
+CAPTCHA is not enabled by default in Mosets Tree. You can enable it going to Mosets Tree's Configuration, under "Captcha" tab. This tab contains 5 configurations that let you control which form (Review, Contact Owner, Report Listing, Report Review and Recommend) to use CAPTCHA. Set all (or just the one you need) to `Yes` to enable CAPTCHA. Click `Save` to save your changes. Once you have done these, you will see CAPTCHA appearing in each of the Mosets Tree forms you've selected to use CAPTCHA.
 
 ### Enable CAPTCHA in Mosets Tree Add Listing form
-To use CAPTCHA in Mosets Tree's front-end Add Listing form, create a new custom field based on "**Captcha**" field type. This is a new field type introduced in Mosets Tree 3 that allows you to use CAPTCHA in Add Listing form. A few things to note about Captcha field type in Mosets Tree:
+To use CAPTCHA in Mosets Tree's front-end Add Listing form, create a new custom field based on "**Captcha**" field type. A few things to note about Captcha field type in Mosets Tree:
 
 - It only appears in front-end when adding a new listing.
 - It does not appear when you editing existing listing.
@@ -350,16 +313,6 @@ Once you've execute the queries, use the 'Import Images' tool to import the imag
 {/answer}
 
 
-{question}Why am I getting '404 error' when accessing Mosets Tree's Home?{/question}
-
-{answer}
-
-You may get a 404 error on your Mosets Tree directory's homepage after a database migration or restoration (done either manually or using third party backup and restore tool such as Akeeba Backup). This is due to Mosets Tree's Root directory's ID being changed from 0.
-
-To fix this, simply login to your site's back-end and go to Mosets Tree Configuration. Click 'Save' and this will resolve the issue.
-{/answer}
-
-
 {question}Convert a custom field from Tag field type to Checkbox or Select Multiple field type{/question}
 
 {answer}
@@ -389,34 +342,15 @@ The steps above is applicable to converting your custom fields from Tag field ty
 {/answer}
 
 
-{question}"Table '***.#__mt_config' doesn't exist SQL=SELECT value FROM #__mt_config WHERE varname ='version' LIMIT 1 " error appears when installing Mosets Tree{/question}
-
-{answer}
-### Symptom
-When attempting to install Mosets Tree, you receive the following error message in Extension Manager:
-
-	Table '***.#__mt_config' doesn't exist SQL=SELECT value FROM #__mt_config WHERE varname ='version' LIMIT 1
-	
-### Resolution
-
-The error appears because Mosets Tree detects that you have prior installation of Mosets Tree that still exists in your server. To resolve this, remove the following directories from your server:
-
-- **/components/com_mtree	**
-- **/administrator/components/com_mtree**
-
-Once you've removed the directories above, attempt to install Mosets Tree again.
-{/answer}
-
-
 {question}How to uninstall Mosets Tree?{/question}
 
 {answer}
 Follow these steps to fully uninstall Mosets Tree from your Joomla website.
 
 1. Login to your Joomla site's back-end.
-2. Go to: **Extensions -> Manage -> Manage**
+2. Go to: **System -> Manage -> Extensions**
 3. Search for "Mosets Tree Package"
-4. Toggle the checkbox for "Mosets Tree Package" and click "Uninstall"
+4. Check the checkbox for "Mosets Tree Package" and click "Uninstall"
 
 > **Warning**: Uninstalling Mosets Tree will remove all Mosets Tree extensions, listings, categories and their associated fields, images and attachments. This action is not reversible.
 {/answer}

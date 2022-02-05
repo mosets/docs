@@ -35,7 +35,7 @@ To disable automatic payments when your subscription is up for renewal, login to
 {answer}
 If you're purchasing through 2Checkout.com, you should receive an e-mail with your login information to your Mosets account. Check your mailbox's SPAM folder for our e-mails in case our e-mails are marked as such.
 
-Alternatively, you can request for a password reset at http://www.mosets.com/login/ and have the new password and your username sent to your registered e-mail.
+Alternatively, you can request for a password reset at https://www.mosets.com/login/ and have the new password and your username sent to your registered e-mail.
 
 If you're still not receiving the e-mail with all the above methods, please [contact us](https://www.mosets.com/contact/) with your e-mail address and Order Number. We will get back to you as soon as possible.
 {/answer}

@@ -42,27 +42,27 @@ Banyan is the default Mosets Tree template that comes with every Mosets Tree pac
 
 #### Index Style 2
 ![Mosets Tree Index Style 2](assets/img/content/template/index-style-2-auto.png)
-Demo: http://demo.mosetstree.com/autos.html
+Demo: http://demo.mosetstree.com/autos
 
 #### Index Style 3
 ![Mosets Tree Index Style 3](assets/img/content/template/index-style-3-business.png)
-Demo: http://demo.mosetstree.com/business.html
+Demo: http://demo.mosetstree.com/business
 
 #### Index Style 4
 ![Mosets Tree Index Style 4 ](assets/img/content/template/index-style-4-architecture.png)
-Demo: http://demo.mosetstree.com/architecture.html
+Demo: http://demo.mosetstree.com/architecture
 
 #### Index Style 5
 ![Mosets Tree Index Style 5 ](assets/img/content/template/index-style-5-health.png)
-Demo: http://demo.mosetstree.com/health.html
+Demo: http://demo.mosetstree.com/health
 
 #### Index Style 6
 ![Mosets Tree Index Style 6 ](assets/img/content/template/index-style-6-travel.png)
-Demo: http://demo.mosetstree.com/travel.html
+Demo: http://demo.mosetstree.com/travel
 
 #### Index Style 7
 ![Mosets Tree Index Style 7 ](assets/img/content/template/index-style-7-softwares.png)
-Demo: http://demo.mosetstree.com/softwares.html
+Demo: http://demo.mosetstree.com/software
 
 ### Listing Summary Styles {#banyan-ls-styles}
 
@@ -72,35 +72,35 @@ Demo: http://demo.mosetstree.com/
 
 #### Listing Summary Style 2
 ![Mosets Tree Listing Summary Style 2](assets/img/content/template/ls2.jpg)
-Demo: http://demo.mosetstree.com/travel/all.html
+Demo: http://demo.mosetstree.com/travel/all
 
 #### Listing Summary Style 3
 ![Mosets Tree Listing Summary Style 3](assets/img/content/template/ls3.jpg)
-Demo: http://demo.mosetstree.com/restaurants/all.html
+Demo: http://demo.mosetstree.com/restaurants/all
 
 #### Listing Summary Style 4
 ![Mosets Tree Listing Summary Style 4](assets/img/content/template/ls4.jpg)
-Demo: http://demo.mosetstree.com/autos/all.html
+Demo: http://demo.mosetstree.com/autos/all
 
 #### Listing Summary Style 5
 ![Mosets Tree Listing Summary Style 5](assets/img/content/template/ls5.jpg)
-Demo: http://demo.mosetstree.com/models/all.html
+Demo: http://demo.mosetstree.com/models/all
 
 #### Listing Summary Style 6
 ![Mosets Tree Listing Summary Style 6](assets/img/content/template/ls6.jpg)
-Demo: http://demo.mosetstree.com/softwares/all.html
+Demo: http://demo.mosetstree.com/softwares/all
 
 #### Listing Summary Style 7
 ![Mosets Tree Listing Summary Style 7](assets/img/content/template/ls7.jpg)
-Demo: http://demo.mosetstree.com/movies/all.html
+Demo: http://demo.mosetstree.com/movies/all
 
 #### Listing Summary Style 8
 ![Mosets Tree Listing Summary Style 8](assets/img/content/template/ls8.jpg)
-Demo: http://demo.mosetstree.com/architecture/all.html
+Demo: http://demo.mosetstree.com/architecture/all
 
 #### Listing Summary Style 9
 ![Mosets Tree Listing Summary Style 9](assets/img/content/template/ls9.jpg)
-Demo: http://demo.mosetstree.com/apps/all.html
+Demo: http://demo.mosetstree.com/apps/all
 
 ## Path & Files {#path-and-files}
 Mosets Tree templates are located at this path:
@@ -135,30 +135,30 @@ it means that the page template includes the `sub_map.tpl.php` sub template file
 This allows you to work on a specific part of a template without affecting other part of the same page. Later, you'll learn how you can create a Mosets Tree template by customizing a small part of the directory, while inheriting the rest from the default template.
 
 ## Copying A Template {#copy}
-Every time you upgrade Mosets Tree, all _Kinabalu_ template files will be overwritten. Because of this, you shouldn't modify and use this template if you intend to customize it.
+Every time you upgrade Mosets Tree, all _Banyan_ template files will be overwritten. Because of this, you shouldn't modify and use this template if you intend to customize it.
 
 Instead, you should copy this template and make a new one for your directory:
 
 1. Go to "**Mosets Tree -> Templates**"
-2. Select the radio button beside "_kinabalu_" to select the template.
+2. Select the radio button beside "_Banyan_" to select the template.
 3. Click the "**Copy Template**" button.
 4. Fill in the "_Template Name_" and "_Folder Name_" field. For our example, let's call our new template Awesome. Fill in "_Awesome_" for the template name and "_awesome_" for the folder name.
 5. Click "**Save & Close**" to save your new template.
 
 You should be directed back to Tree Templates page and see your new "_Awesome_" template. Because we want to modify and use this as our default template, check the radio button for "_Awesome_" and click the "**Default**" button.
 
-Behind the scene, Mosets Tree is making a copy of all _Kinabalu_ files to the the new _Awesome_ template path:
+Behind the scene, Mosets Tree is making a copy of all _Banyan_ files to the the new _Awesome_ template path:
 
 	/components/com_mtree/templates/awesome/
 
 ## Inheritance {#inheritance}
-Template inheritance in Mosets Tree allows you to include only the template file you're customizing in your template. When Mosets Tree does not find a template file in your template, it will fallback to "_Kinabalu_" version of the file.
+Template inheritance in Mosets Tree allows you to include only the template file you're customizing in your template. When Mosets Tree does not find a template file in your template, it will fallback to "_Banyan_" version of the file.
 
 Continuing our _Awesome_ example above, keep `templatedetails.xml` and delete all other files inside `/components/com_mtree/templates/awesome/`. This will leave a single XML file in your template:
 
 	/components/com_mtree/templates/awesome/templatedetails.xml
 
-If you view Mosets Tree in front-end, you will see that it looks unchanged. That's because the _Awesome_ template is inheriting all images, template and CSS files from _Kinabalu_.
+If you view Mosets Tree in front-end, you will see that it looks unchanged. That's because the _Awesome_ template is inheriting all images, template and CSS files from _Banyan_.
 
 > **Note**: `templatedetails.xml` contains the metadata about your Mosets Tree template. Each Mosets Tree template must contain this file in order for Mosets Tree to detect and use your template.
 
@@ -168,7 +168,7 @@ Although the template file for listing details is `page_listing.tpl.php`, often 
 - `sub_listingDetails.tpl.php`: Controls listings details page layout and outputs the description.
 - `sub_listingDetailsFields.tpl.php`: Outputs all fields caption and value.
 
-If you're coming from the previous _Awesome_ template example, copy the 2 template files from _Kinabalu_ to _Awesome_ template:
+If you're coming from the previous _Awesome_ template example, copy the 2 template files from _Banyan_ to _Awesome_ template:
 
 	/components
 		/com_mtree
@@ -216,16 +216,22 @@ Add a field ID to the `array()` to prevent it from being show under "_Listing De
 	
 ### Implementing Bootstrap Toggleable Tabs {#listing-details-bootstrap-toggleable-tabs}
 
-Lets take what we have learned so far to implement a toggable tabs to show some of your custom fields using Bootstrap's [Togglable Tabs](http://getbootstrap.com/2.3.2/javascript.html#tabs). We are going to do the customization in `sub_listingDetails.tpl.php` template file.
+Lets take what we have learned so far to implement a toggable tabs to show some of your custom fields using Bootstrap's [Togglable Tabs](https://getbootstrap.com/docs/5.1/components/navs-tabs/#javascript-behavior). We are going to do the customization in `sub_listingDetails.tpl.php` template file.
 
 Here's the basic Bootstrap toggleable tabs HTML code:
 
-	<ul class="nav nav-tabs" id="tab-title"> 
-        <li><a href="#toggleabletab" data-toggle="tab">Tab Title</a></li>
-    </ul>
-    <div class="tab-content"> 
-        <div class="tab-pane" id="toggleabletab">Tab Content</div>
-    </div>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	<li class="nav-item" role="presentation">
+		<button class="nav-link active" id="mytext-tab" data-bs-toggle="tab" data-bs-target="#mytext" type="button" role="tab" aria-controls="mytext" aria-selected="true">Tab Title 1</button>
+	</li>
+	<li class="nav-item" role="presentation">
+		<button class="nav-link" id="myimage-tab" data-bs-toggle="tab" data-bs-target="#myimage" type="button" role="tab" aria-controls="myimage" aria-selected="false">Tab Title 2</button>
+	</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show active" id="mytext" role="tabpanel" aria-labelledby="mytext-tab">Content 1</div>
+		<div class="tab-pane fade" id="myimage" role="tabpanel" aria-labelledby="myimage-tab">Content 2</div>
+	</div>
 
 For the example, we will create 3 tabs for 3 of our custom fields:
 
@@ -241,56 +247,69 @@ First you need to [get the custom fields object]({{version}}/template#listing-de
 
 We call the `getCaption()` method to display each custom fields' caption:
 
-	<ul class="nav nav-tabs" id="myTab">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
 		<?php if(isset($text)) { ?>
-			<li><a href="#text" data-toggle="tab"><?php echo $text->getCaption(); ?></a></li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="mytext-tab" data-bs-toggle="tab" data-bs-target="#mytext" type="button" role="tab" aria-controls="mytext" aria-selected="true">
+					<?php echo $text->getCaption(); ?>
+				</button>
+			</li>
 		<?php } ?>
-        <?php if(isset($image)) { ?>
-			<li><a href="#image" data-toggle="tab"><?php echo $image->getCaption(); ?></a></li>
+		<?php if(isset($image)) { ?>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="mytext-tab" data-bs-toggle="tab" data-bs-target="#mytext" type="button" role="tab" aria-controls="mytext" aria-selected="true">
+					<?php echo $image->getCaption(); ?>
+				</button>
+			</li>
 		<?php } ?>
-        <?php if(isset($youtube)) { ?>
-			<li><a href="#youtube" data-toggle="tab"><?php echo $youtube->getCaption(); ?></a></li>
+		<?php if(isset($youtube)) { ?>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="mytext-tab" data-bs-toggle="tab" data-bs-target="#mytext" type="button" role="tab" aria-controls="mytext" aria-selected="true">
+					<?php echo $youtube->getCaption(); ?>
+				</button>
+			</li>
 		<?php } ?>
     </ul>
     
 To output value for tab content, we use `getOutput()` method. You notice that we use the `isset` function to check if the custom fields object exists. This is a good practise to make sure that you only want to show the tabs when your custom fields exist and published. Without these checks, your user may get errors on your directory whenever any of the 3 fields are unpublished:
 
-	<div class="tab-content">
+	<div class="tab-content" id="myTabContent">
 		<?php if(isset($text)) { ?>
-			<div class="tab-pane" id="text">
-				<?php if($text->hasValue()) {
+			<div class="tab-pane fade show active" id="mytext" role="tabpanel" aria-labelledby="mytext-tab">
+			<?php if($text->hasValue()) {
 					echo $text->getOutput(); 
 				} else {
-					echo 'Listing has no Description.';
+					echo 'Listing has no Text.';
 				} ?>
 			</div>
 		<?php } ?>
-        <?php if(isset($image)) { ?>
-			<div class="tab-pane" id="image">
-				<?php if($image->hasValue()) {
+		<?php if(isset($image)) { ?>
+			<div class="tab-pane fade show active" id="myimage" role="tabpanel" aria-labelledby="myimage-tab">
+			<?php if($image->hasValue()) {
 					echo $image->getOutput(); 
 				} else {
 					echo 'Listing has no Image.';
 				} ?>
-			</div> 
-		<?php } ?>
-        <?php if(isset($youtube)) { ?>
-			<div class="tab-pane" id="youtube">
-				<?php if ($youtube->hasValue()) {
-					echo $youtube->getOutput(); 
-				} else {
-                	echo 'Listing has no Video';	
-				} ?> 
 			</div>
 		<?php } ?>
-    </div>
+		<?php if(isset($youtube)) { ?>
+			<div class="tab-pane fade show active" id="myyoutube" role="tabpanel" aria-labelledby="myyoutube-tab">
+			<?php if($youtube->hasValue()) {
+					echo $youtube->getOutput(); 
+				} else {
+					echo 'Listing has no Youtube.';
+				} ?>
+			</div>
+		<?php } ?>
+	</div>
+
 
 Make sure you [hide]({{version}}/template#listing-details-hiding-custom-fields) these custom fields under "_Listing Details_" so that a page is not showing repetitive content.  
     
 ## Customize Listing Summary Sub Template {#listing-summary}
 Listing summary sub template file is located at this path:
 
-	/components/com_mtree/templates/kinabalu/sub_listingSummary.tpl.php
+	/components/com_mtree/templates/banyan/sub_listingSummary.tpl.php
 
 If you're coming from the _Awesome_ template example, copy this file to _Awesome_ template:
 
@@ -320,7 +339,7 @@ To test the sample code above in your directory, make sure that:
 
 ## Module Positions {#module-positions}
 
-Mosets Tree's Kinabalu template supports additional module positions within the Mosets Tree extension. These module positions are available in index and category pages, opening up the possibilities of showing additional any modules inside these pages.
+Mosets Tree's Banyan template supports additional module positions within the Mosets Tree extension. These module positions are available in index and category pages, opening up the possibilities of showing additional any modules inside these pages.
 
 You may refer to the diagram below to see all the available module positions. Replace `{cat_id}` with the category ID you want the module to be displayed. For example, to use `category2-footer-id{cat_id}` in th category with ID 13, you'll enter `category2-footer-id13` as the module position.
 
@@ -328,11 +347,11 @@ You may refer to the diagram below to see all the available module positions. Re
 
 Here are some pages from demo that make use of these module positions:
 
-Demo: http://demo.mosetstree.com/computers.html
+Demo: http://demo.mosetstree.com/software
 
-: _Computer_ category using `category2-footer-id{cat_id}` to show listings in 2 positions.
+: _Software_ category using `category-header-id{cat_id}` to show listings on top of the category occupying the full width.
 
-Demo: http://demo.mosetstree.com/health.html
+Demo: http://demo.mosetstree.com/health
 
-: _Health_ category using `category3-header-id{cat_id}` to show listings in 3 positions.
+: _Health_ category using `category3-footer-id{cat_id}` position to publish 3 modules at the bottom of page.
 
