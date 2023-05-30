@@ -48,7 +48,7 @@ You have successfully publish Mosets Tree to your Joomla website. A link for Mos
 
 {question}Which PHP version should I use?{/question}
 {answer}
-Although Joomla specify PHP 7.2 as the minimum requirement, it is [no longer being maintained](https://www.php.net/eol.php) by the PHP maintainers.
+Although Joomla specify PHP 7.2.5 as the minimum requirement for Joomla 4, it is [no longer being maintained](https://www.php.net/eol.php) by the PHP maintainers.
 
-Therefore we recommend PHP 7.4 as the minimum requirement and PHP 8 as the recommended version.
+If you're installing a new Joomla website today, we recommend you to use PHP 8.2.
 {/answer}
