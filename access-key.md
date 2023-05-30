@@ -11,8 +11,8 @@ To get an access key, you need to have an active Mosets Tree subscription.
 If you have an active subscription:
 1. Login to your to your [Mosets account](https://www.mosets.com/login).
 2. Click on your **Subscription ID**.
-3. Click "**Generate Access Key**". 
-	- Note: If you have an existing access key here, you can use the existing key. Alternatively, you can click on "**Regenerate Access Key**" to get a new one.
+3. Click "**Generate New Access Key**". 
+	- Note: If you have an existing access key here, you can use the existing key.
 
 ## Using an Access Key
 
