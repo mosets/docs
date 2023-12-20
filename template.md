@@ -343,7 +343,7 @@ Mosets Tree's Banyan template supports additional module positions within the Mo
 
 You may refer to the diagram below to see all the available module positions. Replace `{cat_id}` with the category ID you want the module to be displayed. For example, to use `category2-footer-id{cat_id}` in th category with ID 13, you'll enter `category2-footer-id13` as the module position.
 
-![Module positions](http://demo3.mosetstree.com/images/demo/mt-kinabalu-template-module-positions.png)
+![Module positions](http://demo.mosetstree.com/images/demo/mt-kinabalu-template-module-positions.png)
 
 Here are some pages from demo that make use of these module positions:
 
