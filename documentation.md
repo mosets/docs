@@ -1,5 +1,6 @@
 - Prologue
 	- [What's New]({{version}}/what-is-new)
+	- [Changelog]({{version}}/changelog)
 
 - Setup
 	- [Installation]({{version}}/installation)
