@@ -9,93 +9,83 @@
 
 ## Permissions {#permissions}
 
-Mosets Tree has comprehensive support for [Joomla ACL](https://docs.joomla.org/J3.x:Access_Control_List_Tutorial) that gives you fine grain control on which user groups have permission to perform tasks within your Mosets Tree directory. This includes permission on creating listings & categories, rating, reviews, contact, recommend, report and claim.
+Mosets Tree offers comprehensive support for [Joomla's Access Control List (ACL)](https://docs.joomla.org/J3.x:Access_Control_List_Tutorial), providing granular control over which user groups can perform specific tasks within your Mosets Tree directory. This includes permissions for creating listings and categories, rating, reviewing, contacting, recommending, reporting, and claiming listings. 
 
-It's important to note that you still need to make sure the features in Mosets Tree's Configuration are enabled or disabled when you change permission in Mosets Tree.
+Note that while you can manage permissions in Mosets Tree, remember to also ensure the features are enabled or disabled in the Mosets Tree Configuration settings.
 
-You can access Mosets Tree's Permissions at:
+Access Mosets Tree's Permissions through:
 
-Joomla's **Global Configuration -> Mosets Tree**
+- Joomla's **Global Configuration -> Mosets Tree**
+- Mosets Tree's **Configuration**, under the **Permission** tab.
 
-You can find a link to the same page in Mosets Tree's **Configuration**, under the **Permission** tab.
 
 ## View Access Levels {#view-access-levels}
 
-With Joomla's View Access Levels, you can specify the view level for top level categories, listing details and custom fields. For example, you can restrict your listing details page to your special group of suppliers, or allow downloads of your floor plan PDFs to a higher privileged user groups.
+Joomla's View Access Levels allow you to specify view permissions for top-level categories, listing details, and custom fields. For example, restrict access to listing details pages to a specific group of suppliers or grant higher-privileged user groups access to download floor plan PDFs.
 
 ### Category View Access Level {#category-view-access-levels}
 
-Category's view access level is only available to top level categories.
+Category View Access Levels apply only to top-level categories.
 
-To access this configuration:
+To configure:
 
-1. Edit a top level category in Mosets Tree's back-end.
-2. Click on **Category Configuration** tab.
+1. Edit a top-level category in the Mosets Tree back-end.
+2. Click on **Category Configuration**.
 3. Select the **Main** panel.
-4. Check the checkbox for **View access level**.
-5. Select which user levels have access to the category.
+4. Check the **View access level** checkbox.
+5. Choose which user levels have access to the category.
 
-Category's View access level will affect the users ability to view the top level category, including all its sub-categories and related listings pages such as _Recently Added_, _Popular_ and _Advanced Search_. Note that listings published to the category are still accessible and are not affected in any way by the category's view access level.
+
+Category View Access Level affects users' ability to view the top-level category, including its subcategories and related listing pages such as _Recently Added_, _Popular_, and _Advanced Search_. Note that listings published to the category remain accessible regardless of the Category View Access Level setting.
 
 ### Listing Details View Access Level {#listing-details-view-access-levels}
 
-Listing details' view access level allows you to control who can click a listing to view the listing details page.
+Listing Details View Access Levels control who can view individual listing details pages.
 
-To access this configuration:
+To configure:
 
-1. Edit a top level category in Mosets Tree's back-end.
-2. Click on **Category Configuration** tab.
+1. Edit a top-level category in the Mosets Tree back-end.
+2. Click on **Category Configuration**.
 3. Select the **Listing** panel.
-4. Check the checkbox for **Listing details view access level**.
-5. Select which user levels has access to listing details.
-
-This will only affect your users ability to view listing details page.
+4. Check the **Listing details view access level** checkbox.
+5. Choose which user levels have access to view listing details.
 
 ### Custom Fields View & Edit Access Levels {#custom-fields-view-and-edit-access-levels}
 
-Custom fields' view access level allows you to control who can view a field (caption and output) in front-end. You can use this, for example, to show a basic set of listing information to _Public_ user group, while showing all listing information to logged in customers only.
+Custom fields offer granular control over who can view and edit them on the front-end. 
 
-Custom fields' edit access level allows you to control who can edit a field in front-end. You can use this, for example, to offer different types of listing packages to your users, such as, only _Premium_ users can upload attachments.
+The "View access level" determines who sees a field's caption and output. For example, you could display basic listing information to public users while revealing full details only to logged-in customers.
 
-To access these configuration, go to:
+Similarly, the "Edit access level" controls who can modify a field. This enables features like tiered listing packages, where only premium users can upload attachments.
 
-1. Go to **Mosets Tree -> Custom Fields**
-1. Edit a custom field.
-3. Change the access level at **View access level** or **Edit access level**.
+To configure these settings:
 
-## Managers {#managers}
+1. Navigate to **Mosets Tree -> Custom Fields**.
+2. Edit an existing custom field.
+3. Adjust the access level under either "View access level" or "Edit access level."
 
-Managers are users who can create, edit or delete listings in the front-end, even when they do not own the listings. This allows you to assign user groups to manage your directory. 
+## Managers {#managers} 
 
-To configure your managers, go to **Mosets Tree** -> **Permission**.
+Managers are users with permissions to create, edit, or delete listings in the front-end, even if they don't own them. This allows you to assign user groups to manage your directory.
 
-This will configure managers for your entire directory. You can also assign managers to manage your top level categories:
+To configure managers, go to **Mosets Tree** -> **Permission**. 
 
-1. Edit a top level category in Mosets Tree's back-end.
-2. Click on **Category Configuration** tab.
+This configures managers for your entire directory. You can also assign managers to specific top-level categories:
+
+1. Edit a top-level category in Mosets Tree's back-end.
+2. Click the **Category Configuration** tab.
 3. Select the **Permission** panel.
-4. Check one or more of the permissions you want to override and then check the corresponding user group checkboxes you want to assign as the managers.
+4. Check the permissions you want to override (e.g., **Edit listing**, **Delete listing**, **Create listing**). Then, select the corresponding user groups you want to assign as managers.
 
-**Edit listing** and **Delete listing** permission lets you control if your managers are allowed to edit and delete listings. 
+Remember that the **Create Listing** permission in Joomla's Configuration applies directory-wide. When both directory-wide and category-specific permissions exist for the same user group, the category-specific permissions take precedence. 
 
-Similarly, Managers' **Create listing** permission lets you control if your managers can create listings. You may recall that the [Permissions]({{version}}/acl#permissions) has a similar permission with the same name. This is a permission configured under Joomla's Configuration and applies directory-wide to all users. When you have 2 different permissions configured to the same user group, the managers permissions will be used.
+Use the **Create listing** permission to control which user groups can submit listings to specific top-level categories:
 
-With Managers' **Create listing** permission, you setup your directory in such a way that only a particular set of user groups can submit to one or more top level categories. An example setup that achieves this is configured as follows:
-
-1. First, disable users' permission to create a listing. This sets up a blank slate to let us choose who can create listings in which categories later on. To do this, disable all users permissions to create listing:
-	1. Go to Mosets Tree's back-end **Configuration**.
-    2. Click on **Permission** tab.
-    3. Click on the **Edit Permissions...** button.
-    4. For both **Public** and **Registered** user groups, set their **Create Listing** permission to **Denied**.
-    5. Click the **Save** button to save the changes.
-2. Next, edit a top level category.
-3. Click on **Category Configuration** tab.
+1. Disable the default **Create Listing** permission for all users (**Public** and **Registered**). Go to Mosets Tree's back-end **Configuration**, click the **Permission** tab, and set both user groups' **Create Listing** permission to **Denied**.
+2. Edit a top-level category.
+3. Click the **Category Configuration** tab.
 4. Select the **Permission** panel.
-5. Check the checkbox for **Create listings**.
-6. Finally, select one or more user groups next to the **Create listings** label. These are the user groups you want to grant permission to create listings in the front-end. Remember, we are editing a top level category's configuration, so this permission only applies to this top level category and all its sub-categories.
-7. Click the **Save** button to save the changes.
+5. Check the **Create listings** checkbox.
+6. Select the desired user groups next to the **Create listings** label. These groups will now have permission to create listings in this top-level category and its subcategories.
 
-
-
-
-
+Click **Save** to confirm your changes.
