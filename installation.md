@@ -17,6 +17,11 @@ Mosets Tree has a few basic server requirements:
 
 If your site runs on Joomla 4.0, chances are your server can run Mosets Tree.
 
+### Recommended Server Requirements
+
+- Joomla >= 5.0
+- PHP >= 8.2
+
 ## Installing Mosets Tree {#install}
 
 Installation of Mosets Tree requires you to install a single package file that you receive when you purchase Mosets Tree. You can also download the latest version of Mosets Tree package from your [Mosets account](http://www.mosets.com/login/). The package includes all the modules, plugins and component that comes with Mosets Tree.
