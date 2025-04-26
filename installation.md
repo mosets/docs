@@ -17,7 +17,7 @@ Mosets Tree has a few basic server requirements:
 
 If your site runs on Joomla 4.0, chances are your server can run Mosets Tree.
 
-### Recommended Server Requirements
+**Recommended Server Requirements**
 
 - Joomla >= 5.0
 - PHP >= 8.2
