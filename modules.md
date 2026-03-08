@@ -20,11 +20,14 @@
     - [Browse]({{version}}/modules#mod-mt-browse)
     - [Categories]({{version}}/modules#mod-mt-categories)
     - [Categories Expanding]({{version}}/modules#mod-mt-categories-expanding)
+    - [Categories Chained Select]({{version}}/modules#mod-mt-categories-chained-select)
     - [Directory Menu]({{version}}/modules#mod-mt-menu)
     - [Directory Stats]({{version}}/modules#mod-mt-stats)
     - [Directory's Last Update]({{version}}/modules#mod-mt-lastupdate)
     - [Dynamic Tree]({{version}}/modules#mod-mt-dtree)
     - [Filter]({{version}}/modules#mod-mt-filter)
+    - [Listings (Cards)]({{version}}/modules#mod-mt-listings-cards)
+    - [Map]({{version}}/modules#mod-mt-map)
     - [Owners]({{version}}/modules#mod-mt-owner)
     - [Search]({{version}}/modules#mod-mt-search)
     - [Static Categories]({{version}}/modules#mod-mt-staticcats)
@@ -34,7 +37,7 @@
 </div>
 
 ## Introduction {#intro}
-Mosets Tree comes with 14 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
+Mosets Tree comes with 17 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
 
 ## Assignment Options {#assignment}
 Mosets Tree allows you to publish modules exactly where you want it. Each Mosets Tree modules includes a pane that allows you to control where within your directory pages that a module will be displayed. For example, you can assign a module to appear in all pages of your site or hide it from your site; or show in a single top level category while being hidden in others; or only display either in category or listing pages; or both.
@@ -88,6 +91,35 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
 
  ### Tag Cloud {#mod-mt-tagcloud}
  Displays a list of popular tags from a tag field.
+
+ Parameters include:
+ - **Category ID**: Scope the tag cloud to show tags only from a specific category.
+
+ ### Map {#mod-mt-map}
+ Displays a Google Map with markers from your directory listings. This module is useful for showing the geographical distribution of your listings on a map.
+
+ Parameters include:
+ - **Listing Count**: Set the number of listings to display on the map.
+ - **Sort Type**: Choose how listings are sorted (e.g., by recently added, top rated).
+ - **Category ID**: Limit the map to show listings from a specific category.
+ - **Map Height**: Set the height of the map in pixels.
+
+ ### Listings {#mod-mt-listings-cards}
+ A card-based listings module that displays listings with rich visual layouts. This module is distinct from the [Top Listings]({{version}}/modules#mod-mt-listings) module and offers more layout options.
+
+ Features include:
+ - **Multiple Layouts**: Choose from default, images-only, or dropdown layouts.
+ - **Card Styles**: Configure the visual style of listing cards.
+ - **Filter Fields**: Up to 3 filter field slots to allow users to filter listings.
+ - **Image Controls**: Configure image display, size, and aspect ratio.
+ - **Field Display**: Select which custom fields to display on each card.
+
+ ### Categories Chained Select {#mod-mt-categories-chained-select}
+ Displays a cascading category select dropdown that allows users to navigate through category levels. Each dropdown selection updates the next level of categories.
+
+ Parameters include:
+ - **Max Levels**: Set the maximum number of category levels to display.
+ - **Placeholder Text**: Customize the placeholder text shown in each dropdown.
 
  ### Top Listings {#mod-mt-listings}
  This is a multipurpose module that allows you to display top listings in your directory. This module can be configured to show New, Recently Updated, Featured, Popular, Most Rated, Top Rated and Most Reviewed listings. This can also be used to show random listings.

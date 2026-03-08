@@ -6,7 +6,8 @@
  - [Upgrading From 2.1 To 2.2.6]({{version}}/upgrade#from-21-to-22)
  - [Upgrading From 2.2 To 3.0]({{version}}/upgrade#from-22-to-30)
  - [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
- - [Upgrading To {{version}}]({{version}}/upgrade#to-39)
+ - [Upgrading From 3.9 To 4.0]({{version}}/upgrade#from-39-to-40)
+ - [Upgrading To {{version}}]({{version}}/upgrade#to-current)
  - [Database Schema Updates]({{version}}/upgrade#db-schema)
 
 ## Introduction {#intro}
@@ -15,7 +16,7 @@ This article documents the process involved in upgrading Mosets Tree.
 
 If you're running version 2.2 or later, upgrading to the next subsequent version is very straight forward because you only need to install the subsequent version over your existing Mosets Tree installation. This will update all Mosets Tree files and database table schema while retaining your existing data on your directory.
 
-If you are few version behind the latest version, upgrading to the latest version requires you to perform multi-steps upgrade. For example, if you're currently running 2.0 on Joomla 1.0 and wish to upgrade to run {{version}} on Joomla 3.6, these are the steps to upgrade:
+If you are few versions behind the latest version, upgrading to the latest version requires you to perform multi-step upgrades. For example, if you're currently running 2.0 on Joomla 1.0 and wish to upgrade to run {{version}} on Joomla 5 or 6, these are the steps to upgrade:
 
 1. Upgrade to Joomla 1.5.
 2. [Upgrade Mosets Tree 2.0 to 2.1.12]({{version}}/upgrade#from-20-to-21)
@@ -23,7 +24,10 @@ If you are few version behind the latest version, upgrading to the latest versio
 4. [Upgrade Mosets Tree 2.1 to 2.2.6]({{version}}/upgrade#from-21-to-22)
 5. [Upgrade Mosets Tree 2.2 to 3.0.13]({{version}}/upgrade#from-22-to-30)
 6. Upgrade to Joomla 3.6
-7. [Upgrading From 3.0 To 3.9]({{version}}/upgrade#from-30-to-39)
+7. [Upgrade Mosets Tree 3.0 to 3.9]({{version}}/upgrade#from-30-to-39)
+8. [Upgrade Mosets Tree 3.9 to 4.0]({{version}}/upgrade#from-39-to-40)
+9. Upgrade to Joomla 5 or 6
+10. [Upgrade to Mosets Tree {{version}}]({{version}}/upgrade#to-current)
 
 You can also refer to the steps above if you are upgrading from other version. For example, if you're upgrading from 2.2, you can start with Step 5 above.
 
@@ -51,6 +55,9 @@ Joomla 3.3 | Mosets Tree 3.5.9
 Joomla 3.4 | Mosets Tree 3.6 & 3.7
 Joomla 3.5 | Mosets Tree 3.8
 Joomla 3.6 | Mosets Tree 3.8 & 3.9
+Joomla 4.x | Mosets Tree 4.0.14
+Joomla 5.x | Mosets Tree 4.0.9+ & 4.1.x
+Joomla 6.x | Mosets Tree 4.1.x
 </div>
 
 ## Upgrading From 2.0 To 2.1.12 {#from-20-to-21}
@@ -126,7 +133,7 @@ If you're running Mosets Tree 2.2, all you need to do to upgrade to 3.0 is by in
  
 > A couple of notes:
 > - In the migration instruction, you can safely ignore the requirement where you need both sites to be on the same version.
-> - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree 3.9's default `kinabalu` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
+> - As part of the migration, it mentions that you need to migrate Mosets Tree templates located at this path: `/components/com_mtree/templates/*`. You can skip this path so that your new site will use Mosets Tree's default `banyan` template. This is so that you can enjoy some of the new features introduced in Mosets Tree 3.5 and later.  
 
 ## Upgrading From 3.0 To 3.9 {#from-30-to-39}
 If you're running Mosets Tree 3.0, you first need to upgrade your Joomla site from Joomla 2.5 to Joomla 3.6.
@@ -138,30 +145,38 @@ The following files are no longer used or have been moved to a new location. Rem
 - `/administrator/components/com_mtree/models/listing.xml`
 - `/language/en-GB/en-GB.fld_mfile.ini`
 
-## Upgrading To {{version}} {#to-39}
-This section shows how you can upgrade Mosets Tree from earlier version of 3.9.x to the latest version.
+## Upgrading From 3.9 To 4.0 {#from-39-to-40}
+This section is for users running Mosets Tree 3.9 on Joomla 3.x who wish to upgrade to Mosets Tree 4.0 on Joomla 4.
 
 ### Requirement
-This upgrade requires Joomla! 3.6 and Mosets Tree 3.9.x.
+You first need to upgrade your Joomla site from Joomla 3.x to Joomla 4. Refer to Joomla's official documentation for the Joomla 3 to Joomla 4 upgrade process.
+
+### Upgrade
+Once you're running Joomla 4, install the latest version of Mosets Tree 4.0 package, `pkg_mtree-4.0.x.zip`, through Joomla's extension installer.
+
+## Upgrading To {{version}} {#to-current}
+This section shows how you can upgrade to the latest version of Mosets Tree {{version}}.
+
+### Requirement
+This upgrade requires Joomla 5.4.x or Joomla 6.x, with Mosets Tree 4.0.x already installed.
 
 ### Full site backup
 It is recommended that you perform a full site backup (files and database) before proceeding with the following upgrade.
 
 ### Upgrading through Joomla's back-end interface
-The steps to upgrade from Mosets Tree 3.x to the latest version of Mosets Tree 3.9 are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
+The steps to upgrade are the same as installing a new extension. This method of upgrading will overwrite all Mosets Tree files including its template files. If you have done any template modification, back-up those files before you begin the upgrade. Mosets Tree templates files are located at:
 
-- `/components/com_mtree/templates/kinabalu/`
+- `/components/com_mtree/templates/banyan/`
 
-1. Download the latest package for Mosets Tree 3.9.x. This is the same package you use to install Mosets Tree 3.9 on a new Joomla site, but here, we are going to use this to upgrade your copy of Mosets Tree 3.6.x to 3.9.x.
+1. Download the latest package for Mosets Tree {{version}}.x (`pkg_mtree-4.1.x.zip`). This is the same package you use to install Mosets Tree on a new Joomla site, but here, we are going to use this to upgrade your existing installation.
 2. Log in to your site's back-end and go to:
-	1. Goto "**Extensions -> Extension Manager**"
-	2. Click "**Browse...**" to select "pkg_mtree-3.9.x.zip" from your computer.
-	3. Click "**Upload & Install**" to start the upgrade.
-	4. If the upgrade is successful, you will see a "_Installing package was successful._" message.
-3. If you have backed up your modified template files prior to the upgrade, restore these files, replacing the ones that have been replace by the upgrade.
+	1. Goto "**System -> Install -> Extensions**"
+	2. Upload `pkg_mtree-4.1.x.zip` from your computer.
+	3. If the upgrade is successful, you will see a "_Installing package was successful._" message.
+3. If you have backed up your modified template files prior to the upgrade, restore these files, replacing the ones that have been replaced by the upgrade.
 
 ### Upgrade completed
-If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree 3.9 on Joomla 3.6.
+If you've reached this point, congratulation. Your upgrade has completed. You're now running the latest version of Mosets Tree {{version}}.
 
 ## Database Schema Updates {#db-schema}
 
@@ -346,9 +361,154 @@ INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `
 # No upgrade queries.
 
 ############################
+# Mosets Tree version 4.0.0
+ALTER TABLE `#__mt_reviews` CHANGE `admin_note` `admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_reviews` CHANGE `ownersreply_text` `ownersreply_text` text NULL COMMENT '';
+ALTER TABLE `#__mt_reviews` CHANGE `ownersreply_date` `ownersreply_date` datetime NULL COMMENT '';
+ALTER TABLE `#__mt_reviews` CHANGE `ownersreply_admin_note` `ownersreply_admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_reviews` CHANGE `send_email` `send_email` tinyint(3) unsigned NULL COMMENT '';
+ALTER TABLE `#__mt_reviews` CHANGE `email_message` `email_message` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_archived_reviews` CHANGE `admin_note` `admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_archived_reviews` CHANGE `ownersreply_text` `ownersreply_text` text NULL COMMENT '';
+ALTER TABLE `#__mt_archived_reviews` CHANGE `ownersreply_admin_note` `ownersreply_admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_archived_reviews` CHANGE `send_email` `send_email` tinyint(4) NULL COMMENT '';
+ALTER TABLE `#__mt_archived_reviews` CHANGE `email_message` `email_message` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_reports` CHANGE `guest_name` `guest_name` varchar(255) NULL COMMENT '';
+ALTER TABLE `#__mt_reports` CHANGE `admin_note` `admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_reports` CHANGE `subject` `subject` varchar(255) NULL COMMENT '';
+ALTER TABLE `#__mt_claims` CHANGE `admin_note` `admin_note` mediumtext NULL COMMENT '';
+ALTER TABLE `#__mt_links` CHANGE `lng` `lng` float(10,6) NULL COMMENT 'Longitude';
+ALTER TABLE `#__mt_links` CHANGE `lat` `lat` float(10,6) NULL COMMENT 'Latitude';
+ALTER TABLE `#__mt_links` CHANGE `address` `address` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `city` `city` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `state` `state` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `telephone` `telephone` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `postcode` `postcode` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `fax` `fax` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `email` `email` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `website` `website` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `price` `price` double(12,2) NULL DEFAULT NULL;
+ALTER TABLE `#__mt_links` CHANGE `link_template` `link_template` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `link_desc` `link_desc` mediumtext NULL;
+ALTER TABLE `#__mt_links` CHANGE `attribs` `attribs` text NULL;
+ALTER TABLE `#__mt_links` CHANGE `metakey` `metakey` text NULL;
+ALTER TABLE `#__mt_links` CHANGE `metadesc` `metadesc` text NULL;
+ALTER TABLE `#__mt_links` CHANGE `internal_notes` `internal_notes` text NULL;
+ALTER TABLE `#__mt_links` CHANGE `firstname` `firstname` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `lastname` `lastname` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `contactperson` `contactperson` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `mobile` `mobile` varchar(255) NULL;
+ALTER TABLE `#__mt_links` CHANGE `date` `date` date NULL;
+ALTER TABLE `#__mt_links` CHANGE `year` `year` int(11) NULL;
+ALTER TABLE `#__mt_links` CHANGE `zoom` `zoom` tinyint(3) unsigned NULL COMMENT "Map\'s zoom level";
+ALTER TABLE `#__mt_customfields` CHANGE `size` `size` smallint(9) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `placeholder_text` `placeholder_text` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `search_caption` `search_caption` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `default_value` `default_value` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `field_elements` `field_elements` text NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `prefix_text_mod` `prefix_text_mod` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `suffix_text_mod` `suffix_text_mod` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `prefix_text_display` `prefix_text_display` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `suffix_text_display` `suffix_text_display` varchar(255) NULL;
+ALTER TABLE `#__mt_customfields` CHANGE `params` `params` text NULL;
+ALTER TABLE `#__mt_cats` CHANGE `cat_image` `cat_image` varchar(255) NULL COMMENT '';
+ALTER TABLE `#__mt_cats` CHANGE `title` `title` varchar(255) NULL;
+ALTER TABLE `#__mt_cats` CHANGE `cat_desc` `cat_desc` text NULL;
+ALTER TABLE `#__mt_cats` CHANGE `metadata` `metadata` text NULL;
+ALTER TABLE `#__mt_cats` CHANGE `metakey` `metakey` text NULL;
+ALTER TABLE `#__mt_cats` CHANGE `metadesc` `metadesc` text NULL;
+ALTER TABLE `#__mt_templates` CHANGE `params` `params` text NULL COMMENT '';
+DELETE FROM `#__mt_config` WHERE `varname` = 'load_font_awesome';
+INSERT INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('pre_release_state', 'core', 'stable', '', '', 0, 0, 0), ('pre_release_version', 'core', '0', '', '', 0, 0, 0);
+
+############################
+# Mosets Tree version 4.0.1
+ALTER TABLE `#__mt_archived_log` DROP INDEX `log_ip`;
+ALTER TABLE `#__mt_archived_log` DROP INDEX `link_id2`;
+ALTER TABLE `#__mt_archived_log` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_archived_log` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE INDEX `log_ip` ON `#__mt_archived_log` (`log_ip`(15), `user_id`);
+CREATE INDEX `link_id2` ON `#__mt_archived_log` (`link_id`, `log_ip`(15));
+ALTER TABLE `#__mt_archived_reviews` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_archived_reviews` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_archived_users` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_archived_users` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cats` DROP INDEX `alias`;
+ALTER TABLE `#__mt_cats` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cats` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE INDEX `alias` ON `#__mt_cats` (`alias`(16));
+ALTER TABLE `#__mt_cfvalues` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cfvalues` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cfvalues_att` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cfvalues_att` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cl` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_cl` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_claims` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_claims` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_clone_owners` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_clone_owners` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_config` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_config` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_configgroup` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_configgroup` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_customfields` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_customfields` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_favourites` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_favourites` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_fields_map` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_fields_map` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_fieldtypes` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_fieldtypes` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_images` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_images` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_linkcheck` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_linkcheck` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_links` DROP INDEX `link_name_desc`;
+ALTER TABLE `#__mt_links` DROP INDEX `link_name`;
+ALTER TABLE `#__mt_links` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_links` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE FULLTEXT INDEX `link_name_desc` ON `#__mt_links` (`link_name`,`link_desc`);
+CREATE INDEX `link_name` ON `#__mt_links` (`link_name`(64));
+ALTER TABLE `#__mt_links_associations` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_links_associations` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_log` DROP INDEX `log_ip`;
+ALTER TABLE `#__mt_log` DROP INDEX `link_id2`;
+ALTER TABLE `#__mt_log` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_log` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE INDEX `log_ip` ON `#__mt_log` (`log_ip`(15), `user_id`);
+CREATE INDEX `link_id2` ON `#__mt_log` (`link_id`, `log_ip`(15));
+ALTER TABLE `#__mt_relcats` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_relcats` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_reports` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_reports` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_reviews` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_reviews` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_templates` DROP INDEX `tem_name`;
+ALTER TABLE `#__mt_templates` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE `#__mt_templates` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE UNIQUE INDEX `tem_name` ON `#__mt_templates` (`tem_name`(64));
+
+############################
+# Mosets Tree version 4.0.6
+ALTER TABLE `#__mt_links` CHANGE `country` `country` varchar(255) NULL;
+
+############################
+# Mosets Tree version 4.0.7
+ALTER TABLE `#__mt_reports` CHANGE `user_id` `user_id` int(11) NULL DEFAULT NULL COMMENT '';
+
+############################
+# Mosets Tree version 4.1.0
+ALTER TABLE `#__mt_cats` CHANGE `cat_created` `cat_created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '';
+ALTER TABLE `#__mt_reports` ADD COLUMN `guest_email` varchar(255) NULL DEFAULT NULL COMMENT '' AFTER `guest_name`;
+
+############################
+# Mosets Tree version 4.1.1
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('facebook_app_id', 'sharing', '', '', 'text', 1020, 1, 0);
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '3.8.6' WHERE  `#__mt_config`.`varname` =  'version';
-UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'major_version';
-UPDATE  `#__mt_config` SET  `value` =  '8' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '6' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '4.1.1' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'major_version';
+UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'minor_version';
+UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```

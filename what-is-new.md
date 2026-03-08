@@ -1,11 +1,14 @@
 # What Is New in Mosets Tree 4.1
 
 - [New in 4.1.1]({{version}}/what-is-new#411)
-- [Cluster Maps]({{version}}/what-is-new#cluster-maps)
-- [JSON Output]({{version}}/what-is-new#json-output)
-- [Listing Renewal]({{version}}/what-is-new#listing-renewal)
-- [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
-- [Miscellaneous]({{version}}/what-is-new#misc)
+- [Grid-style Gallery Layout]({{version}}/what-is-new#grid-gallery)
+- [JSON/ZIP Import]({{version}}/what-is-new#json-zip-import)
+- [Category Export & CSV Download]({{version}}/what-is-new#category-export)
+- [Updating Existing Listings via Import]({{version}}/what-is-new#import-update)
+- [Search Respects Category Authorization]({{version}}/what-is-new#search-category-auth)
+- [Category Breadcrumbs Tool]({{version}}/what-is-new#category-breadcrumbs)
+- [Guest Email on Reports]({{version}}/what-is-new#guest-email-reports)
+- [Font Awesome 6 Free]({{version}}/what-is-new#font-awesome-6)
 
 ## New in 4.1.1 {#411}
 
@@ -36,32 +39,26 @@ Video.js and MediaElement.js have been replaced with native HTML5 video and audi
 
 The Multiple Dates custom field now uses [Flatpickr](https://flatpickr.js.org/) instead of jQuery datepick, providing a modern, lightweight date picker with better mobile support.
 
-## Cluster Maps {#cluster-maps}
+## Grid-style Gallery Layout {#grid-gallery}
+A new grid-style gallery layout option is available for listing images, in addition to the classic slider layout. This can be configured through the template parameters.
 
-Mosets Tree 3.9 introduces Cluster Maps that lets you show Google Maps with markers from multiple listings. You can show Cluster Maps in Category, Index, Search Results, Top Listings and All Listings pages. 
+## JSON/ZIP Import {#json-zip-import}
+MT Importer now supports importing data from JSON and ZIP files. ZIP files can contain CSV data, images, and a field type mapping file. See the [Importer documentation]({{version}}/importer#json-zip) for details.
 
-## JSON Output {#json-output}
+## Category Export & CSV Download {#category-export}
+You can now export your directory data as CSV files, with options to export by category or date range. See the [Export documentation]({{version}}/importer#export) for details.
 
-JSON output allows other app or services to consume data from Mosets Tree in a machine readable way. This is disabled by default and can be enabled through Mosets Tree Configuration. Check out the [full documentation]({{version}}/configuration#allow_json_output) to learn more about this. 
+## Updating Existing Listings via Import {#import-update}
+MT Importer now supports updating existing listings by matching on `link_id`, instead of always creating new listings. See the [Importer documentation]({{version}}/importer#update-existing) for details.
 
-## Listing Renewal {#listing-renewal}
+## Search Respects Category Authorization {#search-category-auth}
+Searching by category now respects the view access level authorization. Users will only see search results from categories they are authorized to view.
 
-Mosets Tree has always allow you to set the number of days new listings stay published before they expire. Mosets Tree 3.9 introduces a new feature that allow your users to renew their listings before they expire. Check out the [full documentation]({{version}}/configuration#allow_listing_renewal) to learn more about listing renewal.
+## Category Breadcrumbs Tool {#category-breadcrumbs}
+A new category breadcrumbs tool is available to display the full category path for listings.
 
-## Featuring a Listing in Front-end {#feature-listing-front-end}
+## Guest Email on Reports {#guest-email-reports}
+Guest users can now provide their email address when reporting a listing, allowing administrators to follow up on reports.
 
- Featuring a listing has always been a privilege for administrator in back-end. Mosets Tree 3.9 introduces support for listing owner to feature their own listing in front-end.
- 
-## Miscellaneous {#misc}
- 
-- Number based fields now defaults to a Slider based ranged search.
-- Filter module (mod_mt_filter) now has auto search.
-- Number fieldtype now uses number input field.
-- E-mails sent through contact and recommended form now originates from the site's sender name & email.
-- Google Maps in listing details page now uses API Keys.
-- New cron controller that execute scheduled tasks within Mosets Tree's context. Hook name: onMTreeExecuteCron
-- "Search By" values are now sorted naturally instead of frequency.
-- Listing Owners page now supports category.
-- mod_mt_owners now links to 'Read more...' page.
-- Don't show Reviews data in Listing Owners page when Reviews are disabled.
-- E-mails to admin for pending reviews now contains URL to the listing.
+## Font Awesome 6 Free {#font-awesome-6}
+Mosets Tree now uses Font Awesome 6 Free icons, replacing the previous version for a wider selection of modern icons.

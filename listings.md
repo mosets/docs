@@ -12,6 +12,7 @@
 	- [Parameters]({{version}}/listings#parameters)
 	- [Notes]({{version}}/listings#notes)
 - [Claim]({{version}}/listings#claim)
+- [Reporting]({{version}}/listings#reporting)
 - [Frequently Asked Questions]({{version}}/listings#faqs)
 
 ## Introduction {#intro}
@@ -122,6 +123,11 @@ If any of your listings are owned by user from _Super Users_, _Administrator_ or
 Approving the claim will assign the ownership of the listing to the claimant, essentially making the claimant the owner of the listing which allow them to manage the listing in front-end.
 
 You can disable this [feature]({{version}}/configuration#show_claim) in Configuration.
+
+## Reporting {#reporting}
+Users can report listings that may contain inaccurate information or are otherwise inappropriate. Reports are sent to the administrator for review.
+
+Guest users can provide their email address when submitting a report, allowing administrators to follow up if needed.
 
 ## Frequently Asked Questions {#faqs}
 

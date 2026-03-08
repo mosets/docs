@@ -20,6 +20,8 @@ For performance reason, results that are returned when using search completion a
 ## Advanced Search {#adv-search}
 Advanced Search provides users a more precise search to a listing in your directory. It allows your user to enter several search criteria and only display those listings that match all or any of the criteria entered by users. You can customize which fields to be shown here for your user by setting the fields to [Advanced Searchable]({{version}}/fields#advanced-searchable).
 
+> **Note**: Searching by category respects the view access level authorization. Users will only see search results from categories they are authorized to view.
+
 Advanced Search usually search against all your directory pages. In order to search within a specific category, you can modify the directory's URL. With [SEF URLs]({{version}}/configuration#sefurls) enabled, you can direct to the specific category advanced search page by entering the category's alias in front of `/advanced-search`. For example: 
     
     http://www.example.com/directory/movies/advanced-search

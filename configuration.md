@@ -432,7 +432,7 @@ When an image is uploaded, system will save the image in three formats: the orig
  Images per listing lets you set the maximum number of images can be uploaded to a listing.
 
 ## Sharing {#sharing}
-In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Facebook, Twitter, Pinterest, Google+ and LinkedIn.
+In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Facebook, Twitter, Pinterest, LinkedIn and WhatsApp.
 
  ### Facebook Like
  By setting this to `Yes`, Facebook Like will show the like button on every listings details page.
@@ -462,7 +462,16 @@ In sharing, you can control whether to insert social bookmarking buttons in list
 	Disallow: /media/
   
   For more information, refer to [Twitter's Getting Started Guide for Cards](https://dev.twitter.com/cards/getting-started#crawling).
-  
+
+ ### Show Share with WhatsApp
+ Setting this to `Yes` will show a WhatsApp share button on listing details pages, allowing users to share listings directly to WhatsApp.
+
+ ### Show Share with LinkedIn
+ Setting this to `Yes` will show a LinkedIn share button on listing details pages, allowing users to share listings on LinkedIn.
+
+ ### Show Share with Email
+ Setting this to `Yes` will show an Email share button on listing details pages, allowing users to share listings via email.
+
 ## RSS{#rss}
 
 Mosets Tree generates an RSS Feed for all categories' recently added and recently updated page. This is often useful when you want to let users know of changes in your directory without needing them to check your website constantly through use of RSS feed readers or news aggregator.

@@ -10,6 +10,9 @@
 	- [Images]({{version}}/importer#csv-images)
 	- [Listing Association]({{version}}/importer#csv-listing-assoc)
 	- [Basic Rules & Tips]({{version}}/importer#csv-basic-rules-tips)
+- [Import from JSON/ZIP]({{version}}/importer#json-zip)
+- [Updating Existing Listings]({{version}}/importer#update-existing)
+- [Export Options]({{version}}/importer#export)
 - [Import from Hot Property]({{version}}/importer#hot-property)
 - [Import from SobiPro 1.1]({{version}}/importer#sobipro)
 
@@ -188,6 +191,48 @@ On Unix, run the following command:
 
 An ideal output would be `UTF-8 Unicode text` or `UTF-8 Unicode English text, with very long lines`.
 {/answer}
+
+## Import from JSON/ZIP {#json-zip}
+
+In addition to CSV imports, MT Importer supports importing data from JSON and ZIP files. These files are typically created using Mosets Tree's export feature.
+
+### JSON Import
+You can import listings from a JSON file that follows Mosets Tree's export format. The JSON file contains listing data in a structured format that maps directly to Mosets Tree's fields.
+
+### ZIP Import
+ZIP files created by Mosets Tree's export feature can contain:
+- A CSV file with listing data
+- An images folder containing listing images
+- A `fields.json` file that maps field types between the source and destination directories
+
+To import from a JSON or ZIP file:
+
+1. Login to your Joomla's administrator back-end.
+2. Goto "**Components -> MT Importer**".
+3. Select the JSON or ZIP file from your computer.
+4. Click "**Import**" to start the import process.
+
+## Updating Existing Listings {#update-existing}
+
+MT Importer supports updating existing listings instead of creating new ones. This is useful when you need to update data for listings that are already in your directory.
+
+To update existing listings, use the `link_id` column in your CSV file. When the `update_existing` option is enabled, MT Importer will match listings by their `link_id` and update the existing listing data instead of creating new listings.
+
+If a `link_id` value does not match any existing listing, the row will be imported as a new listing.
+
+## Export Options {#export}
+
+Mosets Tree provides several options for exporting your directory data:
+
+- **CSV Download**: Export your listings data as a CSV file that can be opened in spreadsheet applications.
+- **Category Export**: Export listings from a specific category.
+- **Export by Date Range**: Export listings that were created or modified within a specific date range.
+
+Exported data can be re-imported using the import features described above.
+
+## Custom Field Type Validation {#field-type-validation}
+
+During import, MT Importer validates the field types of your data against the existing custom fields in your directory. If a field type in your import data does not match the field type of an existing custom field, MT Importer will automatically create a replacement field with the correct field type to accommodate the imported data.
 
 ## Import from Hot Property {#hot-property}
 MT Importer will import all types, companies, agents and properties from Hot Property 1.0 to Mosets Tree version 3.5+. During the import, 3 new top level categories will be created, namely 'Hot Property Properties', 'Hot Property Agents' and 'Hot Property Companies' to store the imported properties, agents and companies respectively.

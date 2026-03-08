@@ -76,6 +76,8 @@ Mosets Tree comes with the following set of core fields:
   - Year Established 
   - Description
   - Owner
+  - First Name
+  - Last Name
   - Address
   - City
   - State
@@ -217,7 +219,7 @@ Audio Player allows your users to upload an audio file along with their listing.
  By default, Loop is set to `No` so the audio track will not start over again when it is finished. If you want the track to loop indefinitely, set it to `Yes` then.
 
 ### Audio Player 2.0 {#fieldtype-audioplayer2}
-The is a newer version of audio player that supersede the previous non-2.0 version of audio player. Audio Player 2.0 uses MediaElement.js audio player for the playback and supports playing in mobile device.
+The is a newer version of audio player that supersede the previous non-2.0 version of audio player. Audio Player 2.0 uses the native HTML5 audio element for playback and supports playing in mobile devices.
 
  #### Audio Player's Width
  Set the width of the audio player in 'px'.
@@ -252,6 +254,12 @@ Category is a display-only field type that shows which categories a listings bel
  
  #### Show Breadcrumbs
  Selecting `Yes` will show the categories with breadcrumbs.
+
+ #### Show Names Only
+ When set to `Yes`, only the category names will be displayed without links.
+
+ #### Name Separator
+ Specify the separator to use between category names when "Show Names Only" is enabled. The default separator is ", ".
 
 ### Checkbox {#fieldtype-checkbox}
 Similar to Radio Button, Checkbox makes all choices permanently visible on the form, except that it allows your users to have multiple selection on the field.
@@ -364,7 +372,9 @@ Listings custom fields are not searchable.
 Multiple Dates allows you to enter one or more dates by entering the dates directly or by selecting the date through the displayed calendar. If you're entering the dates manually, the dates must be entered in the following format, separated by comma(s):
 
 	YYYY-MM-DD
-	
+
+The date picker is powered by [Flatpickr](https://flatpickr.js.org/), providing a modern and mobile-friendly date selection experience.
+
  #### Search's Start Month 
  Your user will be able to search your dates based on month. Mosets Tree will offer a list of months for searching and this parameter allows you to specify which month the list will start with. By default, it will start with the current month.
  
@@ -505,7 +515,7 @@ Vanity URL is a simplified version of Weblink field type. Instead of accepting a
  If you use Google Analytics, this parameter allows you to enter an outgoing directory where all outbound clicks through Vanity URL field will be recorded. More information is available [here](https://support.google.com/analytics/answer/1136920?cbid=1aul57ykjrzdd&src=cb&rd=1).
 
 ### Video Player {#fieldtype-videoplayer}
-Mosets Tree allows your users to submit video along with their new listings. You can specify the width and height of the video player and whether or not to start the video automatically. 
+Mosets Tree allows your users to submit video along with their new listings. Video Player uses the native HTML5 video element for playback. You can specify the width and height of the video player and whether or not to start the video automatically. 
 
 ### Vimeo {#fieldtype-vimeo}
 Use Vimeo field type to let your users share a Vimeo video to their listing. Your users will be asked to enter a Vimeo video URL and Mosets Tree will display the Vimeo video player.
@@ -565,6 +575,9 @@ Web link allows your users to add URL links to their listings.
   
  #### GA's outbound directory
  If you use Google Analytics, this parameter allows you to enter an outgoing directory where all outbound clicks through Web link field will be recorded. More information is available [here](https://support.google.com/analytics/answer/1136920?cbid=1aul57ykjrzdd&src=cb&rd=1).
+
+ #### Use Exit Popup
+ When enabled, an exit popup warning will be shown when users click on external links. This gives users a chance to confirm before leaving your site. This parameter also applies to the core Website field.
 
 ### Year {#fieldtype-year}
 Sometimes, you only want the information about years and nothing else. Mosets Tree provides you this field for your users to enter a year value.
