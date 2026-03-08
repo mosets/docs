@@ -1,4 +1,4 @@
-# What Is New in Mosets Tree 3.9
+# What Is New in Mosets Tree 4.1
 
 - [Cluster Maps]({{version}}/what-is-new#cluster-maps)
 - [JSON Output]({{version}}/what-is-new#json-output)
