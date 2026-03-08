@@ -1,8 +1,15 @@
 <style>
     .fieldtypes-list {
-        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
-        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
         margin-top:10px;
+    }
+
+    @media (max-width: 1279px) {
+        .fieldtypes-list {
+            list-position: inside;
+            margin-left:2.25rem;
+            column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+            column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+        }
     }
 
     .fieldtypes-list a {

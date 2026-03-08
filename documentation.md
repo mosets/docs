@@ -10,7 +10,7 @@
 
 - Features
 	- [Access Control List]({{version}}/acl)
-	- ️[Categories]({{version}}/categories)
+	- [Categories]({{version}}/categories)
 	- [Listings]({{version}}/listings)
 	- [Fields]({{version}}/fields)
 <!--	- ⭕️ [Tags]({{version}}/tags) -->
