@@ -51,7 +51,7 @@ You have successfully publish Mosets Tree to your Joomla website. A link for Mos
 
 {question}Which PHP version should I use?{/question}
 {answer}
-Although Joomla 6 specify PHP 8.1 as the minimum requirement, it will be an [End-of-life](http://php.net/supported-versions.php) (EOL) version by the end of 2025.
+Although Joomla 6 specifies PHP 8.1 as the minimum requirement, it is an [End-of-life](http://php.net/supported-versions.php) (EOL) version since the end of 2025.
 
-PHP 8.3 is the minimum recommended version because it currently has active support and is not estimated to be EOL'd until 1 Jan 2028.
+PHP 8.4 is the recommended version because it currently has active support and is not estimated to be EOL'd until 31 Dec 2028.
 {/answer}
