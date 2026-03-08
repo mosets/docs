@@ -436,6 +436,9 @@ In sharing, you can control whether to insert social bookmarking buttons in list
 
  ### Facebook Like
  By setting this to `Yes`, Facebook Like will show the like button on every listings details page.
+
+ ### Facebook App ID {#facebook_app_id}
+ Enter your Facebook App ID to associate the Facebook Like button with your Facebook app. You can create one at [developers.facebook.com](https://developers.facebook.com). This is optional but recommended for better analytics and control over your Like button integration.
  
  ### Pinterest On Hover Pin
  On Hover Pin will show Pinterest's `Pin it` button on your listing's main image when a user mouses over it.

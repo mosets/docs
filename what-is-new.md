@@ -1,10 +1,40 @@
 # What Is New in Mosets Tree 4.1
 
+- [New in 4.1.1]({{version}}/what-is-new#411)
 - [Cluster Maps]({{version}}/what-is-new#cluster-maps)
 - [JSON Output]({{version}}/what-is-new#json-output)
 - [Listing Renewal]({{version}}/what-is-new#listing-renewal)
 - [Featuring a listing in front-end]({{version}}/what-is-new#feature-listing-front-end)
 - [Miscellaneous]({{version}}/what-is-new#misc)
+
+## New in 4.1.1 {#411}
+
+### Facebook App ID Configuration {#facebook-app-id}
+
+You can now configure a Facebook App ID for the Facebook Like button. This allows you to associate the Like button with your Facebook app for better analytics and control. The new setting is available under **Mosets Tree -> Configuration -> Sharing**. See the [configuration documentation]({{version}}/configuration#facebook_app_id) for more details.
+
+### WCAG 2.2 Accessibility Improvements {#accessibility}
+
+Mosets Tree 4.1.1 includes comprehensive accessibility improvements across templates and modules to better comply with WCAG 2.2 guidelines. These include:
+
+- Added accessible names, labels, and ARIA attributes for star ratings, images, buttons, and links
+- Decorative icons are now marked with `aria-hidden`
+- Added `aria-current` attribute to the current category in tree browse navigation
+- Added `aria-label` to category select dropdowns, edit menu buttons, and search form inputs
+- External links now include `rel="noopener noreferrer"` for security
+- Empty content is handled gracefully to avoid broken links
+
+### Swiper Replaces FlexSlider {#swiper}
+
+The image gallery slider has been upgraded from FlexSlider to [Swiper](https://swiperjs.com/), a modern, performant and touch-friendly slider library. This provides smoother transitions and better mobile support for listing image galleries.
+
+### Native Audio & Video Players {#native-media-players}
+
+Video.js and MediaElement.js have been replaced with native HTML5 video and audio players. This reduces the number of third-party libraries, improves page load performance, and enables seeking in audio and video players.
+
+### Flatpickr Replaces jQuery Datepick {#flatpickr}
+
+The Multiple Dates custom field now uses [Flatpickr](https://flatpickr.js.org/) instead of jQuery datepick, providing a modern, lightweight date picker with better mobile support.
 
 ## Cluster Maps {#cluster-maps}
 
