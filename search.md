@@ -2,6 +2,7 @@
 
 - [Simple Search]({{version}}/search#simple-search)
 - [Advanced Search]({{version}}/search#adv-search)
+- [Radius Search]({{version}}/search#radius-search)
 - [Filters]({{version}}/search#filters)
 
 It would be tedious if you have to browse through categories and look through many listings to find the listings you're looking for. Mosets Tree comes with 3 types of searches to help your users to search for listings quickly.
@@ -29,6 +30,26 @@ Advanced Search usually search against all your directory pages. In order to sea
 When no SEF URLs is enable, you can go to any of the category page and replace `listcats` to `advsearch` in URL for entering to the category Advanced Search.
 
 Demo: http://demo.mosetstree.com/advanced-search.html
+
+## Radius Search {#radius-search}
+Radius Search lets users find listings within a chosen distance of a place — for example, all listings within 25 km of an address. Once enabled, a location input and a distance selector appear in the Advanced Search page, and listing summaries can show the distance from the searched location.
+
+To enable radius search, go to **Mosets Tree → Configuration → Search → Radius Search** and set "Enable Radius Search" to `Yes`. From the same screen you can choose the unit (kilometers or miles), define the distance options shown in the dropdown, and set a default radius. See the [configuration documentation]({{version}}/configuration#radius-search-config) for details.
+
+You can also publish the [Location Search module]({{version}}/modules#mod-mt-location-search) to expose radius search anywhere on your site outside the Advanced Search page.
+
+### Requirements {#radius-search-requirements}
+
+Radius search uses Google Maps for location autocomplete and geocoding. To use it, you need:
+
+1. **A Google Maps API key** entered under **Mosets Tree → Configuration → Map → Google Maps API Key**. This is the same key used by Cluster Maps.
+2. The following APIs enabled on that key in [Google Cloud Console](https://console.cloud.google.com/):
+    - **Maps JavaScript API** — loads the map library (already required for Cluster Maps).
+    - **Places API** (or **Places API (New)**) — powers the location autocomplete dropdown.
+    - **Geocoding API** — converts the chosen place into coordinates used for the distance calculation, and converts the user's current location (from the "Use my location" button) into a readable address.
+3. **Geocoded listings**. Radius search measures distance from the searched location to each listing's stored latitude and longitude. Listings without coordinates will not appear in results. Use the back-end **Locate Listings in Map** tool to geocode existing listings.
+
+If autocomplete suggestions don't appear or the search returns no results despite nearby listings existing, the most common cause is one of the APIs above not being enabled, or the API key having referrer or billing restrictions that block these specific APIs.
 
 ## Filters {#filters}
 Filters are available by publishing Mosets Tree's [Filter module]({{version}}/modules#mod-mt-filter) to your directory. Similar to Advanced Search, Filters is also an option that allows users to filter the listings to quickly find the listing they are looking, except that users can use this searching method in any pages of your directory from where you want the module to be published.

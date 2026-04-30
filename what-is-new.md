@@ -1,5 +1,6 @@
 # What Is New in Mosets Tree 4.1
 
+- [New in 4.1.2]({{version}}/what-is-new#412)
 - [New in 4.1.1]({{version}}/what-is-new#411)
 - [Grid-style Gallery Layout]({{version}}/what-is-new#grid-gallery)
 - [JSON/ZIP Import]({{version}}/what-is-new#json-zip-import)
@@ -10,11 +11,34 @@
 - [Guest Email on Reports]({{version}}/what-is-new#guest-email-reports)
 - [Font Awesome 6 Free]({{version}}/what-is-new#font-awesome-6)
 
+## New in 4.1.2 {#412}
+
+### Radius Search {#radius-search}
+
+Mosets Tree 4.1.2 introduces location-based searching. Visitors can now find listings within a chosen distance of a place — for example, "all coffee shops within 10 km of my current location".
+
+Radius search is configured under **Mosets Tree → Configuration → Search → Radius Search** and is available in the Advanced Search page when enabled. You can choose between kilometers and miles, define the distance options shown to users, and set a default radius.
+
+See the [Search documentation]({{version}}/search#radius-search) and [configuration]({{version}}/configuration#radius-search-config) for details.
+
+### Location Search Module {#location-search-module}
+
+A new `mod_mt_location_search` module makes radius search accessible from anywhere on your site. The module displays a location input with optional autocomplete, an optional "Use my location" button, and an optional radius selector.
+
+See the [Location Search module documentation]({{version}}/modules#mod-mt-location-search) for details.
+
+### Heading Field Type {#heading-field}
+
+A new **Heading** custom field type displays a section heading to visually organize related custom fields into groups in the Add Listing form, listing details page and search forms. Use it to break long forms into clearly labelled sections.
+
+See the [Heading fieldtype documentation]({{version}}/fields#fieldtype-heading) for details.
+
+### Bug Fixes {#412-fixes}
+
+- Grid gallery lightbox now scopes navigation per listing instead of cycling through every image on the page
+- "Trigger Modified Listing" configuration now supports core field IDs (Name, Description, etc.) in addition to custom fields
+
 ## New in 4.1.1 {#411}
-
-### Facebook App ID Configuration {#facebook-app-id}
-
-You can now configure a Facebook App ID for the Facebook Like button. This allows you to associate the Like button with your Facebook app for better analytics and control. The new setting is available under **Mosets Tree -> Configuration -> Sharing**. See the [configuration documentation]({{version}}/configuration#facebook_app_id) for more details.
 
 ### WCAG 2.2 Accessibility Improvements {#accessibility}
 

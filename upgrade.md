@@ -506,9 +506,25 @@ ALTER TABLE `#__mt_reports` ADD COLUMN `guest_email` varchar(255) NULL DEFAULT N
 INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`) VALUES ('facebook_app_id', 'sharing', '', '', 'text', 1020, 1, 0);
 
 ############################
+# Mosets Tree version 4.1.2
+INSERT IGNORE INTO `#__mt_config` VALUES
+    ('note_radius_search', 'search', '', '', 'note', 2600, 1, 1),
+    ('radius_search_enabled', 'search', '0', '0', 'yesno', 2610, 1, 1),
+    ('radius_search_unit', 'search', 'km', 'km', 'radius_search_unit', 2620, 1, 1),
+    ('radius_search_options', 'search', '5,10,25,50,100', '5,10,25,50,100', 'text', 2630, 1, 1),
+    ('radius_search_default', 'search', '25', '25', 'text', 2640, 1, 1);
+
+UPDATE `#__mt_config` SET `ordering` = 2700 WHERE `varname` = 'note_filter_search';
+UPDATE `#__mt_config` SET `ordering` = 2710 WHERE `varname` = 'filter_show_keyword_search';
+
+INSERT IGNORE INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('mheading', 'Heading', '1.0.0', '', 'Displays a section heading to visually organize custom fields into groups.', 0, 0, 0, 0, 0, 0, 0);
+
+DELETE FROM `#__mt_config` WHERE `varname` IN ('note_facebook_like', 'use_facebook_like', 'facebook_app_id');
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '4.1.1' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '4.1.2' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '2' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```

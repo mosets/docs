@@ -37,6 +37,7 @@
 	- [Directory]({{version}}/fields#fieldtype-directory)
 	- [E-mail]({{version}}/fields#fieldtype-email)
 	- [File]({{version}}/fields#fieldtype-file)
+	- [Heading]({{version}}/fields#fieldtype-heading)
 	- [Image]({{version}}/fields#fieldtype-image)
 	- [Listing ID]({{version}}/fields#fieldtype-listingid)
 	- [Month & Year]({{version}}/fields#fieldtype-monthandyear)
@@ -342,6 +343,11 @@ File is an attachment fieldtype that allows you to create a file input field for
   
  #### Link Class Suffix
  Link Class Suffix sets a suffix to be applied to the CSS class of the download link.
+
+### Heading {#fieldtype-heading}
+Heading is a display-only fieldtype that renders a section heading. Use it to visually organize related custom fields into groups in the Add Listing form, listing details page and search forms.
+
+A Heading field has no input or stored value — it only displays its caption. Place it before the group of fields it should label, and order it accordingly in your Add Listing form.
 
 ### Image {#fieldtype-image}
 Image is an attachment fieldtype that allows your users to upload image files along with their listings.

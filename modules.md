@@ -27,6 +27,7 @@
     - [Dynamic Tree]({{version}}/modules#mod-mt-dtree)
     - [Filter]({{version}}/modules#mod-mt-filter)
     - [Listings (Cards)]({{version}}/modules#mod-mt-listings-cards)
+    - [Location Search]({{version}}/modules#mod-mt-location-search)
     - [Map]({{version}}/modules#mod-mt-map)
     - [Owners]({{version}}/modules#mod-mt-owner)
     - [Search]({{version}}/modules#mod-mt-search)
@@ -37,7 +38,7 @@
 </div>
 
 ## Introduction {#intro}
-Mosets Tree comes with 17 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
+Mosets Tree comes with 18 modules that helps you to display snippets of your directory across your site. If you just started using Joomla, you can refer to Joomla Documentation on [general information about modules](https://docs.joomla.org/Module).
 
 ## Assignment Options {#assignment}
 Mosets Tree allows you to publish modules exactly where you want it. Each Mosets Tree modules includes a pane that allows you to control where within your directory pages that a module will be displayed. For example, you can assign a module to appear in all pages of your site or hide it from your site; or show in a single top level category while being hidden in others; or only display either in category or listing pages; or both.
@@ -94,6 +95,19 @@ Mosets Tree allows you to publish modules exactly where you want it. Each Mosets
 
  Parameters include:
  - **Category ID**: Scope the tag cloud to show tags only from a specific category.
+
+ ### Location Search {#mod-mt-location-search}
+ Displays a location-based search form that lets visitors find listings near a specified place or their current location. Submitting the form takes them to the Advanced Search results filtered by the chosen location.
+
+ [Radius search must be enabled]({{version}}/configuration#radius-search-config) under **Configuration → Search → Radius Search** before this module can return distance-based results.
+
+ Parameters include:
+ - **Placeholder Text**: Custom placeholder shown in the location input.
+ - **Show "My Location" Button**: Adds a button that uses the browser's geolocation to prefill the location.
+ - **Show Search Button**: Show or hide the explicit search button.
+ - **Show Radius Selector**: Let users choose the search radius. When hidden, you can set a fixed default radius.
+ - **Default Radius**: The radius applied when the selector is hidden.
+ - **Parent Cat. ID**: Restrict the search to a specific category branch.
 
  ### Map {#mod-mt-map}
  Displays a Google Map with markers from your directory listings. This module is useful for showing the geographical distribution of your listings on a map.

@@ -223,6 +223,24 @@ Mosets Tree has three types of searching functions to help your user find the li
   #### Default sorting in results page
   This config allows you to choose how listings in advanced search results are ordered.
 
+ ### Radius Search {#radius-search-config}
+
+ Radius Search lets users find listings within a chosen distance of a location. When enabled, a location input and distance selector appear in the [Advanced Search]({{version}}/search#adv-search) page. You can also expose radius search anywhere on your site through the [Location Search module]({{version}}/modules#mod-mt-location-search).
+
+ Radius search uses your existing Google Maps API key but requires the **Places API** and **Geocoding API** to be enabled in [Google Cloud Console](https://console.cloud.google.com/) on top of the **Maps JavaScript API** that Cluster Maps already uses. Listings must have latitude and longitude coordinates to appear in results — see [requirements]({{version}}/search#radius-search-requirements) for details.
+
+  #### Enable Radius Search
+  Set this to `Yes` to enable radius search across the directory.
+
+  #### Distance Unit
+  Choose between `Kilometers` and `Miles` for the distance unit displayed and used in calculations.
+
+  #### Distance Options
+  Comma-separated list of distance values offered to users in the radius dropdown. The default is `5,10,25,50,100`.
+
+  #### Default Radius
+  The distance that is preselected when the user opens the radius search form. Should match one of the values in Distance Options.
+
  ### Filter Search
 
   #### Show keyword search
@@ -432,14 +450,8 @@ When an image is uploaded, system will save the image in three formats: the orig
  Images per listing lets you set the maximum number of images can be uploaded to a listing.
 
 ## Sharing {#sharing}
-In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Facebook, Twitter, Pinterest, LinkedIn and WhatsApp.
+In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Twitter, Pinterest, LinkedIn and WhatsApp.
 
- ### Facebook Like
- By setting this to `Yes`, Facebook Like will show the like button on every listings details page.
-
- ### Facebook App ID {#facebook_app_id}
- Enter your Facebook App ID to associate the Facebook Like button with your Facebook app. You can create one at [developers.facebook.com](https://developers.facebook.com). This is optional but recommended for better analytics and control over your Like button integration.
- 
  ### Pinterest On Hover Pin
  On Hover Pin will show Pinterest's `Pin it` button on your listing's main image when a user mouses over it.
  
