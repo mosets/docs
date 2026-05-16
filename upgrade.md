@@ -522,9 +522,26 @@ INSERT IGNORE INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`,
 DELETE FROM `#__mt_config` WHERE `varname` IN ('note_facebook_like', 'use_facebook_like', 'facebook_app_id');
 
 ############################
+# Mosets Tree version 4.1.3
+INSERT IGNORE INTO `#__mt_config` (`varname`, `groupname`, `value`, `default`, `configcode`, `ordering`, `displayed`, `overridable_by_category`)
+VALUES
+('noimage_thb', 'image', '', '', 'text', 1080, 1, 1),
+('note_geocoder', 'map', '', '', 'note', '4111', '1', '1'),
+('geocoder', 'map', 'photon', 'photon', 'geocoder_providers', '4112', '1', '0'),
+('geocoder_countrycode', 'map', '', '', 'text', '4113', '1', '0');
+
+UPDATE `#__mt_config` SET `ordering` = '4113' WHERE `varname` = 'geocoder_countrycode';
+UPDATE `#__mt_config` SET `ordering` = '4115' WHERE `varname` = 'note_google_maps';
+UPDATE `#__mt_config` SET `ordering` = '4116' WHERE `varname` = 'google_maps_api_key';
+UPDATE `#__mt_config` SET `ordering` = '4117' WHERE `varname` = 'google_maps_type_ids';
+UPDATE `#__mt_config` SET `ordering` = '4118' WHERE `varname` = 'google_maps_type_id';
+
+INSERT IGNORE INTO `#__mt_fieldtypes` (`field_type`, `ft_caption`, `ft_version`, `ft_website`, `ft_desc`, `use_elements`, `use_size`, `use_columns`, `use_placeholder`, `is_file`, `taggable`, `iscore`) VALUES ('dateperiod', 'Date Period', '1.0.0', '', 'A period between two dates. The end date is optional - leave it blank for ongoing periods.', 0, 0, 0, 0, 0, 0, 0);
+
+############################
 # Update Mosets Tree Version number
-UPDATE  `#__mt_config` SET  `value` =  '4.1.2' WHERE  `#__mt_config`.`varname` =  'version';
+UPDATE  `#__mt_config` SET  `value` =  '4.1.3' WHERE  `#__mt_config`.`varname` =  'version';
 UPDATE  `#__mt_config` SET  `value` =  '4' WHERE  `#__mt_config`.`varname` =  'major_version';
 UPDATE  `#__mt_config` SET  `value` =  '1' WHERE  `#__mt_config`.`varname` =  'minor_version';
-UPDATE  `#__mt_config` SET  `value` =  '2' WHERE  `#__mt_config`.`varname` =  'dev_version';
+UPDATE  `#__mt_config` SET  `value` =  '3' WHERE  `#__mt_config`.`varname` =  'dev_version';
 ```

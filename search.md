@@ -40,16 +40,24 @@ You can also publish the [Location Search module]({{version}}/modules#mod-mt-loc
 
 ### Requirements {#radius-search-requirements}
 
-Radius search uses Google Maps for location autocomplete and geocoding. To use it, you need:
+Radius search uses a geocoder to convert addresses into coordinates and calculate distances. Starting with Mosets Tree 4.1.3, the default geocoder is **Photon** ([photon.komoot.io](https://photon.komoot.io)), a free, open-source service that requires no API key. You can switch to **Google Maps Geocoder** under **Mosets Tree → Configuration → Map → Geocoder**.
+
+If using the default **Photon** geocoder:
+
+1. No API key is required. Autocomplete and geocoding work out of the box.
+2. You can restrict results to specific countries using the **Country Code** config (ISO 3166-1 alpha-2 codes, comma-separated).
+
+If using **Google Maps** as the geocoder:
 
 1. **A Google Maps API key** entered under **Mosets Tree → Configuration → Map → Google Maps API Key**. This is the same key used by Cluster Maps.
 2. The following APIs enabled on that key in [Google Cloud Console](https://console.cloud.google.com/):
     - **Maps JavaScript API** — loads the map library (already required for Cluster Maps).
     - **Places API** (or **Places API (New)**) — powers the location autocomplete dropdown.
     - **Geocoding API** — converts the chosen place into coordinates used for the distance calculation, and converts the user's current location (from the "Use my location" button) into a readable address.
-3. **Geocoded listings**. Radius search measures distance from the searched location to each listing's stored latitude and longitude. Listings without coordinates will not appear in results. Use the back-end **Locate Listings in Map** tool to geocode existing listings.
 
-If autocomplete suggestions don't appear or the search returns no results despite nearby listings existing, the most common cause is one of the APIs above not being enabled, or the API key having referrer or billing restrictions that block these specific APIs.
+In both cases, **geocoded listings** are required. Radius search measures distance from the searched location to each listing's stored latitude and longitude. Listings without coordinates will not appear in results. Use the back-end **Locate Listings in Map** tool to geocode existing listings.
+
+If autocomplete suggestions don't appear or the search returns no results despite nearby listings existing, check that the correct geocoder is configured and, if using Google Maps, that the required APIs are enabled and the API key has no restrictive referrer or billing settings.
 
 ## Filters {#filters}
 Filters are available by publishing Mosets Tree's [Filter module]({{version}}/modules#mod-mt-filter) to your directory. Similar to Advanced Search, Filters is also an option that allows users to filter the listings to quickly find the listing they are looking, except that users can use this searching method in any pages of your directory from where you want the module to be published.

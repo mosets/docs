@@ -1,5 +1,6 @@
 # What Is New in Mosets Tree 4.1
 
+- [New in 4.1.3]({{version}}/what-is-new#413)
 - [New in 4.1.2]({{version}}/what-is-new#412)
 - [New in 4.1.1]({{version}}/what-is-new#411)
 - [Grid-style Gallery Layout]({{version}}/what-is-new#grid-gallery)
@@ -10,6 +11,51 @@
 - [Category Breadcrumbs Tool]({{version}}/what-is-new#category-breadcrumbs)
 - [Guest Email on Reports]({{version}}/what-is-new#guest-email-reports)
 - [Font Awesome 6 Free]({{version}}/what-is-new#font-awesome-6)
+
+## New in 4.1.3 {#413}
+
+### Date Period Field Type {#date-period-field}
+
+A new **Date Period** custom field type lets you store a period between two dates — for example, "1939-09-01 to 1945-05-09". The end date is optional, making it suitable for ongoing periods. When used in search, Date Period uses "active during" overlap matching, so users can find listings whose date period overlaps with a given date.
+
+See the [Date Period fieldtype documentation]({{version}}/fields#fieldtype-dateperiod) for details.
+
+### Unified Geocoder {#unified-geocoder}
+
+Mosets Tree 4.1.3 introduces a unified geocoder abstraction. **Photon** ([photon.komoot.io](https://photon.komoot.io)) is now the default geocoder, replacing the hard-coded dependency on Google Maps Geocoder. Google Maps Geocoder remains available as a configurable alternative.
+
+Key changes:
+
+- **Photon autocomplete** with keyboard navigation (ArrowUp, ArrowDown, Enter, Escape) for location inputs.
+- New **Geocoder** config under **Mosets Tree → Configuration → Map** lets you choose between Photon and Google Maps.
+- New **Country Code** config restricts geocoding results to specific ISO 3166-1 alpha-2 country codes. Photon supports multiple comma-separated codes; Google Maps uses the first.
+- Map configuration is reorganised into a **Geocoder** section (Geocoder, Country Code) and a **Google Maps** section (API Key, Map Types, Default Type, Styled Map).
+
+See the [configuration documentation]({{version}}/configuration#map) for details.
+
+### Custom No-Image Thumbnail {#noimage-thumbnail}
+
+A new **No-Image Thumbnail** config (**Mosets Tree → Configuration → Image**) lets you override the default no-image placeholder with a custom path or URL. Mosets Tree also auto-detects a per-template `noimage_thb.png` at:
+
+- `/components/com_mtree/templates/{template}/noimage_thb.png`
+- `/images/noimage_thb.png`
+
+Custom templates can ship their own placeholder without code changes.
+
+### Filter Open State When Filtered {#filter-open-state}
+
+A new `keep_filter_open_when_filtered` option in the template `config.php` (`listings_view` group) controls whether the filter dropdown is expanded by default when listings are filtered. This is useful for directories where users frequently refine filters.
+
+### Accessibility: Heading Level Fix {#a11y-heading-fix}
+
+The listing summary heading has been changed from `<h3>` to `<h2>` in all bundled templates (Banyan, Boldfire, Drift, Sienna, Slate, Zenith) to fix WCAG 2.1 heading order. If you have custom CSS targeting `.mt-ls-header h3`, you will need to update it to target `.mt-ls-header h2`.
+
+### Bug Fixes {#413-fixes}
+
+- Fixed radius search: distance is now shown in listing summaries even when the listing has no populated address fields, and resolved an SQL error when advanced search uses `sort=distance` without an active radius search.
+- Fixed core fields (Address, City, State, Country, Postcode, etc.) going missing from listing summaries when stray `cfvalues` rows exist for some listings but not others.
+- Fixed a malformed closing tag in the Category field type HTML output.
+- Fixed COM_MTREE language strings not being loaded in Mosets Tree modules when displayed on non-Mosets Tree pages.
 
 ## New in 4.1.2 {#412}
 

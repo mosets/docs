@@ -34,6 +34,7 @@
 	- [Category]({{version}}/fields#fieldtype-category)
 	- [Checkbox]({{version}}/fields#fieldtype-checkbox)
 	- [Date]({{version}}/fields#fieldtype-date)
+	- [Date Period]({{version}}/fields#fieldtype-dateperiod)
 	- [Directory]({{version}}/fields#fieldtype-directory)
 	- [E-mail]({{version}}/fields#fieldtype-email)
 	- [File]({{version}}/fields#fieldtype-file)
@@ -317,6 +318,16 @@ Date provides a text box for entry of a date. An icon next to the text box provi
  
  #### Date Format
  Date Format decides how the date to be displayed for the field. By default, "_Year-Month-Day_" (for example, 2015-12-31) is used for the field.
+
+### Date Period {#fieldtype-dateperiod}
+Date Period stores a period between two dates — for example, "1939-09-01 to 1945-05-09". It renders two date inputs (start date and end date) in the edit form.
+
+The end date is optional. Leave it blank to represent an ongoing or open-ended period.
+
+When used in search, Date Period uses "active during" overlap matching: a search for a specific date will return listings whose period includes that date. For example, searching for "1943-06-15" will match a listing with the period "1939-09-01 to 1945-05-09" because June 1943 falls within that range.
+
+ #### Date Format
+ Date Format decides how the dates are displayed for the field. By default, "_Year-Month-Day_" (for example, 2015-12-31) is used for the field.
 
 ### Directory {#fieldtype-directory}
 Directory is a display-only fieldtype that shows the top level category which a listing belongs to.

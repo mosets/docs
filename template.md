@@ -291,6 +291,7 @@ Templates may offer the following display options:
 - **Alpha Index**: Controls whether the alphabetical index is displayed.
 - **Search Bar**: Controls whether the search bar is displayed.
 - **Browse by Tags**: Controls whether the browse by tags section is displayed.
+- **Keep Filter Open When Filtered** (`config.php`): When set to `Yes`, the filter dropdown remains expanded by default when listings are filtered. This is a template-level setting configured in `config.php` under the `listings_view` group, not exposed in the Configuration screen.
 
 ### Focus Fields and Main Attribute Fields
 Some templates allow you to designate certain custom fields as **Focus Fields** or **Main Attribute Fields**. These fields are given visual prominence in listing summaries and details views, making key information more visible to your users.

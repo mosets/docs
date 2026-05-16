@@ -339,23 +339,34 @@ Mosets Tree has three types of searching functions to help your user find the li
 
  ### Show link to map
  Enable this feature to provide users a link to view the listing's location in Google Maps.
- 
 
  ### Show map in category, index, search results, top listings and list all pages
  These are the individual settings for Cluster Maps. Cluster Map shows a map with multiple markers from your listings. This appear near the top of the pages before listing summaries are shown with a toggle to Show or Hide map. 
 
- ### Google Maps API Key
- Enter your Google Maps API Key.
+ ### Geocoder
 
- ### Google Maps Types
- Select the type of maps you want to make available to your user in your Cluster Maps.
+  #### Geocoder
+  Choose the geocoder provider used for location autocomplete, geocoding addresses to coordinates, and the "Use my location" reverse geocoding. Options:
+  
+  - **Photon** (default): Uses [Photon](https://photon.komoot.io), a free, open-source geocoding service. No API key required. Photon provides autocomplete with keyboard navigation.
+  - **Google Maps**: Uses Google Maps Geocoder. Requires a valid Google Maps API Key with the **Geocoding API** enabled.
 
+  #### Country Code
+  Restrict geocoding results to specific countries by entering ISO 3166-1 alpha-2 country codes. Photon supports multiple comma-separated codes (e.g. `US,CA,MX`). Google Maps uses only the first code. Leave empty for no restriction.
 
- ### Default Google Maps Type
- Choose the map type to load by default. 
+ ### Google Maps
 
- ### Google Maps' 'Styled Map' JS style array
- Enter the javascript style array codes to define a custom style to your map. You can find some popular styles at https://snazzymaps.com/.
+  #### Google Maps API Key
+  Enter your Google Maps API Key. Required for Cluster Maps and for Google Maps geocoder (if selected above).
+
+  #### Google Maps Types
+  Select the type of maps you want to make available to your user in your Cluster Maps.
+
+  #### Default Google Maps Type
+  Choose the map type to load by default. 
+
+  #### Google Maps' 'Styled Map' JS style array
+  Enter the javascript style array codes to define a custom style to your map. You can find some popular styles at https://snazzymaps.com/.
 
 ## Features {#features}
 Features allows you to configure most of the functions in the listing page of your directory.
@@ -448,6 +459,9 @@ When an image is uploaded, system will save the image in three formats: the orig
  
  ### Images per listing
  Images per listing lets you set the maximum number of images can be uploaded to a listing.
+
+ ### No-Image Thumbnail
+ Enter a custom path or URL to override the default no-image placeholder used when a listing has no uploaded image. You can also place a `noimage_thb.png` file in your template directory at `/components/com_mtree/templates/{template}/noimage_thb.png` or in `/images/noimage_thb.png` and Mosets Tree will auto-detect it without any configuration.
 
 ## Sharing {#sharing}
 In sharing, you can control whether to insert social bookmarking buttons in listings details view so that users can share your directory pages in popular social networks such as Twitter, Pinterest, LinkedIn and WhatsApp.
